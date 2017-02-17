@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <!-- Old Way
+    <AutoCompleteTextView
+        android:id="@+id/actvElement"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:completionHint="@string/actvHint"
+        android:maxLength="3"
+        android:inputType="textCapSentences" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"/>
+
+    <EditText
+        android:id="@+id/etAtomN"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="end"/>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btAdd"/>
+
+        -->
+
+    <!-- New Way -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvFormula"/>
+
+    <EditText
+        android:id="@+id/etFormula"
+        android:inputType=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

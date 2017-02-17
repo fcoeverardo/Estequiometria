@@ -1,0 +1,1492 @@
+<resources>
+    <string name="app_name">Estequiometria</string>
+    <string name="action_about">Sobre</string>
+    <string name="action_info">Informação</string>
+
+    <!-- About Activity -->
+    <string name="aboutActivity">Sobre</string>
+
+    <string name="about1">
+        Universidade Federal do Ceará
+        &lt;br />Centro de Ciências
+        &lt;br />Departamento de Química Orgânica e Inorgânica
+        &lt;br />Grupo de Desenvolvimento de Ferramentas Educacionais em Química
+    </string>gent
+
+    <string name="about2">
+        &lt;br />Estequiometria: Software Educacional
+
+        &lt;br />&lt;br />&lt;b>Autor:&lt;/b> Prof. José Nunes da Silva Jr. (nunes.ufc@gmail.com)
+
+        &lt;br />&lt;br />&lt;b>Colaboração:&lt;/b>
+
+        &lt;br />Antônio José Melo Leite Jr.
+        &lt;br />Francisco Serra Oliveira Alexandre
+
+        &lt;br />&lt;br />&lt;b>Outras Ferramentas Educacionais:&lt;/b>
+
+        &lt;br />Conheça outras ferramentas desenvolvidas pelo grupo.
+    </string>
+
+    <string name="about3">Acesse:&#160;</string>
+    <string name="about4">http://www.quimica.ufc.br/gdfceq</string>
+
+    <!-- About Activity -->
+
+    <!-- Modules Names -->
+    <string-array name="modulesNames">
+        <item>Cálculos Químicos</item>
+        <item>Cálculos de Fórmulas</item>
+        <item>Cálculo Estequiométrico</item>
+        <item>Volumetria</item>
+    </string-array>
+    <!-- Modules Names -->
+
+    <!-- Modules Brief Descriptions -->
+    <!-- Modules Brief Descriptions -->
+
+    <!-- Modules Descriptions -->
+        <string name="m1d">
+            Nesta seção, você aprenderá a calcular as massa atômicas e moleculares a partir da unidade de massa atômica,
+            e como se calcula a massa de um elemento quimico que se apresenta na natureza como diferentes isotopos.
+
+            \n\nAtravés do conceito de mol, você também aprenderá a calcular o número de átomos/moléculas/ions/prótons/nêutrons presentes em uma determinada massa de uma substância.
+
+            \n\nToque nos botões abaixo para explorar cada um dos conceitos.
+
+        </string>
+
+        <string name="m2d">
+            Quando um químico obtém uma nova substância,
+            uma das primeiras providências que ele toma
+            é a determinação de sua composição
+            percentual ou centesimal. A partir da composição percentual é possível
+            determinar a fórmula mínima da substância e
+            a partir desta é possível chegar a sua fórmula molecular.
+
+            \nVamos aprender como encontrar
+            estas três fórmulas: percentual, mínima emolecular.
+        </string>
+
+        <string name="m3d">Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla iaculis accumsan purus, et dictum tellus ornare sed. Aliquam erat volutpat.
+            Duis ipsum nunc, molestie euismod interdum eget, varius id turpis.
+            Vivamus vulputate sapien ut felis molestie ornare. Cras dapibus ultricies viverra.
+            Mauris porta mattis dui, in imperdiet nulla lobortis sed.
+            Sed ac lacinia massa, in faucibus purus.
+        </string>
+
+        <string name="m4d">Descrição: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla iaculis accumsan purus, et dictum tellus ornare sed.
+            Aliquam erat volutpat. Duis ipsum nunc, molestie euismod interdum eget, varius id turpis.
+            Vivamus vulputate sapien ut felis molestie ornare. Cras dapibus ultricies viverra.
+            Mauris porta mattis dui, in imperdiet nulla lobortis sed.
+            Sed ac lacinia massa, in faucibus purus.
+        </string>
+    <!-- Modules Descriptions -->
+
+    <!-- Module 1 Topics -->
+    <string-array name="module1Topics">
+        <item>Unidade de massa atômica (u)</item>
+        <item>Massa atômica (MA)</item>
+        <item>Massa de um elemento químico</item>
+        <item>Massa molecular (MM)</item>
+        <item>Mol e massa molar</item>
+    </string-array>
+    <!-- Module 1 Topics -->
+
+    <!-- Module 2 Topics -->
+    <string-array name="module2Topics">
+        <item>Fórmula percentual ou centesimal</item>
+        <item>Fórmula mínima, empírica ou estequiométrica</item>
+        <item>Fórmula molecular</item>
+        <item>Água de hidratação</item>
+        <item>Análise por combustão</item>
+    </string-array>
+    <!-- Module 2 Topics -->
+
+    <!-- Module 3 Topics -->
+    <string-array name="module3Topics">
+        <item>Casos gerais</item>
+        <item>Reagente em excesso</item>
+        <item>Rendimento</item>
+        <item>Pureza</item>
+        <item>Reações sucessivas</item>
+    </string-array>
+    <!-- Module 3 Topics -->
+
+    <!-- Module 4 Topics -->
+    <string-array name="module4Topics">
+        <item>Volumetria de precipitação</item>
+        <item>Volumetria de oxi-redução</item>
+        <item>Volumetria ácido-base</item>
+        <item>Padronização de solução de NaOH</item>
+    </string-array>
+    <!-- Module 4 Topics -->
+
+
+    <!-- Module 1 Topics Description -->
+    <string-array name="module1TopicsDesc">
+        <item>Unidade de massa atômica (u)</item>
+        <item>Massa atômica (MA)</item>
+        <item>Massa atômica de um elemento químico (massa atômica média)</item>
+        <item>Massa molecular (MM)</item>
+        <item>Massa molar</item>
+        <item>Cálculo do número de mols (cálculo da quantidade de matéria)</item>
+    </string-array>
+    <!-- Module 1 Topics Description -->
+
+    <!-- Module 2 Topics Description -->
+    <string-array name="module2TopicsDesc">
+        <item>Unidade de massa atômica (u)</item>
+        <item>Massa atômica (MA)</item>
+        <item>Massa atômica de um elemento químico (massa atômica média)</item>
+        <item>Massa molecular (MM)</item>
+        <item>Massa molecular (MM)</item>
+    </string-array>
+    <!-- Module 2 Topics Description -->
+
+    <!-- Module 3 Topics Description -->
+    <string-array name="module3TopicsDesc">
+        <item>Unidade de massa atômica (u)</item>
+        <item>Massa atômica (MA)</item>
+        <item>Massa atômica de um elemento químico (massa atômica média)</item>
+        <item>Massa molecular (MM)</item>
+        <item>Massa molecular (MM)</item>
+    </string-array>
+    <!-- Module 3 Topics Description -->
+
+    <!-- Module 4 Topics Description -->
+    <string-array name="module4TopicsDesc">
+        <item>Volumetria de precipitação</item>
+        <item>Volumetria de oxi-redução</item>
+        <item>Volumetria ácido-base</item>
+        <item>Padronização de solução de NaOH</item>
+    </string-array>
+    <!-- Module 4 Topics Description -->
+
+
+    <!-- Module 1 Topic 1 -->
+        <string name="m1t1.1">
+            As unidades usuais de medidas de massa, tais como grama e quilograma, não são adequadas para expressar a massa de um átomo, uma vez que a masssa dos átomos são muito pequenas.&lt;br />&lt;br />
+
+            Em 1962, em um Congresso Internacional de Química, foi escolhida a &lt;b>unidade de massa atômica (u)&lt;/b>, definida como a massa de 1/12 do &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C :&lt;br />&lt;br />
+        </string>
+
+        <string name="m1t1.2">
+            &lt;b>Isótopos&lt;/b> são átomos que apresentam o mesmo número atômico (Z), isto é apresentam o mesmo número de prótons, e diferentes números de massa (A). Essa diferença no número de massa ocorre devido a diferença no número de nêutrons.
+            &lt;br />&lt;br />Exemplo: Isótopos do carbono.
+        </string>
+
+    <string name="m1t1.3">
+        &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C :&lt;br />
+        A = Z + n&lt;br />
+        A = 6 + 6 = 12&lt;br />&lt;br />
+
+        &lt;sup>&lt;small>13&lt;/small>&lt;/sup>C :&lt;br />
+        A = Z + n &lt;br />
+        A = 6 + 7 = 13&lt;br />&lt;br />
+
+        &lt;sup>&lt;small>14&lt;/small>&lt;/sup>C :&lt;br />
+        A = Z + n&lt;br />
+        A = 6 + 8 = 14&lt;br />
+
+    </string>
+    <!-- Module 1 Topic 1 -->
+
+    <!-- Module 1 Topic 2 -->
+        <string name="m1t2.1">
+            &lt;b>Massa atômica&lt;/b> é a massa de um átomo expressa em u. Ela indica quantas vezes a massa do átomo é maior que 1/12 da massa do átomo de &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C.
+
+            &lt;br />&lt;br />&lt;b>Exemplos:&lt;/b>&lt;br />
+            Massa atômica do átomo &lt;sup>&lt;small>16&lt;/small>&lt;/sup>O = 15,99 u&lt;br />
+            1 átomo de oxigênio = 15,99 x 1/12 do &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C;
+
+            &lt;br />&lt;br />Massa atômica do átomo &lt;sup>&lt;small>24&lt;/small>&lt;/sup>Mg = 23,98 u&lt;br />
+            1 átomo de magnésio = 23,98 x 1/12 do &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C;
+
+            &lt;br />&lt;br />Massa atômica do átomo &lt;sup>&lt;small>56&lt;/small>&lt;/sup>Fe = 55,93 u&lt;br />
+            1 átomo de ferro = 55,93 x 1/12 do &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C.
+
+            &lt;br />&lt;br />Observe que os valores das massas atômicas são muito próximas dos respectivos números de massa.
+
+            &lt;br />&lt;br />Exemplo:
+            &lt;br />Massa atômica do átomo &lt;sup>&lt;small>56&lt;/small>&lt;/sup>Fe = 55,93 u
+
+            &lt;br />&lt;br />O isótopo do &lt;sup>&lt;small>56&lt;/small>&lt;/sup>Fe apresenta 26 prótons e 30 nêutrons no seu núcleo, assim temos:
+
+            &lt;br />&lt;br />Número de massa: A = Z + n = 26 + 30 = 56
+
+            &lt;br />&lt;br />Não confunda os conceitos número de massa com massa atômica.&lt;br />&lt;br />
+        </string>
+
+    <string name="btInteraction1">Saiba Mais</string>
+
+    <!-- Module 1 Topic 2 -->
+
+    <!-- Module 1 Topic 3 -->
+        <string name="m1t3.1">
+            Como se calcula a massa atômica de um elemento químico que se apresenta na natureza diferentes isótopos?
+
+            \n\nDevemos calcular a média ponderada das
+            massas atômicas de seus isótopos, considerando a abundância relativa destes isótopos na natureza.\n
+        </string>
+
+        <string name="m1t3.2" formatted="false">
+            Observe o seguinte exemplo:&lt;br />
+            O elemento químico Cloro é encontrado na natureza como dois isótopos: &lt;sup>&lt;small>35&lt;/small>&lt;/sup>Cl e &lt;sup>&lt;small>37&lt;/small>&lt;/sup>Cl.&lt;br />&lt;br />
+
+            O &lt;sup>&lt;small>35&lt;/small>&lt;/sup>Cl, possui massa atômica de 34,9689 u e tem uma ocorrência na natureza em torno de 75,77%, enquanto que o &lt;sup>&lt;small>37&lt;/small>&lt;/sup>Cl,
+            de massa 36,96590 u e tem uma ocorrência na natureza de 24,23%. &lt;br />&lt;br />
+
+
+
+        </string>
+
+        <string name="m1t3.3">
+            É importante salientar que, não existe um átomo de Cl com massa atômico igual a 35,45 u.
+            Este é o valor médio da massa do átomo de Cl, considerando sua abundância na natureza.
+
+            &lt;br />&lt;br />No caso dos elementos que se apresentam na natureza como um único isótopo, tais como F, Al e Mn, a massa atômica do elemento será a massa atômica do único isótopo existente.&lt;br />&lt;br />
+
+            &lt;sup>&lt;small>19&lt;/small>&lt;/sup>F: 18,99 u; &lt;sup>&lt;small>27&lt;/small>&lt;/sup>Al: 26,98 u; &lt;sup>&lt;small>55&lt;/small>&lt;/sup>Mn: 54,93 u;&lt;br />&lt;br />
+        </string>
+
+        <string name="m1t3f1">
+            m.a. = Σ(% de ocorrência x massa atômica) / 100\n
+        </string>
+
+        <string name="m1t3f2">
+            m.a.Cl = ( (75,77 x 34,9689u) + (24,23 x 36,96590u) ) / 100 = 35,45u\n
+        </string>
+
+    <string name="btInteraction2">Saiba Mais</string>
+
+    <!-- Module 1 Topic 3 -->
+
+    <!-- Module 1 Topic 4 -->
+        <string name="m1t4.1">
+            &lt;b>Massa molecular&lt;/b> de uma substância é a massa da molécula expressa em unidades de massa atômica (u).
+
+            &lt;br />&lt;br />Numericamente, a massa molecular (MM) é igual à soma das massas atômicas (MA) de todos os átomos constituintes da molécula.
+
+            &lt;br />&lt;br />Exemplos:
+            &lt;br />MM (H&lt;small>2&lt;/small>O) = 2 x MA(H) + MA(O)&lt;br />
+            MM (H&lt;small>2&lt;/small>O) = 2 x 1u + 16u&lt;br />
+            MM (H&lt;small>2&lt;/small>O) = 18u&lt;br />&lt;br />
+
+            &lt;br />&lt;br />Observação: os compostos iônicos (como NaCl, MgCl&lt;small>2&lt;/small>, MgO) não formam moléculas, mas sim aglomerados iônicos, entretanto podemos usar o termo massa molecular para expressar as suas massas.
+            &lt;br />Assim temos:
+
+            &lt;br />MM (MgCl&lt;small>2&lt;/small>) = MA(Mg) + 2 x MA(Cl)&lt;br />
+            MM (MgCl&lt;small>2&lt;/small>) = 23,31u + 2 x 35,45u
+
+        </string>
+    <!-- Module 1 Topic 4 -->
+
+    <!-- Module 1 Topic 5 -->
+        <string name="m1t5.1">
+            No cotidiano, usualmente trabalhamos com grandes quantidades de átomos, moléculas ou aglomerados iônicos. Sendo assim, é necessário usar uma &lt;b>unidade muito grande&lt;/b> para mensurar tais espécies químicas: o &lt;b>mol&lt;/b>.
+
+            &lt;br />&lt;br />No Sistema Internacional de Unidades (SI), o mol é a quantidade de substância que contém tantas entidades elementares (átomos, moléculas, ions-fórmula, íons, ou outras partículas) quantas existem em, exatamente, 12 g do &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C.
+
+            &lt;br />&lt;br />O número de átomos existentes em 12 g de &lt;sup>&lt;small>12&lt;/small>&lt;/sup>C foi determinado experimentalmente como 6,0221367 x 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup>.&lt;br />&lt;br />
+
+            Tal grandeza é conhecida como número de Avogadro, em homenagem ao cientista italiano Amedeo Avogadro.&lt;br />&lt;br />
+
+            &lt;br />&lt;br />O número de Avogadro não tem unidade, mas dividindo-o por 1 mol obtemos a constante de Avogadro (NA):&lt;br />&lt;br />
+            NA = 6,0221367 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> mol&lt;sup>&lt;small>−1&lt;/small>&lt;/sup>&lt;br />&lt;br />
+
+            &lt;br />&lt;br />Assim temos:
+            &lt;br />a) Um mol de átomos de hélio contém 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> átomos de He.
+
+            &lt;br />&lt;br />b) Um mol de átomos de carbono contém 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> átomos de C.
+
+            &lt;br />&lt;br />c) Um mol de moléculas de água contém 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> moléculas de H&lt;small>2&lt;/small>O, que corresponde a 2 × (6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup>) átomos de H e 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> átomos de O.
+
+            &lt;br />&lt;br />d) Um mol de NaCl contém 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> aglomerados ionicos de NaCl, que corresponde a 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> íons Na&lt;sup>&lt;small>+&lt;/small>&lt;/sup> e 6,022 × 10&lt;sup>&lt;small>23&lt;/small>&lt;/sup> íons Cl&lt;sup>&lt;small>-&lt;/small>&lt;/sup>.
+
+            &lt;br />&lt;br />A &lt;b>massa molar&lt;/b> de uma substância é a &lt;b>massa&lt;/b> em gramas (ou quilogramas) de &lt;b>1 mol da substância&lt;/b>,e é numericamente igual a massa atômica ou a massa molecular.&lt;br />&lt;br />
+
+            &lt;b>Exemplos:&lt;/b>
+            &lt;br />MA de C = 12,01 u;
+            &lt;br />Massa molar de C = 12,01 g/mol&lt;br />&lt;br />
+
+            MA de S = 32,07 u;&lt;br />
+            Massa molar de S = 32,07 g/mol&lt;br />&lt;br />
+
+            MM H&lt;small>2&lt;/small>O = 18,00 u;
+            &lt;br />Massa molar de H&lt;small>2&lt;/small>O = 18,00 g/mol&lt;br />&lt;br />
+
+            MM C&lt;small>6&lt;/small>H&lt;small>12&lt;/small>O&lt;small>6&lt;/small> = 180,06 u;
+            &lt;br />Massa molar de C&lt;small>6&lt;/small>H&lt;small>12&lt;/small>O&lt;small>6&lt;/small> = 180,06 g/mol&lt;br />&lt;br />
+
+            Massa molecular de NaCl = 58,44 u; &lt;br />
+            Massa molar de NaCl = 58,44 g/mol&lt;br />&lt;br />
+
+            Massa molecular de MgO = 40,31 u;&lt;br />&lt;br />
+            Massa molar de MgO = 40,31 g/mol&lt;br />&lt;br />
+
+        </string>
+
+        <string name="btInt15">
+            Saiba Mais
+        </string>
+
+
+    <!-- Module 1 Topic 5 -->
+
+    <!-- Module 1 Topic 6 -->
+        <string name="m1t6.1">
+            Utilizando-se a massa molar poderemos calcular o número de átomos ou de moléculas ou de íons-fórmula em uma determinada massa da substância.
+            \n\nPara isso podemos usar a seguinte relação:\n
+        </string>
+
+        <string name="m1t6f1">
+            número de mols = massa da substância (g) / massa molar da substância (g/mol)\n
+        </string>
+
+        <string name="m1t6.2">
+            Observe os exemplos:\n
+        </string>
+
+    <!-- Module 1 Topic 6 -->
+
+
+    <!-- Module 2 Topic 1 -->
+        <string name="m2t1.1">
+            A &lt;b>composição percentual&lt;/b> (ou composição centesimal) de um composto indica as massas relativas dos elementos deste composto, em geral, na forma de percentagem por massa.&lt;br />
+            A &lt;b>percentagem por massa&lt;/b> de um elemento é o número de gramas deste elemento presente em 100 g do composto.&lt;br />
+            Esta percentagem é obtida, em geral, com o uso da seguinte equação:&lt;br />
+        </string>
+
+        <string name="m2t1.2" formatted="false">
+            % por massa de elemento = (massa de elemento * 100%) / massa total da amostra &lt;br />
+        </string>
+
+        <string name="m2t1.3">
+            A composição percentual de uma substância indica a percentagem em massa de cada elemento para cada 100g da amostra.&lt;br />&lt;br />
+
+            &lt;b>Exemplo 1&lt;/b>&lt;br />
+            Determine a composição percentual para a glicose (C&lt;small>6&lt;/small>H&lt;small>12&lt;/small>O&lt;small>6&lt;/small>)&lt;br />&lt;br />
+
+            &lt;b>Dados:&lt;/b> MA(C) = 12u; MA(H) = 1u; MA(O) = 16u.&lt;br />
+            &lt;b>Solução:&lt;/b> C&lt;small>6&lt;/small>H&lt;small>12&lt;/small>O&lt;small>6&lt;/small>&lt;br />
+            Massa molar = 6. (12) + 12. (1) + 6. (16)&lt;br />
+            Massa molar = 72 + 12 + 96 = 180 g/mol:&lt;br />
+
+        </string>
+
+        <string name="m2t1.4" formatted="false">
+            Cálculo da % de C&lt;br />
+            180 &#8594; 100%&lt;br />
+            72g &#8594; X%&lt;br />&#8594;
+
+            x = (72 * 100) / 180 = &lt;u>40%&lt;/u>
+        </string>
+
+        <string name="m2t1.5" formatted="false">
+            Cálculo da % de H&lt;br />
+            180 &#8594; 100%&lt;br />
+            12g &#8594; Y%&lt;br />&#8594;
+
+            y = (12 * 100) / 180 = &lt;u>6,7%&lt;/u>
+        </string>
+
+        <string name="m2t1.6" formatted="false">
+            Cálculo da % de O&lt;br />
+            180 &#8594; 100%&lt;br />
+            96g &#8594; Z%&lt;br />&#8594;
+
+            z = (96 * 100) / 180 = &lt;u>53.3%&lt;/u>
+        </string>
+
+        <string name="m2t1.7" formatted="false">
+            &lt;b>Composição percentual da glicose:&lt;/b> C = 40%; H = 6,7%; O = 53,3%&lt;br />&lt;br />
+
+            A partir da composição percentual, podemos representar a &lt;b>fração em massa&lt;/b> dos componentes de um composto; basta dividir as porcentagens por 100.&lt;br />
+        </string>
+
+        <string name="m2t1.8">
+            C = 40 / 100 = 0,40
+        </string>
+
+        <string name="m2t1.9">
+            H = 6,7 / 100 = 0,067
+        </string>
+
+        <string name="m2t1.10">
+            O = 53,3 / 100 = 0,533
+        </string>
+
+        <string name="m2t1.11" formatted="false">
+            A soma das frações em massa dos componentes de uma substância é igual a 1,00.&lt;br />&lt;br />
+
+            0,400 + 0,067 + 0,533 = 1,000&lt;br />&lt;br />
+
+            Para o exemplo anterior a fórmula percentual seria dada por:&lt;br />&lt;br />
+
+            &lt;b>Fórmula percentual da glicose: C&lt;small>40%&lt;/small> H&lt;small>6,7%&lt;/small> O&lt;small>53,3%&lt;/small> &lt;/b>
+
+            Observe que a fórmula percentual contém as porcentagens em massa dos elementos que compõe a substância escritas como de fosse uma fórmula química.
+        </string>
+
+    <string name="btIntPer">Interação Fórmula Percentual</string>
+
+    <!-- Module 2 Topic 1 -->
+
+    <!-- Module 2 Topic 2 -->
+
+        <string name="m2t2.1">
+            É a fórmula do composto que tem os menores índices inteiros possíveis.&lt;br />&lt;br />
+
+            Exemplos:
+        </string>
+
+        <string name="m2t2.2">
+            &lt;b>Fórmula molecular&lt;/b>&lt;br />
+            C&lt;small>6&lt;/small>H&lt;small>12&lt;/small>O&lt;small>6&lt;/small>&lt;br />
+            C&lt;small>4&lt;/small>H&lt;small>10&lt;/small>&lt;br />
+            C&lt;small>8&lt;/small>H&lt;small>18&lt;/small>&lt;br />
+            C&lt;small>12&lt;/small>H&lt;small>22&lt;/small>O&lt;small>11&lt;/small>&lt;br />
+            H&lt;small>2&lt;/small>O&lt;small>2&lt;/small>&lt;br />
+            H&lt;small>2&lt;/small>O&lt;br />
+            ----&lt;br />
+            ----&lt;br />
+            ----&lt;br />
+        </string>
+
+        <string name="m2t2.3">
+            &lt;b>Fórmula mínima&lt;/b>&lt;br />
+            CH&lt;small>2&lt;/small>O&lt;br />
+            C&lt;small>2&lt;/small>H&lt;small>5&lt;/small>&lt;br />
+            C&lt;small>4&lt;/small>H&lt;small>9&lt;/small>&lt;br />
+            C&lt;small>12&lt;/small>H&lt;small>22&lt;/small>O&lt;small>11&lt;/small>&lt;br />
+            HO&lt;br />
+            H&lt;small>2&lt;/small>O&lt;br />
+            AlCl&lt;small>3&lt;/small>&lt;br />
+            CaCO&lt;small>3&lt;/small>&lt;br />
+            Ca(OH)&lt;small>2&lt;/small>&lt;br />
+        </string>
+
+        <string name="m2t2.4">
+            Os compostos iônicos (como o AlCl&lt;small>3&lt;/small>, CaCO&lt;small>3&lt;/small>, Ca(OH)&lt;small>2&lt;/small>), geralmente são escritos na sua fórmula mínima.&lt;br />&lt;br />
+
+            Para determinar a fórmula mínima de um composto, devemos estabelecer, através da análise química, as proporções em massa entre os elementos que formam o composto.&lt;br />&lt;br />
+
+            &lt;b>Procedimento:&lt;/b>&lt;br />
+            I. transformar os dados do problema, em quantidade de matéria (Nº de mol). Os dados fornecidos para cada elemento que compõe a substância poderão estar em massa, em porcentagem (composição percentual em massa) ou em número de átomos.
+        </string>
+
+        <string name="iv22.1Desc">
+            Descrição img
+        </string>
+
+        <string name="m2t2.5" formatted="false">
+            II. dividir os dados obtidos em (I) pelo menor deles.
+            Esta operação indica o índice do elemento na fórmula mínima.&lt;br />&lt;br />
+
+            III. Caso um dos números não seja inteiro, multiplique todos por um menor número, de
+            modo que se obtenha números inteiros. A proporção em mol obtida corresponde também à proporção de cada átomo na fórmula do composto.&lt;br />&lt;br />
+
+            Exemplo 1:
+            A análise de um determinado composto determinou que a sua composição centesimal é: 69,47% de “C”, 5,15% de “H” e 41,23% de “O”. Qual a sua fórmula mínima?
+        </string>
+
+        <string name="m2t2.6" formatted="false">
+            &lt;b>C&lt;/b>&lt;br />
+            69,47%&lt;br />
+            &lt;u>69,47g&lt;/u>&lt;br />
+            12g / mol&lt;br />&lt;br />
+
+            &lt;u>5,78 mols&lt;/u>&lt;br />
+            2,57&lt;br />&lt;br />
+
+            2,25 mols&lt;br />
+            x4&lt;br />&lt;br />
+
+            &lt;u>9 mols&lt;/u>
+        </string>
+
+        <string name="m2t2.7" formatted="false">
+            &lt;b>H&lt;/b>&lt;br />
+            5,15%&lt;br />
+            &lt;u>5,15g&lt;/u>&lt;br />
+            1g / mol&lt;br />&lt;br />
+
+            &lt;u>5,15 mols&lt;/u>&lt;br />
+            2,57&lt;br />&lt;br />
+
+            2 mols&lt;br />
+            x4&lt;br />&lt;br />
+
+            &lt;u>8 mols&lt;/u>
+        </string>
+
+        <string name="m2t2.8" formatted="false">
+            &lt;b>O&lt;/b>&lt;br />
+            41,23%&lt;br />
+            &lt;u>41,23g&lt;/u>&lt;br />
+            16g / mol&lt;br />&lt;br />
+
+            &lt;u>2,57 mols&lt;/u>&lt;br />
+            2,57&lt;br />&lt;br />
+
+            1 mol&lt;br />
+            x4&lt;br />&lt;br />
+
+            &lt;u>4 mols&lt;/u>
+        </string>
+
+        <string name="m2t2.9" formatted="false">
+            C&lt;small>9&lt;/small>H&lt;small>5&lt;/small>O&lt;small>4&lt;/small> &#8594; Fórmula Mínima
+        </string>
+
+
+    <!-- Module 2 Topic 2 -->
+
+    <!-- Module 2 Topic 3 -->
+
+        <string name="m2t3.1">
+            A fórmula molecular de um composto é muito mais importante que a sua fórmula mínima, pois a fórmula molecular indica, os elementos formadores da substância e o número exato de átomos de cada elemento na molécula do composto.&lt;br />&lt;br />
+
+            A fórmula molecular de um composto é um múltiplo da sua fórmula mínima.
+        </string>
+
+        <string name="m2t3.2">
+            &lt;br />FM = (f.mín) x n&lt;br />
+        </string>
+
+        <string name="m2t3.3">
+            Onde “n” é um número inteiro que indica quantas vezes a fórmula mínima está contida na fórmula molecular.
+        </string>
+
+        <string name="m2t3.4">
+            &lt;br />n = massa molecular / massa da fórmula mínima&lt;br />
+        </string>
+
+        <string name="m2t3.5" formatted="false">
+            &lt;b>Exemplo:&lt;/b>
+            Um determinado hidrocarboneto apresenta 85,71% de C e 14,29% de H em massa.
+
+            &lt;br />
+            Sabendo que a massa molecular do hidrocarboneto é 42, determine sua fórmula mínima e a sua fórmula molecular.
+
+            &lt;br />&lt;br />
+            &lt;b>Dados:&lt;/b> &lt;br />&lt;br />
+
+            (C = 12 u; H = 1 u)&lt;br />&lt;br />
+
+            &lt;b>Cálculo da fórmula mínima:&lt;/b>&lt;br />
+        </string>
+
+        <string name="m2t3.6" formatted="false">
+            &lt;b>C&lt;/b> 85,71%&lt;br />
+            (passando para "g")&lt;br />&lt;br />
+
+            &lt;b>C&lt; /b> 85,71g&lt;br />
+            (dividindo pela massa molar)&lt;br />&lt;br />
+
+            &lt;b>C&lt; /b> &lt;u>85,71g&lt;/u>&lt;br />
+            \t\t12g/mol&lt;br />&lt;br />
+
+            &lt;b>C&lt; /b> 7,14 mols&lt;br />
+            (dividinddo pelo menor)
+
+            &lt;b>C&lt; /b> &lt;u>7,14 mols&lt;/u>
+            \t\t7,14&lt;br />&lt;br />
+
+            &lt;b>C&lt; /b> 1 mol&lt;br />
+
+        </string>
+
+        <string name="m2t3.7" formatted="false">
+            &lt;b>H&lt;/b> 14,29% &lt;br />&lt;br />
+
+            &lt;b>H&lt;/b> 14,29g&lt;br />&lt;br />
+
+            &lt;b>H&lt;/b> &lt;u>14,29g &lt;/u>&lt;br />
+            \t\t 1g/mol&lt;br />&lt;br />
+
+            &lt;b>H&lt;/b> 14,29 mols &lt;br />&lt;br />
+
+            &lt;b>H&lt;/b> &lt;u>14,29 mols &lt;/u>&lt;br />
+            \t\t 7,14&lt;br />&lt;br />
+
+            &lt;b>H&lt;/b> 2 mols&lt;br />&lt;br />
+
+            CH&lt;small>2&lt;/small> &#8594; Fórmula Mínima
+        </string>
+
+        <string name="m2t3.8">
+            &lt;br />&lt;br />
+            Cálculo do n:&lt;br />
+            n = Massa molecular / Massa da F. Mínima&lt;br />&lt;br />
+
+            Massa da Formula Mínima CH&lt;small>2&lt;/small> = 12 + 2 = 14u&lt;br />&lt;br />
+
+            n = 42u / 14u = 3&lt;br />
+        </string>
+
+        <string name="m2t3.9">
+            Desta forma, a fórmula molecular é:&lt;br />&lt;br /> (CH&lt;small>2&lt;/small>) x 3 = C&lt;small>3&lt;/small>H&lt;small>6&lt;/small>.
+        </string>
+
+    <!-- Module 2 Topic 3 -->
+
+    <!-- Module 2 Topic 4 -->
+
+        <string name="m2t4.1">
+            Um sal hidratado é um sal que possui moléculas de água agregadas em seu retículo cristalino, tais com: CaCl&lt;small>2&lt;/small>.6H&lt;small>2&lt;/small>O e Na&lt;small>2&lt;/small>SO&lt;small>4&lt;/small>.10H&lt;small>2&lt;/small>O.&lt;br />
+            &lt;br />&lt;br />
+
+            Ao Aquecer um sal hidratado, as moléculas de água se desprenderão do composto, originando um sal anidro. &lt;br />&lt;br />
+
+            Conhecendo-se a massa do sal hidratado e a massa do sal anidro, é possível se determinar a fórmula mínima do sal e, consequentemente, o número de moléculas de água agregadas no composto hidratado.&lt;br />&lt;br />
+
+            &lt;b>Exemplo:&lt;/b>&lt;br />
+            Uma amostra de 25,5 g de cloreto de cálcio hidratado (CaCl&lt;small>2&lt;/small> . &lt;b>n&lt;/b>H&lt;small>2&lt;/small>O) foi aquecida até perder toda a água de hidratação. Sabendo-se que a massa de cloreto de cálcio anidro após aquecimento foi de 11,1 g, determine o número de moléculas de água de hidratação e fórmula minima de sal hidratado.
+            &lt;br />&lt;br />
+
+            Dados: Ca = 40 u; Cl = 35,5 u; H = 1 u; O = 16 u&lt;br />&lt;br />
+
+            Fazendo a desidratação do sal hidratado:&lt;br />&lt;br />
+
+            CaCl&lt;small>2&lt;/small>.nH&lt;small>2&lt;/small>O  &#8594; CaCl&lt;small>2&lt;/small> + nH&lt;small>2&lt;/small>O
+            &lt;br />&lt;br />
+
+            Colocando-se as massas molares e as respectivas massas fornecidas:
+            &lt;br />&lt;br />
+
+            (111 g + n.18 g) &#8594; 111 g n.18 g&lt;br />
+            25,5g &#8594; 11,1g&lt;br />&lt;br />
+
+            Fazendo o produto dos meios pelos extremos, calcularemos o valor de n:&lt;br />&lt;br />
+
+            (111 + n.18) x 11,1 = 25,5 x 111&lt;br />
+            (111 + n.18) x 0,1 = 25,5&lt;br />
+            11,1 + 1,8n= 25,5&lt;br />
+            1,8n = 14,4&lt;br />
+            n = 14,4 / 1,8&lt;br />&lt;br />
+
+            &lt;b>n = 8&lt;/b>&lt;br />&lt;br />
+
+            Fórmula mínima do sal hidratado: CaCl&lt;small>2&lt;/small>.8H&lt;small>2&lt;/small>O
+
+        </string>
+
+    <string name="btIntM2T4">Pratica Assunto</string>
+
+    <!-- Module 2 Topic 4 -->
+
+    <!-- Module 2 Topic 5 -->
+
+        <string name="m2t5.1" formatted="false">
+            Um hidrocarboneto, ou mesmo um composto contendo C, H e O, pode ter a sua composição percentual e sua fórmula mínima determinadas por uma análise de combustão.&lt;br />&lt;br />
+            Observe o exemplo da combustão completa de álcool etílico (C&lt;small>2&lt;/small>H&lt;small>5&lt;/small>OH) representada pela seguinte equação.&lt;br />&lt;br />
+
+            C&lt;small>2&lt;/small>H&lt;small>5&lt;/small>OH + 3O&lt;small>2&lt;/small> → 2CO&lt;small>2&lt;/small> + 3H&lt;small>2&lt;/small>O&lt;br />&lt;br />
+
+            O dióxido de carbono e a água podem ser separados, e suas massas podem ser medidas. A partir daí é importante perceber que todos os átomos de carbono do composto original estarão agora nas moléculas de CO&lt;small>2&lt;/small>, e todos os átomos de hidrogênio estarão nas moléculas de H&lt;small>2&lt;/small>O.&lt;br />&lt;br />
+
+            Deste modo, a partir da massa de CO&lt;small>2&lt;/small> produzida, é possível encontrar a massa de C existente na amostra do composto.&lt;br />&lt;br />
+
+            Da mesma forma, a partir da massa de H&lt;small>2&lt;/small>O formada é possível encontrar a massa de H existente na amostra do composto.&lt;br />&lt;br />
+
+            Por sua vez, a massa de oxigênio na amostra pode ser calculada a partir da diferença entre a massa total da amostra e o somatorio das massas de C e H calculadas anteriormente.&lt;br />&lt;br />
+
+
+            &lt;b>Exemplo:&lt;/b>&lt;br />
+            Uma amostra de 4,24mg de um composto orgânico oxigenado sofre uma combustão completa e produz 6,21mg de CO&lt;small>2&lt;/small> e 2,54mg de H&lt;small>2&lt;/small>O. Determine a composição centesimal do composto de orgânico.&lt;br />&lt;br />
+
+            &lt;b>Dados:&lt;/b> C = 12u; H = 1u; O = 16u&lt;br />&lt;br />
+
+            &lt;b>Resolução:&lt;/b>&lt;br />
+            Combustão completa do composto:&lt;br />
+            C&lt;small>x&lt;/small>H&lt;small>y&lt;/small>O&lt;small>z&lt;/small> + O&lt;small>z&lt;/small>   xCO&lt;small>z&lt;/small> + y/zH&lt;small>2&lt;/small>O&lt;br />
+            • Todo “C” do CO&lt;small>2&lt;/small> se encontrava no composto orgânico.
+        </string>
+    
+        <string name="m2t5.2">
+            CO2 ––––––––––––– C&lt;br />
+            44g ––––––––––––– 12g&lt;br />
+            6,21mg –––––––––– x&lt;br />&lt;br />
+
+            x = (6,21*12)/44 = 1,69mg de C
+        </string>
+
+        <string name="m2t5.3">
+
+        </string>
+
+        <string name="m2t5.4">
+            Todo “H” do H&lt;small>2&lt;/small>O se encontrava no composto orgânico.
+        </string>
+
+        <string name="m2t5.5">
+            H&lt;small>2&lt;/small>O –––––––––––––– 2H&lt;br />
+            18g –––––––––––––– 2g&lt;br />
+            2,54mg –––––––– y&lt;br />&lt;br />
+
+            x = (2,54*2)/18 = 0,28mg de H
+        </string>
+
+        <string name="m2t5.6">
+
+        </string>
+
+        <string name="m2t5.7" formatted="false">
+            No composto orgânico existem 1,69mg de C e 0,28mg de H.&lt;br />&lt;br />
+
+            • Cálculo da percentagem de C, H e O:&lt;br />&lt;br />
+
+            &lt;center>&lt;b>% de C&lt;/b>&lt;br />
+            4,24mg ----------- 100%&lt;/center>&lt;br />
+            &lt;center>1,69mg ----------- X%&lt;/center>&lt;br />
+            &lt;center>X = 39,9%&lt;/center>&lt;br />&lt;br />
+
+            &lt;center>&lt;b>% de H&lt;/b>&lt;br />
+            4,24mg ----------- 100%&lt;/center>&lt;br />
+            &lt;center>0,29mg ----------- Y%&lt;/center>&lt;br />
+            &lt;center>Y = 6,7%%&lt;/center>&lt;br />&lt;br />
+
+            &lt;b>% de O&lt;/b>&lt;br />
+            O cálculo da percentagem de oxigênio pode ser realizado da seguinte forma:&lt;br />&lt;br />
+
+            m O = m Total - (m C + m H)&lt;br />
+            m O = 4,24mg – (1,69 mg + 0,28 mg)&lt;br />
+            m O = 2,27g &lt;br />&lt;br />
+
+            4,24mg &#8594; 100%&lt;br />
+            2,27mg &#8594; x%&lt;br />
+
+            x = (2,27*100)/4,24 = 53,4%&lt;br />&lt;br />
+
+            &lt;b>Resultado final:&lt;/b>&lt;br />
+            Fórmula centesimal = C&lt;small>39,9%&lt;/small> H&lt;small>6,7%&lt;/small> O&lt;small>53,4%&lt;/small>.
+
+        </string>
+
+    <!-- Module 2 Topic 5 -->
+
+    <!-- Module 3 Topic 1 -->
+
+        <string name="m3t1.1">
+            Cálculos estequiométricos são aqueles que envolvem as quantidades das substâncias que participam de uma reação química.&lt;br />
+            Os coeficientes de uma reação química balanceada indicam a proporção de cada substância que reage e que é produzido. Essa proporção pode ser em mols, massa, número de moléculas, volume nas mesmas condições de temperatura e de pressão ou volume nas CNTP (a relação entre volumes só é válida para substâncias na fase gasosa).&lt;br />&lt;br />
+
+            &lt;b>Exemplo:&lt;/b>
+        </string>
+
+    <!-- Strings Tabela -->
+
+    <!-- Linha 1 -->
+
+            <string name="m3t1.2">
+                &lt;b>Relações&lt;/b>
+            </string>
+
+            <string name="m3t1.3">
+                &lt;b>1 N&lt;small>2(g)&lt;/small>&lt;/b>
+            </string>
+
+            <string name="m3t1.4">
+                &lt;b>+3 H&lt;small>2(g)&lt;/small>&lt;/b>
+            </string>
+
+            <string name="m3t1.5">
+                &lt;b>&#8594; 2NH&lt;small>3(g)&lt;/small>&lt;/b>
+            </string>
+
+    <!-- Linha 1 -->
+
+    <!-- Linha 2 -->
+
+            <string name="m3t1.6">
+                &lt;b>Mols:&lt;/b>
+            </string>
+
+            <string name="m3t1.7">
+                1 mol
+            </string>
+
+            <string name="m3t1.8">
+                3 mols
+            </string>
+
+            <string name="m3t1.9">
+                2 mols
+            </string>
+
+    <!-- Linha 2 -->
+
+    <!-- Linha 3 -->
+
+            <string name="m3t1.10">
+                &lt;b>Nº de Moléculas:&lt;/b>
+            </string>
+
+            <string name="m3t1.11">
+                6,02*10&lt;sup>23&lt;/sup>
+            </string>
+
+            <string name="m3t1.12">
+                18,06*10&lt;sup>23&lt;/sup>
+            </string>
+
+            <string name="m3t1.13">
+                12,04*10&lt;sup>23&lt;/sup>
+            </string>
+
+    <!-- Linha 3 -->
+
+    <!-- Linha 4 -->
+
+            <string name="m3t1.14">
+                &lt;b>Massa&lt;/b>
+            </string>
+
+            <string name="m3t1.15">
+                28 g
+            </string>
+
+            <string name="m3t1.16">
+                6 g
+            </string>
+
+            <string name="m3t1.17">
+                34 g
+            </string>
+
+    <!-- Linha 4 -->
+
+    <!-- Linha 5 -->
+
+            <string name="m3t1.18">
+                &lt;b>Volume (T e P ctes.)&lt;/b>
+            </string>
+
+            <string name="m3t1.19">
+                1 L
+            </string>
+
+            <string name="m3t1.20">
+                3 L
+            </string>
+
+            <string name="m3t1.21">
+                2 L
+            </string>
+
+    <!-- Linha 5 -->
+
+    <!-- Linha 6 -->
+
+            <string name="m3t1.22">
+                &lt;b>Volume Nas CNTP&lt;/b>
+            </string>
+
+            <string name="m3t1.23">
+                22,4 L
+            </string>
+
+            <string name="m3t1.24">
+                67,2 L
+            </string>
+
+            <string name="m3t1.25">
+                44,8 L
+            </string>
+
+    <!-- Linha 6 -->
+
+    <!-- Strings Tabela -->
+
+        <string name="m3t1.26">
+            Para a resolução de um problema de cálculo estequiométrico, proceda da seguinte maneira: &lt;br />
+            I. escrever a equação química; &lt;br />
+            II. balancear a equação química; &lt;br />
+            III. grifar o que foi dado e pedido;&lt;br />
+            IV. Resolver a questão por análise dimensional ou por regra de três;&lt;br />
+        </string>
+
+
+    <!-- Module 3 Topic 1 -->
+
+    <!-- Module 3 Topic 2 -->
+
+        <string name="m3t2.1">
+            Sempre que em uma questão forem fornecidas as quantidades (em massa, mols, moléculas, volumes etc.) &lt;b>de dois ou mais reagentes&lt;/b>, devemos fazer a verificação se existe reagente em excesso. &lt;br />
+            Não trabalhe com o reagente em excesso. &lt;br />
+            O reagente que &lt;b>não&lt;/b> está em excesso é denominado de &lt;/b>reagente limitante&lt;/b>. &lt;br />&lt;br />
+
+            &lt;h3>&lt;b>Procedimento prático para verificar se existe reagente em excesso:&lt;/b>&lt;/h3>&lt;br />
+
+            Quando se trabalha com quantidade de matéria, número de mols, pode-se usar o seguinte procedimento para verificar qual o reagente que está em excesso.&lt;br />&lt;br />
+
+            Seja uma equação hipotética A + B → C. &lt;br />
+            Usando-se 2 mols de A para reagir com 1 mol de B, qual o reagente em excesso?&lt;br />
+
+        </string>
+
+        <string name="m3t2.2">
+            A
+        </string>
+
+        <string name="m3t2.3">
+            + B
+        </string>
+
+        <string name="m3t2.4">
+            = C
+
+        </string>
+
+        <string name="m3t2.5">
+            1 mol
+        </string>
+
+        <string name="m3t2.6">
+            1 mol
+        </string>
+
+        <string name="m3t2.7">
+            1 mol
+        </string>
+
+        <string name="m3t2.8">
+            2 mol
+        </string>
+
+        <string name="m3t2.9">
+            1 mol
+        </string>
+
+        <string name="m3t2.10">
+            X mol
+        </string>
+
+        <string name="m3t2.11">
+            &lt;br />
+            Caso você faça o produto dos meios pelo produto dos extremos, vai verificar que um dos produtos é igual a 2 (1x2) e o outro é igual a 1 (1x1). &lt;br />&lt;br />
+            Conclui-se assim que há reagente em excesso, pois estes produtos são diferentes. &lt;br />&lt;br />
+            Caso os produtos fossem iguais, significaria que não existiria reagente em excesso, e assim eu poderia calcular a quantidade de produto formada a partir de qualquer um dos reagentes.&lt;br />&lt;br />
+            Maior produto, indica qual o reagente que está em excesso. O reagente “A” possuí quantidade em excesso. Então, o reagente B é o limitante.&lt;br />&lt;br />
+            O mesmo procedimento realizado para mol, pode ser feito para as outras unidades possíveis de serem calculadas em um cálculo estequiométrico. &lt;br />&lt;br />
+
+            &lt;b>Observações:&lt;/b>&lt;br />
+            I. Se o produto dos extremos for igual ao produto dos meios, não existe reagente em excesso, isto é, os reagentes foram consumidos totalmente (pelo menos teoricamente). &lt;br />
+            II. Se existe reagente em excesso, significa que o reagente foi consumido apenas parcialmente, isto é, no final sobra sem reagir uma certa quantidade.&lt;br />
+        </string>
+
+    <string name="btIntM3T2">Interação Reagente Limitante</string>
+
+    <!-- Module 3 Topic 2 -->
+
+    <!-- Module 3 Topic 3 -->
+
+        <string name="m3t3.1" formatted="false">
+            Devido a uma série de fatores, tais como aparelhagem mal esterilizada, deficiência do operador, impureza das substâncias reagentes etc., sabemos que, ao efetuarmos, uma reação química, os produtos são obtidos em quantidades menores que as previstas teoricamente (Qt).&lt;br />&lt;br />
+
+            &lt;b>Procedimento:&lt;/b>&lt;br />
+            I. Determinar a quantidade teórica (Qt).&lt;br />
+            Essa quantidade teórica seria obtida se o rendimento fosse de 100%. Rendimento teórico (Rt)&lt;br />
+            Qt &#8594; Rt = 100%&lt;br />&lt;br />
+
+            II. Calcular a quantidade real (Qr) a ser obtida, considerando-se um rendimento inferior a 100%. Rendimento real (Rr).&lt;br />&lt;br />
+
+            Qt &#8594; Rt = 100%&lt;br />
+            Qr &#8594; Rr &lt; 100%&lt;br />&lt;br />
+
+            Na maioria das questões de rendimento, a pergunta é feita em relação à quantidade (em mol, massa, moléculas, volume etc.) do produto, assim a Quantidade real (Qr) obtida deverá ser menor que a Quantidade teórica (Qt).&lt;br />&lt;br />
+            Quando uma questão de rendimento se refere a uma quantidade desconhecida de um reagente, a Quantidade (Qr) que vai ser colocada para reagir deverá ser, maior que a Quantidade teórica (Qt), pois apenas uma parte do regente irá reagir.
+        </string>
+
+    <string name="btIntM3T3">Interação Desconhecida</string>
+
+    <!-- Module 3 Topic 3 -->
+
+    <!-- Module 3 Topic 4 -->
+
+        <string name="m3t4.1" formatted="false">
+            Nos experimentos realizados no laboratório de química é muito comum o uso de reagentes impuros que contém, além da substância que irá reagir efetivamente, outras tantas misturadas.&lt;br />&lt;br />
+
+            Nos problemas que envolvem impurezas é aconselhável que de início, se determine a massa da substância que reage (substância pura).&lt;br />&lt;br />
+
+            Amostra (m&lt;small>total&lt;/small> = massa da substância pura que reage (m&lt;small>p&lt;/small>) + massa de impureza (mi&lt;small>mp&lt;/small>)&lt;br />&lt;br />
+
+            mt = massa total da amostra&lt;br />
+            mp = massa da substância pura&lt;br />
+            mi = massa da impureza&lt;br />
+            mt = mp + mi&lt;br />&lt;br />
+
+            &lt;b>Procedimento:&lt;/b>&lt;br />
+            I. Trabalhe somente com a parte pura, pois as impurezas não vão reagir.&lt;br />&lt;br />
+
+            Amostra &#8594; 100%&lt;br />
+            Pura(?) &#8594; P%&lt;br />&lt;br />
+
+            II. Resolvo a questão através de uma regra de três, utilizando a quantidade da substância pura encontrada no procedimento anterior.&lt;br />&lt;br />
+
+
+            &lt;b>Observações:&lt;/b>&lt;br />
+            Em questões onde for pedida a quantidade da amostra (parte pura + parte impura) devemos calcular a quantidade que reage e igualá-la à porcentagem de pureza, e assim descobrir a quantidade da amostra considerando-a igual a 100%.&lt;br />&lt;br />
+
+            Quantidade pura &#8594; % de pureza&lt;br />
+            Amostra (?) &#8594; 100%
+        </string>
+
+        <string name="btIntm3t4">Interação Rendimento e Pureza</string>
+        <string name="btIntm3t42">Interação Reagente Impuro</string>
+
+    <!-- Module 3 Topic 4 -->
+
+    <!-- Module 3 Topic 5 -->
+
+        <string name="m3t5.1">
+            Em processos químicos é muito comum que para a produção de uma determinada substância, duas ou mais reações sejam sucessivamente realizadas, formando compostos intermediários, para se chegar ao produto final.&lt;br />&lt;br />
+            Substância comum entre duas equações é aquela que na primeira funciona como produto e na segunda como reagente.&lt;br />&lt;br />
+
+            &lt;b>Exemplo: &lt;/b>&lt;br />
+            I. S + O&lt;small>2&lt;/small> → SO&lt;small>2&lt;/small>&lt;br />
+            II. SO&lt;small>2&lt;/small> + 2 NaOH → Na&lt;small>2&lt;/small>SO&lt;small>3&lt;/small> + H&lt;small>2&lt;/small>O&lt;br />&lt;br />
+
+            Reação Global: S + O&lt;small>2&lt;/small> + 2 NaOH → Na&lt;small>2&lt;/small>SO&lt;small>3&lt;/small> + H&lt;small>2&lt;/small>O
+
+            A substância comum entre as duas equações é o SO&lt;small>2&lt;/small>
+
+            &lt;b>Procedimento:&lt;/b>&lt;br />
+            I. Balancear cada equação química; &lt;br />
+            II. Igualar o coeficiente da substância comum, multiplicando a equação por um número; &lt;br />
+            III. Somar as duas ou mais equações, de forma a se obter uma única equação; &lt;br />
+            IV. No processo de soma as substâncias que se repetem de um lado e do outro das reações devem ser simplificadas, enquanto que as presentes do mesmo lado devem ser somadas; &lt;br />
+            V. Relacionar o que foi dado e pedido e trabalhar com a equação química obtida a partir da soma das reações anteriores.
+        </string>
+
+    <!-- Module 3 Topic 5 -->
+
+    <!-- Module 4 Topic 1 -->
+
+        <string name="m4t1.1">
+
+        </string>
+
+    <!-- Module 4 Topic 1 -->
+
+    <!-- Module 4 Topic 2 -->
+
+        <string name="m4t2e1">
+            O ácido oxálico é encontrado, em baixas concentrações, em alguns vegetais importantes na
+            alimentação humana, tal como o espinafre. Apesar de ser uma substância tóxica, é bem tolerado
+            pelo organismo humano em concentrações abaixo do limite de toxicidade. Os sucos concentrados
+            de espinafre, entretanto, podem conter quantidades excessivas do ácido oxálico, que ultrapassem
+            tais limites. Por este motivo, a indústria de sucos de espinafre exerce um controle rigoroso em
+            seus produtos, analisando os teores de ácido oxálico, através de titulação com o íon permanganato,
+            de acordo com a seguinte reação:&lt;br />&lt;br />
+
+            5H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4 (aq)&lt;/small> + 2MnO&lt;small>4&lt;/small>&lt;/sup>&lt;small>­&lt;/small>&lt;/sup> &lt;small>(aq)&lt;/small> + 6H&lt;sup>&lt;small>+&lt;/small>&lt;/sup> &lt;small>(aq)&lt;/small> &#8594; 10CO&lt;small>2&lt;/small> (g) + 2Mn&lt;sup>&lt;small>2+&lt;/small>&lt;/sup> &lt;small>(aq)&lt;/small> + 8H&lt;small>2&lt;/small>O (l)&lt;br />&lt;br />
+
+            Sabendo-se que uma amostra de 20 mL de suco de espinafre reagiu completamente com 24mL de
+            uma
+        </string>
+
+    <!-- Module 4 Topic 2 -->
+
+
+    <!-- Interaction 1 -->
+
+    <string name="int1Name">Prática Massa Atômica</string>
+
+    <string-array name="elements">
+        <item>CARBONO</item>
+        <item>ENXOFRE</item>
+        <item>COBRE</item>
+        <item>CHUMBO</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Element 1 -->
+
+        <string name="tvi11">
+            &lt;b>Massa Atômica:&lt;/b>&lt;br />&lt;br />
+
+            m&lt;small>a&lt;/small> ( C ) = A&lt;small>r&lt;/small> * u&lt;br />
+
+            m&lt;small>a&lt;/small> ( C ) = 12 u = 12 * (1 / 12) = 1 x massa ( C )&lt;br />&lt;br />
+
+            &lt;b>Massa (g):&lt;/b >&lt;br />&lt;br />
+
+            1 u = 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>g (determinada experimentalmente)&lt;br />&lt;br />
+
+            Massa de 1 átomo (em gramas) = m&lt;small>a&lt;/small> * u&lt;br />&lt;br />
+
+            Massa de 1 átomo ( &lt;b>C&lt;/b> ) = 12 x 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>&lt;br />
+            = 1995 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small> gramas&lt;br />&lt;br />
+
+            &lt;b>Número de Avogrado&lt;/b> = m&lt;small>a&lt;/small> / massa de 1 átomo&lt;br />
+            = 12 / (1,995 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small>) = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> = 1 mol&lt;br/>&lt;br/>
+
+            &lt;b>Portanto:&lt;/b>&lt;br />
+            1 mol de &lt;b>C&lt;/b> = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> átomos de C = 12 g
+
+        </string>
+
+    <!-- Element 2 -->
+
+        <string name="tvi12">
+            &lt;b>Massa Atômica:&lt;/b>&lt;br />&lt;br />
+
+            m&lt;small>a&lt;/small> ( S ) = A&lt;small>r&lt;/small> * u&lt;br />
+
+            m&lt;small>a&lt;/small> ( S ) = 32 u = 32 * (1 / 12) = 2,666 x massa ( C )&lt;br />&lt;br />
+
+            &lt;b>Massa (g):&lt;/b >&lt;br />&lt;br />
+
+            1 u = 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>g (determinada experimentalmente)&lt;br />&lt;br />
+
+            Massa de 1 átomo (em gramas) = m&lt;small>a&lt;/small> * u&lt;br />&lt;br />
+
+            Massa de 1 átomo ( &lt;b>S&lt;/b> ) = 32 x 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>&lt;br />
+            = 3,372 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small> gramas&lt;br />&lt;br />
+
+            &lt;b>Número de Avogrado&lt;/b> = m&lt;small>a&lt;/small> / massa de 1 átomo&lt;br />
+            = 32 / (3,372 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small>) = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> = 1 mol&lt;br/>&lt;br/>
+
+            &lt;b>Portanto:&lt;/b>&lt;br />
+            1 mol de &lt;b>S&lt;/b> = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> átomos de S = 32 g
+
+        </string>
+
+    <!-- Element 3 -->
+
+        <string name="tvi13">
+            &lt;b>Massa Atômica:&lt;/b>&lt;br />&lt;br />
+
+            m&lt;small>a&lt;/small> ( Cu ) = A&lt;small>r&lt;/small> * u&lt;br />
+
+            m&lt;small>a&lt;/small> ( Cu ) = 63 u = 63 * (1 / 12) = 5,25 x massa ( C )&lt;br />&lt;br />
+
+            &lt;b>Massa (g):&lt;/b >&lt;br />&lt;br />
+
+            1 u = 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>g (determinada experimentalmente)&lt;br />&lt;br />
+
+            Massa de 1 átomo (em gramas) = m&lt;small>a&lt;/small> * u&lt;br />&lt;br />
+
+            Massa de 1 átomo ( &lt;b>Cu&lt;/b> ) = 63 x 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>&lt;br />
+            = 10,55 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small> gramas&lt;br />&lt;br />
+
+            &lt;b>Número de Avogrado&lt;/b> = m&lt;small>a&lt;/small> / massa de 1 átomo&lt;br />
+            = 63 / (10,55 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small>) = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> = 1 mol&lt;br/>&lt;br/>
+
+            &lt;b>Portanto:&lt;/b>&lt;br />
+            1 mol de &lt;b>Cu&lt;/b> = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> átomos de Cu = 63 g
+
+        </string>
+
+    <!-- Element 4 -->
+
+        <string name="tvi14">
+            &lt;b>Massa Atômica:&lt;/b>&lt;br />&lt;br />
+
+            m&lt;small>a&lt;/small> ( Pb ) = A&lt;small>r&lt;/small> * u&lt;br />
+
+            m&lt;small>a&lt;/small> ( Pb ) = 207 u = 207 * (1 / 12) = 17,25 x massa ( C )&lt;br />&lt;br />
+
+            &lt;b>Massa (g):&lt;/b >&lt;br />&lt;br />
+
+            1 u = 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>g (determinada experimentalmente)&lt;br />&lt;br />
+
+            Massa de 1 átomo (em gramas) = m&lt;small>a&lt;/small> * u&lt;br />&lt;br />
+
+            Massa de 1 átomo ( &lt;b>Pb&lt;/b> ) = 207 x 1,661 x 10&lt;small>&lt;sup>-24&lt;/sup>&lt;/small>&lt;br />
+            = 41,33 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small> gramas&lt;br />&lt;br />
+
+            &lt;b>Número de Avogrado&lt;/b> = m&lt;small>a&lt;/small> / massa de 1 átomo&lt;br />
+            = 207 / (41,33 x 10&lt;small>&lt;sup>-23&lt;/sup>&lt;/small>) = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> = 1 mol&lt;br/>&lt;br/>
+
+            &lt;b>Portanto:&lt;/b>&lt;br />
+            1 mol de &lt;b>Pb&lt;/b> = 6,02 x 10&lt;small>&lt;sup>23&lt;/sup>&lt;/small> átomos de Pb = 207 g
+
+        </string>
+
+    <!-- Interaction 1 -->
+
+    <!-- Interaction 2 -->
+
+    <string-array name="elements2">
+        <item>CARBONO</item>
+        <item>FERRO</item>
+        <item>PALÁDIO</item>
+        <item>OURO</item>
+    </string-array>
+
+    <integer name="maxMass">12</integer>
+
+    <string name="elementC">C</string>
+    <string name="molarMassC">12.01</string>
+
+    <string name="elementFe">Fe</string>
+    <string name="molarMassFe">56.0</string>
+
+    <string name="elementPd">Pd</string>
+    <string name="molarMassPd">106.42</string>
+
+    <string name="elementAu">Au</string>
+    <string name="molarMassAu">196.97</string>
+
+    <string name="tvi21" formatted="false">Massa (g) = %s</string>
+    <string name="tvi22" formatted="false">Moles = %s</string>
+
+        <string name="tvi23" formatted="false">
+            &lt;b>Resolução:&lt;/b>&lt;br />&lt;br />
+
+            Nº de mols = massa de &lt;b>%s&lt;/b> / massa molar &lt;b>%s&lt;/b> = %s / %s = %s mols
+        </string>
+
+    <!-- Interaction 2 -->
+
+
+    <!-- Interaction 3 -->
+
+    <string name="tvDescInt3">
+        Para encontrar o massar molar e o número de moles correspondente a uma determinada massa de uma substância, insira a formula molecular e a massa da substância e toque no botão calcular.&lt;br />&lt;br />
+    </string>
+
+    <string name="int3Name">Pratica Massa Molar</string>
+
+    <string name="actvHint">Digite a sigla do elemento desejado</string>
+    <string name="btAdd">Adicionar</string>
+    <string name="tvFormula">Formula Molecular:</string>
+    <string name="tvMolarMass">Massa Molar:</string>
+    <string name="tvMass">Massa:</string>
+    <string name="btCalc">Calcular</string>
+    <string name="tvNMols">Número de Moles:</string>
+
+    <!-- Interaction 3 -->
+
+    <!-- Interaction 4 -->
+
+    <string name="int4Name">Rendimento da reação</string>
+
+    <string name="tvExp4">Varie a quantidade dos dois reagentes, o rendimento da reação e observe quem será o reagente limitante em cada combinação escolhida, bem como as quantidades dos produtos que serão formados e a massa que restará do reagente em excesso (se houver).&lt;br /></string>
+
+    <string name="tvReaction">&lt;b>3 NiCl&lt;small>2(aq)&lt;/small> + 2 Na&lt;small>3&lt;/small>PO&lt;small>4(aq)&lt;/small> &#8594;  Ni(Po&lt;small>4&lt;/small>)&lt;small>2(s)&lt;/small> + 6 NaCl&lt;small>(aq)&lt;/small>&lt;/b>&lt;br /></string>
+    <string name="tvi41">NiCl&lt;small>2&lt;/small></string>
+    <string name="tvi42">Na&lt;small>3&lt;/small>PO&lt;small>4&lt;/small></string>
+
+    <string name="tvMass2">Massa (g):</string>
+    <string name="tvMols">Moles:</string>
+    <string name="tvExcLim">Reagente:</string>
+    <string name="Remain">&lt;b>Resta:&lt;/b></string>
+    <string name="Yield">Rendimento: </string>
+
+    <string name="Limitant">&lt;b>limitante&lt;/b></string>
+    <string name="Exceeding">&lt;b>em excesso&lt;/b></string>
+
+    <string name="tvProd1">Ni(PO&lt;small>4&lt;/small>)&lt;small>2(s)&lt;/small></string>
+    <string name="tvProd2">6 NaCl&lt;small>(aq)&lt;/small></string>
+
+    <!-- Interaction 4 -->
+
+    <!-- Interaction 5 -->
+
+    <string name="titleInt5">Concentração de soluções</string>
+
+    <string name="rbWater">Água</string>
+    <string name="rbEthanol">Etanol</string>
+    <string name="rbBenzene">Benzeno</string>
+    <string name="rbAcetic">Ácido acético</string>
+
+    <string name="tvPurity">Pureza:</string>
+
+    <string name="tvSolu">Soluto:</string>
+
+    <string name="rbLiquid">Liquido</string>
+    <string name="rbSolid">Sólido</string>
+
+    <string name="tvSol">Solvente:</string>
+
+    <string name="tvVolSol">Volume solvente (ml):</string>
+
+    <string name="tvMol">Molaridade (M):</string>
+    <string name="tvMol2">Molalidade (molal):</string>
+    <string name="tvmm">% m/m:</string>
+    <string name="tvmv">% m/v:</string>
+    <string name="tvvv">% v/v:</string>
+
+    <!-- Interaction 5 -->
+
+    <!-- Interaction 6 -->
+
+    <string name="int6Title">Titulação de HCl</string>
+
+        <string name="tvInt61">
+            Um frasco tem uma solução de HCl com concentração desconhecida. Esta solução é titulada com NaOH até atingir o ponto de equivalência.
+
+            &lt;br />&lt;br />&lt;b>Insira as informações solicitadas e clique no botão "Calcular".&lt;/b>
+
+        </string>
+
+    <string name="tvInt62">&lt;br />HCl&lt;small>(aq)&lt;/small> + NaOH&lt;small>(aq)&lt;/small> &#8594; NaCl&lt;small>(aq)&lt;/small> + H&lt;small>2&lt;/small>O&lt;small>l&lt;/small>&lt;br /></string>
+
+    <string name="tvHcl">HCl&lt;small>(aq)&lt;/small></string>
+    <string name="tvNaOH">NaOH&lt;small>(aq)&lt;/small></string>
+
+    <string name="tvVol">Volume (mL):</string>
+    <string name="tvVolHcl">Volume de HCl (mL):</string>
+    <string name="tvVolNaoh">Volume de NaOH (mL):</string>
+    <string name="tvMolaridade">Molaridade:</string>
+    <string name="tvConcNaOH">Concentração de NaOH&lt;small>(aq)&lt;/small>(Mol/L):</string>
+
+    <string name="tvResults">&lt;br />Resultados:&lt;br /></string>
+
+    <string name="tvNMolsHCl">Nº de Moles HCl:</string>
+    <string name="tvMolaridadeHCl">Molaridade HCl:</string>
+
+    <!-- Interaction 6 -->
+
+    <!-- Interaction 7 -->
+
+    <string name="int7Title">Padronização da Solução de NaOH</string>
+
+        <string name="tvInt71">
+            A padronização de uma solução de hidróxido de sódio (NaOH) é feita por titulação com uma solução de &lt;b>biftalato de potássio (C&lt;small>8&lt;/small>H&lt;small>5&lt;/small>KO&lt;small>4&lt;/small>)&lt;/b> utilizada como indicador a fenolftaleina.
+            &lt;br />&lt;br />O &lt;b>biftalato de potássio&lt;/b> é um padrão primário, isto é, é um composto com pureza suficiente para permitir a preparação de uma solução padrão mediante a pesagem direta da quantidade da substância, seguida pela diluição até um volume definido de solução. A solução resultante é adicionada uma solução de NaOH até que o ponto de equivalência seja atingido.
+            &lt;br />&lt;br />&lt;b>Insira as quantidades solicitadas e clique no botão "Calcular".&lt;br />
+        </string>
+
+    <string name="tvInt72">C&lt;small>8&lt;/small>H&lt;small>5&lt;/small>KO&lt;small>4(aq)&lt;/small> + NaOH&lt;small>(aq)&lt;/small> &#8594; C&lt;small>8&lt;/small>H&lt;small>4&lt;/small>KNaO&lt;small>4(aq)&lt;/small> + H&lt;small>2&lt;/small>O&lt;small>(l)&lt;/small></string>
+
+    <string name="tvCHKO">C&lt;small>8&lt;/small>H&lt;small>5&lt;/small>KO&lt;small>4(aq)&lt;/small></string>
+
+    <string name="tvMassCHKO">Massa de C&lt;small>8&lt;/small>H&lt;small>5&lt;/small>KO&lt;small>4(aq)&lt;/small>:</string>
+
+    <string name="tvVolNaOH">Volume de NaOH adicionado:</string>
+
+
+    <string name="tvMolaridadeNaOH">Concentração de NaOH(Mol/L):</string>
+
+    <!-- Interaction 7 -->
+
+    <!-- Interaction 8 -->
+
+    <string name="int8Title">Preparo de Soluções</string>
+
+    <string-array name="tab8Names">
+        <item>POR DILUIÇÃO</item>
+        <item>POR DISSOLUÇÂO</item>
+    </string-array>
+
+    <string name="tv1Sol">Solução:\n</string>
+
+    <string name="tv1SolDil">Solução diluida:\n</string>
+
+    <string name="tv2Vol">Volume da solução diluida (mL):</string>
+    <string name="tv3Molar">Concentração final (Mol/L):</string>
+    <string name="tv4Molar">Concentração solução stock (Mol/L):</string>
+
+    <string name="tv5Result" formatted="false">Adicione %s mL da solução concentrada em um balão volumétrico de %s mL e acrescente água destilada até a marca.</string>
+
+    <string name="tvUni">Unidade:</string>
+    <string name="rbMolar">Molaridade</string>
+    <string name="rbMassm" formatted="false">% massa/massa</string>
+    <string name="rbVolv" formatted="false">% volume/volume</string>
+
+    <string name="tvConcM">Contentração (M):</string>
+
+    <string name="tvConcD">Contentração desejada (Mol/L):</string>
+
+    <string name="tvConcPerc">Contentração (%):</string>
+
+    <string name="tvConc">Contentração (%):</string>
+
+    <string name="tvDensSol">Densidade do soluto (g/Ml):</string>
+
+    <string name="tvPGrade" formatted="false">Grau de pureza do soluto (%):</string>
+    <string name="tvVolSolAq">Volume da solução aquosa desejada (mL):</string>
+
+    <string name="tvResultInt9">Adicione %1$.2f %2$s de soluto em um balão volumétrico de %3$.2f %4$s e complete-o com o solvente até a marca.</string>
+    <string name="gram">g</string>
+    <string name="milliliter">mL</string>
+
+    <!-- Interaction 8 -->
+
+    <!-- Interaction 9 -->
+
+    <string name="int9Title">Reações Sucessivas</string>
+
+        <string name="tvInt91">
+            O superóxido de potássio, KO&lt;small>2&lt;/small>, é utilizado em equipamentos de respiração em sistemas fechados para remover o dióxido de carbono e a água do ar exalado. A remoção de água gera oxigênio para a respiração pela reação:&lt;br />
+        </string>
+
+    <string name="tvInt92">KO&lt;small>2(s)&lt;/small> + H&lt;small>2&lt;/small>O&lt;small>(l)&lt;/small> &#8594; O&lt;small>2(g)&lt;/small> + KOH&lt;small>(s)&lt;/small>&lt;br /></string>
+
+    <string name="tvInt93">O hidróxido de potássio (KOH) remove o dióxido de carbono (CO&lt;small>2&lt;/small>) do equipamento pela reação:&lt;br /></string>
+
+    <string name="tvInt94">KOH&lt;small>(s)&lt;/small> + CO&lt;small>2(g)&lt;/small> &#8594; KHCO&lt;small>3(s)&lt;/small>&lt;br /></string>
+
+    <string name="tvInt95">Determine a massa de CO&lt;small>2&lt;/small> que pode ser removida, e a massa de O&lt;small>2&lt;/small> que pode ser produzida, a partir de uma dada quantidade de KO&lt;small>2&lt;/small>.&lt;br /></string>
+
+    <string name="tvInt96">Insira a quantidade de KO&lt;small>2&lt;/small> e clique no botão "Calcular":&lt;br /></string>
+
+    <string name="tvKO2Mass">Massa de KO&lt;small>2(g)&lt;/small>:</string>
+
+        <string name="tvInt9Result">
+            Massa CO&lt;small>2&lt;/small> removida (g) = %1$s&lt;br />
+            Massa O&lt;small>2&lt;/small> produzida (g) = %2$s
+        </string>
+
+    <!-- Interaction 9 -->
+
+    <!-- Interaction 10 -->
+
+    <string name="titleInt10">Reagentes Estequiométricos</string>
+
+    <string name="tvIntRect"> 3 NiCl&lt;small>2&lt;/small> + 2 Na&lt;small>3&lt;/small>PO&lt;small>4&lt;/small> &#8594; Ni(PO&lt;small>4&lt;/small>)&lt;small>2&lt;/small> + 6 NaCl</string>
+    <string name="tvInt102">&lt;br />Números de Moles (NiCl&lt;small>2&lt;/small>):</string>
+
+    <string name="tvExp10">Varie a massa de NiCl&lt;small>2&lt;/small> e observe a massa/número de moles nescessários para a reação e a quantidade de massa/número de moles produzidos por cada produto. Considere rendimento de 100%.&lt;br /></string>
+
+    <string name="tvNicl2">&lt;b>NiCl&lt;small>2&lt;/small>&lt;/b>: %1$sg consumidos, Moles: %2$s</string>
+    <string name="tvNa3PO4">Na&lt;small>3&lt;/small>PO&lt;small>4&lt;/small>: %1$sg consumidos, Moles: %2$s</string>
+    <string name="tvNipo42">Ni(PO4)2: %1$sg consumidos, Moles: %2$s</string>
+    <string name="tvNacl">NaCl: %1$sg consumidos, Moles: %2$s</string>
+
+    <!-- Interaction 10 -->
+
+    <!-- Interaction 11 -->
+
+    <string name="titleInt11">Reagente Impuro</string>
+
+    <string name="tvExp11">Varie a massa e a pureza de NiCl&lt;small>2&lt;/small> e observe a massa/número de moles necessários para reação e a quantidade de massa/número de moles produzidos de cada produto.</string>
+
+    <string name="tvPurityNiCl">Pureza (NiCl):</string>
+
+    <!-- Interaction 11 -->
+
+    <!-- Interaction 12 -->
+
+    <string name="titleInt12">Reagente Limitante</string>
+
+    <string name="tvExp12">Varie a quantidade dos dois reagentes e observe quem será o reagente limitante em cada combinação escolhida, bem como as quantidades dos produtos que serão formados e a massa que restará do reagente em excesso (se houver).&lt;br /></string>
+
+    <!-- Interaction 12 -->
+
+    <!-- Interaction 13 -->
+
+    <string name="titleInt13">Rendimento e pureza</string>
+
+    <!-- Interaction 13 -->
+
+    <!-- Interaction 14 -->
+
+    <string name="titleSub2">Fórmula Molecular</string>
+
+    <string name="tvPercFormula">Formula Percentual:</string>
+    <string name="tvMinFormula">Formula Minima:</string>
+
+    <!-- Interaction 14 -->
+
+</resources>

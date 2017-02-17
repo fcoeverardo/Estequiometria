@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="quimica.ufc.br.estequiometria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TopicsActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".AboutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Intro" />
+        <activity android:name=".SubjectActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".BasicActivity" />
+        <activity android:name=".InteractionAcitivity" />
+
+        <!-- Subjects Activities -->
+
+        <activity android:name=".subjetcs.Subject11Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject12Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject13Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject14Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject15Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject16Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject21Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject22Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject23Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject24Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject25Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject31Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject32Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject33Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject34Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+        <activity android:name=".subjetcs.Subject35Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+
+        <!-- Subjects Activities -->
+
+
+        <!-- Interactions Actictivities -->
+
+        <activity android:name=".interactions.Interaction1Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject12Activity" />
+        </activity>
+        <activity android:name=".interactions.Interaction2Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject13Activity" />
+        </activity>
+        <activity
+            android:name=".interactions.Interaction3Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject15Activity" />
+        </activity>
+        <activity android:name=".interactions.Interaction4Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject32Activity" />
+        </activity>
+        <activity
+            android:name=".interactions.Interaction5Activity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".interactions.Interaction6Activity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".interactions.Interaction7Activity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".interactions.Interaction8Activity" />
+        <activity android:name=".interactions.Interaction9Activity" />
+        <activity android:name=".interactions.Interaction10Activity" />
+        <activity android:name=".interactions.Interaction11Activity" />
+        <activity android:name=".interactions.Interaction12Activity" />
+        <activity android:name=".interactions.Interaction13Activity" />
+        <activity
+            android:name=".interactions.Interaction14Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject21Activity" />
+        </activity>
+
+        <!-- Interactions Actictivities -->
+
+        <activity android:name=".test.TestActivity" />
+        <activity android:name=".VideoActivity"
+            android:theme="@style/FullScreanTheme">
+
+        </activity>
+    </application>
+
+</manifest>
