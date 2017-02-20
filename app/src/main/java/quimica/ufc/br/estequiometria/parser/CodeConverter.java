@@ -38,6 +38,31 @@ public class CodeConverter {
                     return "Ca";
                 case 14000:
                     return "He";
+                case 15000:
+                    return "Li";
+                case 16000:
+                    return "Be";
+                case 17000:
+                    return "B";
+                case 18000:
+                    return "F";
+                case 19000:
+                    return "Mg";
+                case 20000:
+                    return "Al";
+                case 21000:
+                    return "Si";
+                case 22000:
+                    return "P";
+                case 23000:
+                    return "S";
+                case 24000:
+                    return "Li";
+                case 25000:
+                    return "Ne";
+                case 26000:
+                    return "Ar";
+
                 default:
                     break;
             }

@@ -13,7 +13,9 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -79,6 +81,7 @@ public class InteractionAcitivity extends BasicActivity {
 
     private Keyboard keyboard;
     private KeyboardView keyboardView;
+    private LinearLayout keyboardLayout;
     protected EditText etFormula;
 
     public static double MOLAR_MASS;
@@ -98,6 +101,8 @@ public class InteractionAcitivity extends BasicActivity {
 
         etFormula = (EditText) findViewById(R.id.etFormula);
 
+        keyboardLayout = (LinearLayout) findViewById(R.id.keyboardLayout);
+
         keyboardView = (KeyboardView) findViewById(R.id.keyboardview);
 
         keyboard = new Keyboard(getBaseContext(), R.xml.keyboard);
@@ -107,8 +112,22 @@ public class InteractionAcitivity extends BasicActivity {
         etFormula.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hideKeyboard(v);
                 showCustomKeyboard(v);
+                hideKeyboard(v);
+
+            }
+        });
+
+        etFormula.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus){
+                    showCustomKeyboard(v);
+                    hideKeyboard(v);
+                }
+
+                else
+                    hideCustomKeyboardIfVisible();
             }
         });
 
@@ -150,18 +169,21 @@ public class InteractionAcitivity extends BasicActivity {
     }
 
     public void hideCustomKeyboard() {
-        keyboardView.setVisibility(View.GONE);
-        keyboardView.setEnabled(false);
+
+        keyboardLayout.setVisibility(View.GONE);
+        //keyboardView.setEnabled(false);
     }
 
     public void showCustomKeyboard( View v ) {
-        keyboardView.setVisibility(View.VISIBLE);
+        if( v!=null )
+            ((InputMethodManager)getSystemService(BasicActivity.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(v.getWindowToken(), 0);
+
+        keyboardLayout.setVisibility(View.VISIBLE);
         keyboardView.setEnabled(true);
-        if( v!=null ) ((InputMethodManager)getSystemService(BasicActivity.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
 
     public boolean isCustomKeyboardVisible() {
-        return keyboardView.getVisibility() == View.VISIBLE;
+        return keyboardLayout.getVisibility() == View.VISIBLE;
     }
 
     public void hideCustomKeyboardIfVisible(){
@@ -180,6 +202,8 @@ public class InteractionAcitivity extends BasicActivity {
         public final static int CodeAllRight = 55004;
         public final static int CodeNext     = 55005;
         public final static int CodeClear    = 55006;
+        public final static int CodeAllElements = -10; // Key All Element
+
         @Override
         public void onPress(int i) {
 
@@ -201,7 +225,7 @@ public class InteractionAcitivity extends BasicActivity {
             if( primaryCode==CodeCancel ) {
                 hideCustomKeyboard();
             } else if( primaryCode==CodeDelete ) {
-                if( editable!=null && start>0 ) editable.delete(start - 1, start);
+                deleteElement(editable,start);
             } else if( primaryCode==CodeClear ) {
                 if( editable!=null ) editable.clear();
             } else if( primaryCode==CodeLeft ) {
@@ -339,5 +363,19 @@ public class InteractionAcitivity extends BasicActivity {
     //public String formatFloat(float number){ return numberFormat.format(number); }
 
     public String formatFloat(double number){ return numberFormat.format(number); }
+
+    public void deleteElement(Editable editable,int start){
+
+        String aux = editable.toString();
+
+        if( editable!=null && start>0 ){
+            if(aux.charAt(aux.length()-1) >= 'a' && aux.charAt(aux.length()-1) <= 'z')
+                editable.delete(start - 2, start);
+            else
+                editable.delete(start - 1, start);
+        }
+
+
+    }
 
 }

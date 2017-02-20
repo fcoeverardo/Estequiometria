@@ -7,7 +7,8 @@
     android:background="@color/keyboradbackgournd"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
-    android:elevation="4dp" >
+    android:elevation="4dp"
+    android:id="@+id/keyboardLayout">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -17,14 +18,13 @@
             android:id="@+id/keyboardview"
             android:background="@drawable/keyboardbackground"
             android:layout_width="fill_parent"
-            android:layout_height="110dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:focusable="true"
             android:keyBackground="@drawable/keysbackground"
             android:keyTextColor="@color/keyboradkey"
             android:keyTextSize="16sp"
             android:focusableInTouchMode="true"
-            android:visibility="visible"
             android:shadowRadius="0"/>
     </FrameLayout>
 
