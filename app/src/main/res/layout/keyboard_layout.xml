@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="bottom"
@@ -20,12 +21,13 @@
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:focusable="true"
             android:keyBackground="@drawable/keysbackground"
             android:keyTextColor="@color/keyboradkey"
-            android:keyTextSize="16sp"
-            android:focusableInTouchMode="true"
-            android:shadowRadius="0"/>
+            android:labelTextSize="14sp"
+
+            android:keyTextSize="14sp"
+            android:shadowRadius="0"
+            android:shadowColor="#00000000" />
     </FrameLayout>
 
 </LinearLayout>

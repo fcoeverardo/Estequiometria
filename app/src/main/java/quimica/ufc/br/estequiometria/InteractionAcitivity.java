@@ -6,8 +6,14 @@ import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
 import android.text.TextWatcher;
+import android.text.style.RelativeSizeSpan;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
@@ -109,12 +115,14 @@ public class InteractionAcitivity extends BasicActivity {
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(keyboardListener);
 
-        etFormula.setOnClickListener(new View.OnClickListener() {
+        etFormula.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
                 showCustomKeyboard(v);
                 hideKeyboard(v);
+                etFormula.requestFocus();
 
+                return true;
             }
         });
 
@@ -125,7 +133,6 @@ public class InteractionAcitivity extends BasicActivity {
                     showCustomKeyboard(v);
                     hideKeyboard(v);
                 }
-
                 else
                     hideCustomKeyboardIfVisible();
             }
@@ -243,7 +250,7 @@ public class InteractionAcitivity extends BasicActivity {
                 View focusNew= etFormula.focusSearch(View.FOCUS_RIGHT);
                 if( focusNew!=null ) focusNew.requestFocus();
             } else {// Insert character
-                editable.insert(start, CodeConverter.convert(primaryCode));
+               insertElement(editable,start,primaryCode);
             }
         }
 
@@ -374,6 +381,30 @@ public class InteractionAcitivity extends BasicActivity {
             else
                 editable.delete(start - 1, start);
         }
+
+
+    }
+
+    public void insertElement(Editable editable,int start, int primaryCode){
+
+        if(primaryCode >= 0 &&  primaryCode < 10){
+
+            if(start > 0 && editable.toString().charAt(start - 1)=='.'){
+                editable.insert(start, CodeConverter.convert(primaryCode));
+            }
+            else{
+                Spanned code;
+                code = Html.fromHtml("<sub>" + CodeConverter.convert(primaryCode) +"</sub>");
+
+                SpannableString spannedCode = new SpannableString(code);
+                spannedCode.setSpan(new RelativeSizeSpan(0.6f),0,spannedCode.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                editable.insert(start, spannedCode);
+            }
+
+        }
+        else
+            editable.insert(start, CodeConverter.convert(primaryCode));
+
 
 
     }

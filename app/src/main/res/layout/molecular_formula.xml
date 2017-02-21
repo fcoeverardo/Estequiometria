@@ -46,7 +46,11 @@
     <EditText
         android:id="@+id/etFormula"
         android:inputType="none"
+        android:paddingLeft="5dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/edittext"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

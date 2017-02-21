@@ -62,6 +62,10 @@ public class CodeConverter {
                     return "Ne";
                 case 26000:
                     return "Ar";
+                case 27000:
+                    return "[";
+                case 28000:
+                    return "]";
 
                 default:
                     break;

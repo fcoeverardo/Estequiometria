@@ -17,8 +17,8 @@
     </Row>
 
     <Row android:keyWidth="12%p">
-        <Key android:codes="3000"    android:keyLabel="H" android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="14000"    android:keyLabel="He" android:horizontalGap="1%p"/>
+        <Key android:codes="27000"    android:keyLabel="[" android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="28000"    android:keyLabel="]" android:horizontalGap="1%p"/>
         <Key android:codes="6000"    android:keyLabel="(" android:horizontalGap="1%p" />
         <Key android:codes="7000"    android:keyLabel=")" android:horizontalGap="1%p" />
         <Key android:codes="8000"    android:keyLabel="." android:horizontalGap="1%p" />
@@ -34,7 +34,7 @@
         <Key android:codes="4000"    android:keyLabel="N" android:horizontalGap="1%p" />
         <Key android:codes="5000"    android:keyLabel="O" android:horizontalGap="1%p" />
         <Key android:codes="18000"    android:keyLabel="F" android:horizontalGap="1%p" />
-        <Key android:codes="-5"    android:keyIcon="@drawable/ic_backspace" android:keyWidth="15%p" android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5"    android:keyIcon="@drawable/ic_backspace" android:keyWidth="15%p" android:isRepeatable="true" android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
     </Row>
     <Row android:keyWidth="11%p">
         <Key android:codes="1000"    android:keyLabel="Na" android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
