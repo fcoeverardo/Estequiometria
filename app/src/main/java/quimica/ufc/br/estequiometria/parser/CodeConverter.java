@@ -66,7 +66,6 @@ public class CodeConverter {
                     return "[";
                 case 28000:
                     return "]";
-
                 default:
                     break;
             }

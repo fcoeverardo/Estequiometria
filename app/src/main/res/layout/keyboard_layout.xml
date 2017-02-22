@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.inputmethodservice.KeyboardView
+        <quimica.ufc.br.estequiometria.models.MyCustomKeyboardView
             android:id="@+id/keyboardview"
             android:background="@drawable/keyboardbackground"
             android:layout_width="fill_parent"

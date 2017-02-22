@@ -1,5 +1,6 @@
 package quimica.ufc.br.estequiometria;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -15,10 +16,12 @@ import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +32,7 @@ import java.util.HashMap;
 
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.models.Element;
+import quimica.ufc.br.estequiometria.models.MyCustomKeyboardView;
 import quimica.ufc.br.estequiometria.parser.CodeConverter;
 import quimica.ufc.br.estequiometria.parser.Evaluator;
 import quimica.ufc.br.estequiometria.parser.SyntaxErrorException;
@@ -86,7 +90,7 @@ public class InteractionAcitivity extends BasicActivity {
     private static Evaluator evaluator = new Evaluator();
 
     private Keyboard keyboard;
-    private KeyboardView keyboardView;
+    private MyCustomKeyboardView keyboardView;
     private LinearLayout keyboardLayout;
     protected EditText etFormula;
 
@@ -109,7 +113,7 @@ public class InteractionAcitivity extends BasicActivity {
 
         keyboardLayout = (LinearLayout) findViewById(R.id.keyboardLayout);
 
-        keyboardView = (KeyboardView) findViewById(R.id.keyboardview);
+        keyboardView = (MyCustomKeyboardView) findViewById(R.id.keyboardview);
 
         keyboard = new Keyboard(getBaseContext(), R.xml.keyboard);
         keyboardView.setKeyboard(keyboard);
@@ -231,6 +235,8 @@ public class InteractionAcitivity extends BasicActivity {
             // Handle key
             if( primaryCode==CodeCancel ) {
                 hideCustomKeyboard();
+            }else if( primaryCode==CodeAllElements ) {
+                openAllElementsDialog();
             } else if( primaryCode==CodeDelete ) {
                 deleteElement(editable,start);
             } else if( primaryCode==CodeClear ) {
@@ -393,12 +399,18 @@ public class InteractionAcitivity extends BasicActivity {
                 editable.insert(start, CodeConverter.convert(primaryCode));
             }
             else{
-                Spanned code;
-                code = Html.fromHtml("<sub>" + CodeConverter.convert(primaryCode) +"</sub>");
 
-                SpannableString spannedCode = new SpannableString(code);
-                spannedCode.setSpan(new RelativeSizeSpan(0.6f),0,spannedCode.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                editable.insert(start, spannedCode);
+                if(start == 0)
+                    editable.insert(start, CodeConverter.convert(primaryCode));
+                else{
+                    Spanned code;
+                    code = Html.fromHtml("<sub>" + CodeConverter.convert(primaryCode) +"</sub>");
+
+                    SpannableString spannedCode = new SpannableString(code);
+                    spannedCode.setSpan(new RelativeSizeSpan(0.6f),0,spannedCode.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    editable.insert(start, spannedCode);
+                }
+
             }
 
         }
@@ -408,5 +420,31 @@ public class InteractionAcitivity extends BasicActivity {
 
 
     }
+
+    public void openAllElementsDialog(){
+
+        final Dialog dialog = new Dialog(this);
+        dialog.setTitle("All Elements");
+        dialog.setContentView(R.layout.all_elements_layout);
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        Window window = dialog.getWindow();
+        lp.copyFrom(window.getAttributes());
+//This makes the dialog take up the full width
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        window.setAttributes(lp);
+        // set the custom dialog components - text, image and button
+
+        KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardview);
+
+        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboard);
+        aEKeyboardView.setKeyboard(keyboard);
+
+        //aEKeyboardView.setOnKeyboardActionListener(keyboardListener);
+
+        dialog.show();
+    }
+
+
 
 }
