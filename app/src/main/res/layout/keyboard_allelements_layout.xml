@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/keyboradbackgournd"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:elevation="4dp"
+    android:id="@+id/keyboardLayout">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:isScrollContainer="true">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="1400dp"
+                android:layout_height="700dp"
+                android:background="#FF0000">
+
+
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

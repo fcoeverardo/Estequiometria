@@ -1,6 +1,5 @@
 package quimica.ufc.br.estequiometria;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -16,15 +15,12 @@ import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -32,7 +28,6 @@ import java.util.HashMap;
 
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.models.Element;
-import quimica.ufc.br.estequiometria.models.MyCustomKeyboardView;
 import quimica.ufc.br.estequiometria.parser.CodeConverter;
 import quimica.ufc.br.estequiometria.parser.Evaluator;
 import quimica.ufc.br.estequiometria.parser.SyntaxErrorException;
@@ -90,8 +85,9 @@ public class InteractionAcitivity extends BasicActivity {
     private static Evaluator evaluator = new Evaluator();
 
     private Keyboard keyboard;
-    private MyCustomKeyboardView keyboardView;
+    private KeyboardView keyboardView,keyboardViewAll,keyboardViewNaoMetais,keyboardViewSemiMetais;
     private LinearLayout keyboardLayout;
+    private FrameLayout keyboardAll;
     protected EditText etFormula;
 
     public static double MOLAR_MASS;
@@ -113,12 +109,35 @@ public class InteractionAcitivity extends BasicActivity {
 
         keyboardLayout = (LinearLayout) findViewById(R.id.keyboardLayout);
 
-        keyboardView = (MyCustomKeyboardView) findViewById(R.id.keyboardview);
+        keyboardView = (KeyboardView) findViewById(R.id.keyboardview);
+        //keyboardViewAll = (KeyboardView) findViewById(R.id.keyboardviewAll);
+        //keyboardViewSemiMetais = (KeyboardView) findViewById(R.id.keyboardviewSemimetais);
+        //keyboardViewNaoMetais = (KeyboardView) findViewById(R.id.keyboardviewNaoMetais);
 
         keyboard = new Keyboard(getBaseContext(), R.xml.keyboard);
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(keyboardListener);
 
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardall);
+       // keyboardViewAll.setKeyboard(keyboard);
+        //keyboardViewAll.setOnKeyboardActionListener(keyboardListener);
+
+        keyboardAll = (FrameLayout) findViewById(R.id.keyboardAllElements);
+/*
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardmetais);
+        keyboardViewMetais.setKeyboard(keyboard);
+        keyboardViewMetais.setOnKeyboardActionListener(keyboardListener);
+
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardsemimetais);
+        keyboardViewSemiMetais.setKeyboard(keyboard);
+        keyboardViewSemiMetais.setOnKeyboardActionListener(keyboardListener);
+
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardnaometais);
+        keyboardViewNaoMetais.setKeyboard(keyboard);
+        keyboardViewNaoMetais.setOnKeyboardActionListener(keyboardListener);
+
+        keyboardAll = (FrameLayout) findViewById(R.id.keyboardAllElements);
+*/
         etFormula.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -423,6 +442,11 @@ public class InteractionAcitivity extends BasicActivity {
 
     public void openAllElementsDialog(){
 
+        keyboardView.setVisibility(View.GONE);
+        keyboardAll.setVisibility(View.VISIBLE);
+
+
+        /*
         final Dialog dialog = new Dialog(this);
         dialog.setTitle("All Elements");
         dialog.setContentView(R.layout.all_elements_layout);
@@ -437,14 +461,11 @@ public class InteractionAcitivity extends BasicActivity {
 
         KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardview);
 
-        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboard);
-        aEKeyboardView.setKeyboard(keyboard);
+        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboardsemimetais);
+        aEKeyboardView.setKeyboard(aEKeyboard);
 
         //aEKeyboardView.setOnKeyboardActionListener(keyboardListener);
 
-        dialog.show();
+        dialog.show();*/
     }
-
-
-
 }

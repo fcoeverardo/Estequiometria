@@ -13,10 +13,12 @@
             android:orientation="vertical" >
 
             <TextView
-                android:text="Metais Alcalinos"
+                android:text="Semi-metais"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/textView"
+                android:textColor="@color/keyboradkey"
+                android:textStyle="bold"
                 android:textSize="18dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"/>

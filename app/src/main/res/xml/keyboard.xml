@@ -47,4 +47,6 @@
         <Key android:codes="25000"    android:keyLabel=" Ne " android:horizontalGap="1%p" />
         <Key android:codes="26000"    android:keyLabel=" Ar " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
     </Row>
+
+
 </Keyboard>
