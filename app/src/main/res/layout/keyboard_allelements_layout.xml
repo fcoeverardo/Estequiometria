@@ -12,28 +12,159 @@
     android:id="@+id/keyboardLayout">
 
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:layout_weight="1">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85">
 
-        <TableLayout
-            android:id="@+id/tableLayout1"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dip"
-            android:isScrollContainer="true">
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
 
-            <TableRow
-                android:id="@+id/tableRow1"
-                android:layout_width="1400dp"
-                android:layout_height="700dp"
-                android:background="#FF0000">
+            <Button
+                android:text="Grupo 1-6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginRight="15dp"
+                android:onClick="avancar"
+                android:textColor="@color/keyboradkey"
+                android:background="@drawable/keysbackground"
+                android:id="@+id/button16" />
+
+            <Button
+                android:text="Grupo 7-12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:onClick="avancar"
+                android:textAllCaps="false"
+                android:textColor="@color/keyboradkey"
+                android:background="@drawable/keysbackground"
+                android:id="@+id/button712" />
+
+            <Button
+                android:text="Grupo 13-18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="avancar"
+                android:textAllCaps="false"
+                android:textColor="@color/keyboradkey"
+                android:background="@drawable/keysbackground"
+                android:id="@+id/button1318" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewflipper">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <android.inputmethodservice.KeyboardView
+                        android:id="@+id/keyboardview16"
+                        android:background="@drawable/keyboardbackground"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:keyBackground="@drawable/keysbackground"
+                        android:keyTextColor="@color/keyboradkey"
+                        android:labelTextSize="14sp"
+
+                        android:keyTextSize="14sp"
+                        android:shadowRadius="0"
+                        android:shadowColor="#00000000" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <android.inputmethodservice.KeyboardView
+                            android:id="@+id/keyboardview712"
+                            android:background="@drawable/keyboardbackground"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:keyBackground="@drawable/keysbackground"
+                            android:keyTextColor="@color/keyboradkey"
+                            android:labelTextSize="14sp"
+
+                            android:keyTextSize="14sp"
+                            android:shadowRadius="0"
+                            android:shadowColor="#00000000" />
 
 
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
 
-            </TableRow>
-        </TableLayout>
-    </ScrollView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <android.inputmethodservice.KeyboardView
+                            android:id="@+id/keyboardview1318"
+                            android:background="@drawable/keyboardbackground"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:keyBackground="@drawable/keysbackground"
+                            android:keyTextColor="@color/keyboradkey"
+                            android:labelTextSize="14sp"
+
+                            android:keyTextSize="14sp"
+                            android:shadowRadius="0"
+                            android:shadowColor="#00000000" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </ViewFlipper>
+    </FrameLayout>
 </LinearLayout>

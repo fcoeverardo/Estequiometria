@@ -1,9 +1,12 @@
 package quimica.ufc.br.estequiometria;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Point;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
+import android.support.v4.widget.ListViewAutoScrollHelper;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.Html;
@@ -13,14 +16,20 @@ import android.text.Spanned;
 import android.text.TextWatcher;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -85,8 +94,9 @@ public class InteractionAcitivity extends BasicActivity {
     private static Evaluator evaluator = new Evaluator();
 
     private Keyboard keyboard;
-    private KeyboardView keyboardView,keyboardViewAll,keyboardViewNaoMetais,keyboardViewSemiMetais;
+    private KeyboardView keyboardView,keyboardView16,keyboardView712,keyboardView1318;
     private LinearLayout keyboardLayout;
+    private ViewFlipper viewFlipper;
     private FrameLayout keyboardAll;
     protected EditText etFormula;
 
@@ -107,37 +117,38 @@ public class InteractionAcitivity extends BasicActivity {
 
         etFormula = (EditText) findViewById(R.id.etFormula);
 
+        viewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
+        setFlipperTouchEvent();
+
         keyboardLayout = (LinearLayout) findViewById(R.id.keyboardLayout);
 
         keyboardView = (KeyboardView) findViewById(R.id.keyboardview);
-        //keyboardViewAll = (KeyboardView) findViewById(R.id.keyboardviewAll);
-        //keyboardViewSemiMetais = (KeyboardView) findViewById(R.id.keyboardviewSemimetais);
-        //keyboardViewNaoMetais = (KeyboardView) findViewById(R.id.keyboardviewNaoMetais);
+        keyboardView16 = (KeyboardView) findViewById(R.id.keyboardview16);
+        keyboardView712 = (KeyboardView) findViewById(R.id.keyboardview712);
+        keyboardView1318 = (KeyboardView) findViewById(R.id.keyboardview1318);
 
         keyboard = new Keyboard(getBaseContext(), R.xml.keyboard);
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(keyboardListener);
 
-        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardall);
-       // keyboardViewAll.setKeyboard(keyboard);
-        //keyboardViewAll.setOnKeyboardActionListener(keyboardListener);
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboard16);
+        keyboardView16.setKeyboard(keyboard);
+        keyboardView16.setOnKeyboardActionListener(keyboardListener);
 
         keyboardAll = (FrameLayout) findViewById(R.id.keyboardAllElements);
-/*
-        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardmetais);
-        keyboardViewMetais.setKeyboard(keyboard);
-        keyboardViewMetais.setOnKeyboardActionListener(keyboardListener);
 
-        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardsemimetais);
-        keyboardViewSemiMetais.setKeyboard(keyboard);
-        keyboardViewSemiMetais.setOnKeyboardActionListener(keyboardListener);
+        //setKeyboardAllSize();
 
-        keyboard = new Keyboard(getBaseContext(), R.xml.keyboardnaometais);
-        keyboardViewNaoMetais.setKeyboard(keyboard);
-        keyboardViewNaoMetais.setOnKeyboardActionListener(keyboardListener);
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboard712);
+        keyboardView712.setKeyboard(keyboard);
+        keyboardView712.setOnKeyboardActionListener(keyboardListener);
 
-        keyboardAll = (FrameLayout) findViewById(R.id.keyboardAllElements);
-*/
+        keyboard = new Keyboard(getBaseContext(), R.xml.keyboard1318);
+        keyboardView1318.setKeyboard(keyboard);
+        keyboardView1318.setOnKeyboardActionListener(keyboardListener);
+
+        //keyboardAll = (FrameLayout) findViewById(R.id.keyboardAllElements);
+
         etFormula.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -442,14 +453,14 @@ public class InteractionAcitivity extends BasicActivity {
 
     public void openAllElementsDialog(){
 
-        keyboardView.setVisibility(View.GONE);
-        keyboardAll.setVisibility(View.VISIBLE);
+        //keyboardView.setVisibility(View.GONE);
+        //keyboardAll.setVisibility(View.VISIBLE);
 
 
-        /*
+
         final Dialog dialog = new Dialog(this);
         dialog.setTitle("All Elements");
-        dialog.setContentView(R.layout.all_elements_layout);
+        dialog.setContentView(R.layout.keyboardall_layout);
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         Window window = dialog.getWindow();
         lp.copyFrom(window.getAttributes());
@@ -459,13 +470,79 @@ public class InteractionAcitivity extends BasicActivity {
         window.setAttributes(lp);
         // set the custom dialog components - text, image and button
 
-        KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardview);
+        KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardviewall);
 
-        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboardsemimetais);
+        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboard1318);
         aEKeyboardView.setKeyboard(aEKeyboard);
 
         //aEKeyboardView.setOnKeyboardActionListener(keyboardListener);
 
-        dialog.show();*/
+        dialog.show();
+    }
+
+    public void setKeyboardAllSize(){
+/*
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+        int height = size.y;
+
+        RelativeLayout keyboardLayoutAll = (RelativeLayout) findViewById(R.id.keyboardLayoutAll);
+
+        ViewGroup.LayoutParams params = keyboardLayoutAll.getLayoutParams();
+// Changes the height and width to the specified *pixels*
+        params.height = (int) (height * 0.75);
+        params.width = (int) (width * 2.88);
+
+        keyboardLayoutAll.setLayoutParams(params);
+
+        Log.d("Wololo","Width: " + params.width + " Height: " + params.height);*/
+    }
+
+    public void setFlipperTouchEvent(){
+
+        viewFlipper.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                float initialX = 0;
+
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        initialX = event.getX();
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        float finalX = event.getX();
+                        if (initialX > finalX) {
+                            if (viewFlipper.getDisplayedChild() == 1)
+                                break;
+
+                            viewFlipper.setInAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_in));
+                            viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_out));
+
+                            viewFlipper.showNext();
+                        } else {
+                            if (viewFlipper.getDisplayedChild() == 0)
+                                break;
+
+                            viewFlipper.setInAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_in));
+                            viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_out));
+
+                            viewFlipper.showPrevious();
+                        }
+                        break;
+                }
+                return false;
+            }
+        });
+    }
+
+    public void avancar(View v){
+
+        viewFlipper.setInAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_in));
+        viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_out));
+
+        viewFlipper.showNext();
+
     }
 }

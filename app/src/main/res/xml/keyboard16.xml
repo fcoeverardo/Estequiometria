@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:verticalGap="5dp"
+    android:keyHeight="8%p">
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="3000"    android:keyLabel=" H " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+
+    </Row>
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="15000"    android:keyLabel=" Li " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="16000"    android:keyLabel=" Be " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="1000"    android:keyLabel=" Na " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="19000"    android:keyLabel=" Mg " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="12000"    android:keyLabel=" K " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="13000"    android:keyLabel=" Ca " android:isSticky="true" android:horizontalGap="1%p"/>
+        <Key android:codes="2"    android:keyLabel=" Sc " android:horizontalGap="1%p"/>
+        <Key android:codes="3"    android:keyLabel=" Ti " android:horizontalGap="1%p" />
+        <Key android:codes="4"    android:keyLabel=" V " android:horizontalGap="1%p" />
+        <Key android:codes="0"    android:keyLabel=" Cr " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="12000"    android:keyLabel=" Rb " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="13000"    android:keyLabel=" Sr " android:isSticky="true" android:horizontalGap="1%p"/>
+        <Key android:codes="2"    android:keyLabel=" Y " android:horizontalGap="1%p"/>
+        <Key android:codes="3"    android:keyLabel=" Zr " android:horizontalGap="1%p" />
+        <Key android:codes="4"    android:keyLabel=" Nb " android:horizontalGap="1%p" />
+        <Key android:codes="0"    android:keyLabel=" Mo " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="12000"    android:keyLabel=" Cs " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="13000"    android:keyLabel=" Ba " android:isSticky="true" android:horizontalGap="1%p"/>
+        <Key android:codes="3"    android:keyLabel=" Hf " android:horizontalGap="14%p" />
+        <Key android:codes="4"    android:keyLabel=" Ta " android:horizontalGap="1%p" />
+        <Key android:codes="0"    android:keyLabel=" W " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:keyWidth="12%p" android:popupKeyboard="@android:color/transparent">
+        <Key android:codes="12000"    android:keyLabel=" Fr " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="13000"    android:keyLabel=" Ra " android:isSticky="true" android:horizontalGap="1%p"/>
+        <Key android:codes="3"    android:keyLabel=" Rf " android:horizontalGap="14%p" />
+        <Key android:codes="4"    android:keyLabel=" Db " android:horizontalGap="1%p" />
+        <Key android:codes="0"    android:keyLabel=" Sg " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+
+
+
+</Keyboard>

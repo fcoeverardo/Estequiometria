@@ -5,8 +5,8 @@
 
 
     <Row android:keyWidth="15%p">
-        <Key android:codes="1000"    android:keyLabel=" H " android:horizontalGap="70%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="26000"    android:keyLabel=" He " android:keyEdgeFlags="right"/>
+        <Key android:codes="1000"    android:keyLabel=" H "  android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="26000"    android:keyLabel=" He " android:horizontalGap="256%p" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="15%p">
@@ -31,63 +31,108 @@
     </Row>
 
     <Row android:keyWidth="15%p">
-        <Key android:codes="1000"    android:keyLabel=" Na " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="19000"    android:keyLabel=" Mg "  android:horizontalGap="1%p"/>
-        <Key android:codes="20000"    android:keyLabel=" Al " android:horizontalGap="1%p" />
-        <Key android:codes="21000"    android:keyLabel=" Si " android:horizontalGap="1%p" />
-        <Key android:codes="22000"    android:keyLabel=" P " android:horizontalGap="1%p" />
-        <Key android:codes="23000"    android:keyLabel=" S " android:horizontalGap="1%p" />
-        <Key android:codes="2000"    android:keyLabel=" Cl " android:horizontalGap="1%p" />
-        <Key android:codes="25000"    android:keyLabel=" Ne " android:horizontalGap="1%p" />
-        <Key android:codes="26000"    android:keyLabel=" Ar " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="1000"    android:keyLabel=" K " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="19000"    android:keyLabel=" Ca " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Sc " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Ti " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" V " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Cr " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Mn " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Fe " android:horizontalGap="1%p" />
+        <Key android:codes="19000"    android:keyLabel=" Co " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Ni " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Cu " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" Zn " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Ga " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Ge " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" As " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Se " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Br " android:horizontalGap="1%p" />
+        <Key android:codes="26000"    android:keyLabel=" Kr " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="15%p">
-        <Key android:codes="1000"    android:keyLabel=" Na " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="19000"    android:keyLabel=" Mg "  android:horizontalGap="1%p"/>
-        <Key android:codes="20000"    android:keyLabel=" Al " android:horizontalGap="1%p" />
-        <Key android:codes="21000"    android:keyLabel=" Si " android:horizontalGap="1%p" />
-        <Key android:codes="22000"    android:keyLabel=" P " android:horizontalGap="1%p" />
-        <Key android:codes="23000"    android:keyLabel=" S " android:horizontalGap="1%p" />
-        <Key android:codes="2000"    android:keyLabel=" Cl " android:horizontalGap="1%p" />
-        <Key android:codes="25000"    android:keyLabel=" Ne " android:horizontalGap="1%p" />
-        <Key android:codes="26000"    android:keyLabel=" Ar " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
-    </Row>
-    <Row android:keyWidth="15%p">
-        <Key android:codes="1000"    android:keyLabel=" Na " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="19000"    android:keyLabel=" Mg "  android:horizontalGap="1%p"/>
-        <Key android:codes="20000"    android:keyLabel=" Al " android:horizontalGap="1%p" />
-        <Key android:codes="21000"    android:keyLabel=" Si " android:horizontalGap="1%p" />
-        <Key android:codes="22000"    android:keyLabel=" P " android:horizontalGap="1%p" />
-        <Key android:codes="23000"    android:keyLabel=" S " android:horizontalGap="1%p" />
-        <Key android:codes="2000"    android:keyLabel=" Cl " android:horizontalGap="1%p" />
-        <Key android:codes="25000"    android:keyLabel=" Ne " android:horizontalGap="1%p" />
-        <Key android:codes="26000"    android:keyLabel=" Ar " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
-    </Row>
-    <Row android:keyWidth="15%p">
-        <Key android:codes="1000"    android:keyLabel=" Na " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="19000"    android:keyLabel=" Mg "  android:horizontalGap="1%p"/>
-        <Key android:codes="20000"    android:keyLabel=" Al " android:horizontalGap="1%p" />
-        <Key android:codes="21000"    android:keyLabel=" Si " android:horizontalGap="1%p" />
-        <Key android:codes="22000"    android:keyLabel=" P " android:horizontalGap="1%p" />
-        <Key android:codes="23000"    android:keyLabel=" S " android:horizontalGap="1%p" />
-        <Key android:codes="2000"    android:keyLabel=" Cl " android:horizontalGap="1%p" />
-        <Key android:codes="25000"    android:keyLabel=" Ne " android:horizontalGap="1%p" />
-        <Key android:codes="26000"    android:keyLabel=" Ar " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
-    </Row>
-    <Row android:keyWidth="15%p">
-        <Key android:codes="1000"    android:keyLabel=" Na " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="19000"    android:keyLabel=" Mg "  android:horizontalGap="1%p"/>
-        <Key android:codes="20000"    android:keyLabel=" Al " android:horizontalGap="1%p" />
-        <Key android:codes="21000"    android:keyLabel=" Si " android:horizontalGap="1%p" />
-        <Key android:codes="22000"    android:keyLabel=" P " android:horizontalGap="1%p" />
-        <Key android:codes="23000"    android:keyLabel=" S " android:horizontalGap="1%p" />
-        <Key android:codes="2000"    android:keyLabel=" Cl " android:horizontalGap="1%p" />
-        <Key android:codes="25000"    android:keyLabel=" Ne " android:horizontalGap="1%p" />
-        <Key android:codes="26000"    android:keyLabel=" Ar " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="1000"    android:keyLabel=" K " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="19000"    android:keyLabel=" Ca " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Sc " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Ti " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" V " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Cr " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Mn " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Fe " android:horizontalGap="1%p" />
+        <Key android:codes="19000"    android:keyLabel=" Co " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Ni " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Cu " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" Zn " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Ga " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Ge " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" As " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Se " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Br " android:horizontalGap="1%p" />
+        <Key android:codes="26000"    android:keyLabel=" Kr " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
     </Row>
 
+    <Row android:keyWidth="15%p">
+        <Key android:codes="1000"    android:keyLabel=" K " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="19000"    android:keyLabel=" Ca " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Sc " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Ti " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" V " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Cr " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Mn " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Fe " android:horizontalGap="1%p" />
+        <Key android:codes="19000"    android:keyLabel=" Co " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Ni " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Cu " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" Zn " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Ga " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Ge " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" As " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Se " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Br " android:horizontalGap="1%p" />
+        <Key android:codes="26000"    android:keyLabel=" Kr " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
 
+    <Row android:keyWidth="15%p">
+        <Key android:codes="1000"    android:keyLabel=" K " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="19000"    android:keyLabel=" Ca " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Sc " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Ti " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" V " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Cr " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Mn " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Fe " android:horizontalGap="1%p" />
+        <Key android:codes="19000"    android:keyLabel=" Co " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Ni " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Cu " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" Zn " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Ga " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Ge " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" As " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Se " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Br " android:horizontalGap="1%p" />
+        <Key android:codes="26000"    android:keyLabel=" Kr " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
 
+    <Row android:keyWidth="15%p">
+        <Key android:codes="1000"    android:keyLabel=" K " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="19000"    android:keyLabel=" Ca " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Sc " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Ti " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" V " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Cr " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Mn " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Fe " android:horizontalGap="1%p" />
+        <Key android:codes="19000"    android:keyLabel=" Co " android:horizontalGap="1%p"/>
+        <Key android:codes="20000"    android:keyLabel=" Ni " android:horizontalGap="1%p" />
+        <Key android:codes="21000"    android:keyLabel=" Cu " android:horizontalGap="1%p" />
+        <Key android:codes="22000"    android:keyLabel=" Zn " android:horizontalGap="1%p" />
+        <Key android:codes="23000"    android:keyLabel=" Ga " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Ge " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" As " android:horizontalGap="1%p" />
+        <Key android:codes="2000"    android:keyLabel=" Se " android:horizontalGap="1%p" />
+        <Key android:codes="25000"    android:keyLabel=" Br " android:horizontalGap="1%p" />
+        <Key android:codes="26000"    android:keyLabel=" Kr " android:horizontalGap="1%p" android:keyEdgeFlags="right"/>
+    </Row>
 
 </Keyboard>

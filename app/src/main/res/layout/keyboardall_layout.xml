@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="700dp"
+        android:layout_height="400dp"
+        android:background="#FF0000">
+
+        <LinearLayout
+            android:id="@+id/keyboardalllayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/keyboardviewall"
+                android:background="@drawable/keyboardbackground"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:keyBackground="@drawable/keysbackground"
+                android:keyTextColor="@color/keyboradkey"
+                android:labelTextSize="14sp"
+                android:keyTextSize="14sp"
+                android:shadowRadius="0"
+                android:shadowColor="#00000000" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

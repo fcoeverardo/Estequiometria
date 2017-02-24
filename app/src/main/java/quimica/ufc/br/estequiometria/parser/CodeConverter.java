@@ -66,6 +66,14 @@ public class CodeConverter {
                     return "[";
                 case 28000:
                     return "]";
+                case 29000:
+                    return "Sc";
+                case 30000:
+                    return "Ti";
+                case 31000:
+                    return "Ti";
+                case 32000:
+                    return "Ti";
                 default:
                     break;
             }
