@@ -93,7 +93,6 @@
                         android:keyBackground="@drawable/keysbackground"
                         android:keyTextColor="@color/keyboradkey"
                         android:labelTextSize="14sp"
-
                         android:keyTextSize="14sp"
                         android:shadowRadius="0"
                         android:shadowColor="#00000000" />

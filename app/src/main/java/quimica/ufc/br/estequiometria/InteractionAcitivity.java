@@ -81,6 +81,7 @@ public class InteractionAcitivity extends BasicActivity {
 
     }};
 
+
     protected final double MM1 = 129.598, MM2 = 163.94, MM3 = 248.635, MM4 = 58.442;
 
     protected final double NICL2 = 129.6, NA3PO4 = 163.94, NIPO42 = 248.64, NACL = 58.44;
@@ -99,6 +100,8 @@ public class InteractionAcitivity extends BasicActivity {
     private ViewFlipper viewFlipper;
     private FrameLayout keyboardAll;
     protected EditText etFormula;
+
+    public static HashMap<String,String> dictionaryCodes = new HashMap<String,String>();
 
     public static double MOLAR_MASS;
 
@@ -361,6 +364,16 @@ public class InteractionAcitivity extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        dictionaryCodes = new HashMap<String,String>(){{
+            put("1001","H");put("1002","He");
+            put("1003","Li");put("1004","Be");put("1005","B");put("1006","C");put("1007","N");put("1008","O");put("1009","F");put("10010","Ne");
+            put("1011","Na");put("1012","Mg");put("1013","Al");put("1014","Si");put("1015","P");put("1016","S");put("1017","Cl");put("1018","Ar");
+            put("1019","K");put("1020","Ca");put("1021","Sc");put("1022","Ti");put("1023","V");put("1024","Cr");put("1025","Mn");put("1026","Fe");put("1027","Co");put("1028","Ni");put("1029","Cu");put("1030","Zn");put("1031","Ga");put("1032","Ge");put("1033","As");put("1034","Se");put("1035","Br");put("1036","Kr");
+            put("1037","Rb");put("1038","Sr");put("1039","Y");put("1040","Zr");put("1041","Nb");put("1042","Mo");put("1043","Tc");put("1044","Ru");put("1045","Rh");put("1046","Pd");put("1047","Ag");put("1048","Cd");put("1049","In");put("1050","Sn");put("1051","Sb");put("1052","Te");put("1053","I");put("1054","Xe");
+            put("1055","Cs");put("1056","Ba");put("1057","La");put("1058","Ce");put("1059","Pr");put("1060","Nd");put("1061","Pm");put("1062","Sm");put("1063","Eu");put("1064","Gd");put("1065","Tb");put("1066","Dy");put("1067","Ho");put("1068","Er");put("1069","Tm");put("1070","Yb");put("1071","Lu");put("1072","Hf");put("1073","Ta");put("1074","W");put("1075","Re");put("1076","Os");put("1077","Ir");put("1078","Pt");put("1079","Au");put("1080","Hg");put("1081","Tl");put("1082","Pb");put("1083","Bi");put("1084","Po");put("1085","At");put("1086","Rn");
+            put("1087","Fr");put("1088","Ra");put("1089","Ac");put("1090","Th");put("1091","Pa");put("1092","U");put("1093","Np");put("1094","Pu");put("1095","Am");put("1096","Cm");put("1097","Bk");put("1098","Cf");put("1099","Es");put("1100","Fm");put("1101","Md");put("1102","No");put("1103","Lr");put("1104","Rf");put("1105","Db");put("1106","Sg");put("1107","Bh");put("1108","Hs");put("1109","Mt");put("1110","Ds");put("1111","Rg");put("1112","Cn");put("1113","Uut");put("1114","Fl");put("1115","Uup");put("1116","Lv");put("1117","Uus");put("1118","Uuo");
+        }};
+
 
     }
 
@@ -426,15 +439,15 @@ public class InteractionAcitivity extends BasicActivity {
         if(primaryCode >= 0 &&  primaryCode < 10){
 
             if(start > 0 && editable.toString().charAt(start - 1)=='.'){
-                editable.insert(start, CodeConverter.convert(primaryCode));
+                editable.insert(start, CodeConverter.convert(primaryCode,dictionaryCodes));
             }
             else{
 
                 if(start == 0)
-                    editable.insert(start, CodeConverter.convert(primaryCode));
+                    editable.insert(start, CodeConverter.convert(primaryCode,dictionaryCodes));
                 else{
                     Spanned code;
-                    code = Html.fromHtml("<sub>" + CodeConverter.convert(primaryCode) +"</sub>");
+                    code = Html.fromHtml("<sub>" + CodeConverter.convert(primaryCode,dictionaryCodes) +"</sub>");
 
                     SpannableString spannedCode = new SpannableString(code);
                     spannedCode.setSpan(new RelativeSizeSpan(0.6f),0,spannedCode.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -445,7 +458,7 @@ public class InteractionAcitivity extends BasicActivity {
 
         }
         else
-            editable.insert(start, CodeConverter.convert(primaryCode));
+            editable.insert(start, CodeConverter.convert(primaryCode,dictionaryCodes));
 
 
 
@@ -456,26 +469,29 @@ public class InteractionAcitivity extends BasicActivity {
         //keyboardView.setVisibility(View.GONE);
         //keyboardAll.setVisibility(View.VISIBLE);
 
-
-
         final Dialog dialog = new Dialog(this);
         dialog.setTitle("All Elements");
         dialog.setContentView(R.layout.keyboardall_layout);
-        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
-        Window window = dialog.getWindow();
-        lp.copyFrom(window.getAttributes());
-//This makes the dialog take up the full width
-        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        window.setAttributes(lp);
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+        int height = size.y;
+
         // set the custom dialog components - text, image and button
+        FrameLayout keyboardWrapper = (FrameLayout) dialog.findViewById(R.id.keyboardwrapper);
 
-        KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardviewall);
+        ViewGroup.LayoutParams params = keyboardWrapper.getLayoutParams();
+        params.width = (int) (width * 3);
+        keyboardWrapper.setLayoutParams(params);
 
-        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboard1318);
+        KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardview);
+
+        Keyboard aEKeyboard = new Keyboard(getBaseContext(), R.xml.keyboardall);
         aEKeyboardView.setKeyboard(aEKeyboard);
 
-        //aEKeyboardView.setOnKeyboardActionListener(keyboardListener);
+        aEKeyboardView.setOnKeyboardActionListener(keyboardListener);
 
         dialog.show();
     }

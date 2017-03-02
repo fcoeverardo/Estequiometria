@@ -28,6 +28,8 @@ import quimica.ufc.br.estequiometria.parser.CodeConverter;
 import quimica.ufc.br.estequiometria.parser.Evaluator;
 import quimica.ufc.br.estequiometria.parser.SyntaxErrorException;
 
+import static quimica.ufc.br.estequiometria.InteractionAcitivity.dictionaryCodes;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -190,7 +192,7 @@ public class InteractionFragment extends Fragment {
                 View focusNew= etFormula.focusSearch(View.FOCUS_RIGHT);
                 if( focusNew!=null ) focusNew.requestFocus();
             } else {// Insert character
-                editable.insert(start, CodeConverter.convert(primaryCode));
+                editable.insert(start, CodeConverter.convert(primaryCode,dictionaryCodes));
             }
         }
 

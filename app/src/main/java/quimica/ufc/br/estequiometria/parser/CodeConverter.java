@@ -1,10 +1,29 @@
 package quimica.ufc.br.estequiometria.parser;
 
+import android.util.Log;
+
+import java.util.HashMap;
+
 /**
  * TODO: Add a class header comment!
  */
 public class CodeConverter {
 
+    public static String convert(int code, HashMap<String,String> dictionaryCodes) {
+        if(code >=0 && code <= 9) {
+            return String.valueOf(code);
+        } else {
+
+            String cod = String.valueOf(code);
+            Log.d("Wololo","Code: " + dictionaryCodes.get(code));
+            return dictionaryCodes.get(code);
+
+            }
+        }
+
+    }
+
+/*
     public static String convert(int code) {
         if(code >=0 && code <= 9) {
             return String.valueOf(code);
@@ -80,4 +99,4 @@ public class CodeConverter {
         }
         return "";
     }
-}
+}*/
