@@ -24,7 +24,7 @@ public class CompoundParser extends Parser {
 	public static final int
 			T__2=1, T__1=2, T__0=3, ATOM=4, INT=5, N=6, WS=7;
 	public static final String[] tokenNames = {
-			"<INVALID>", "'('", "')'", "'.'", "ATOM", "INT", "N", "WS"
+			"<INVALID>", "'('", "')'", "'.'", "ATOM", "INT", "N", "WS","'['", "']'"
 	};
 	public static final int
 			RULE_s = 0, RULE_compound = 1, RULE_hidr = 2, RULE_parens = 3, RULE_element = 4;

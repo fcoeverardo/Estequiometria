@@ -2,21 +2,30 @@ package quimica.ufc.br.estequiometria.fragments;
 
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Point;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
+import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
 import android.text.TextWatcher;
+import android.text.style.RelativeSizeSpan;
 import android.util.Log;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -27,8 +36,6 @@ import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.parser.CodeConverter;
 import quimica.ufc.br.estequiometria.parser.Evaluator;
 import quimica.ufc.br.estequiometria.parser.SyntaxErrorException;
-
-import static quimica.ufc.br.estequiometria.InteractionAcitivity.dictionaryCodes;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +50,8 @@ public class InteractionFragment extends Fragment {
 
     private KeyboardView keyboardView;
     protected EditText etFormula;
+
+    Dialog dialog;
 
 
     public static DecimalFormat numberFormat = new DecimalFormat("#.00");
@@ -153,6 +162,7 @@ public class InteractionFragment extends Fragment {
         public final static int CodeAllRight = 55004;
         public final static int CodeNext     = 55005;
         public final static int CodeClear    = 55006;
+        public final static int CodeAllElements = -10; // Key All Element
         @Override
         public void onPress(int i) {
 
@@ -173,8 +183,10 @@ public class InteractionFragment extends Fragment {
             // Handle key
             if( primaryCode==CodeCancel ) {
                 hideCustomKeyboard();
+            }else if( primaryCode==CodeAllElements ) {
+                openAllElementsDialog();
             } else if( primaryCode==CodeDelete ) {
-                if( editable!=null && start>0 ) editable.delete(start - 1, start);
+                deleteElement(editable,start);
             } else if( primaryCode==CodeClear ) {
                 if( editable!=null ) editable.clear();
             } else if( primaryCode==CodeLeft ) {
@@ -192,7 +204,7 @@ public class InteractionFragment extends Fragment {
                 View focusNew= etFormula.focusSearch(View.FOCUS_RIGHT);
                 if( focusNew!=null ) focusNew.requestFocus();
             } else {// Insert character
-                editable.insert(start, CodeConverter.convert(primaryCode,dictionaryCodes));
+                insertElement(editable,start,primaryCode);
             }
         }
 
@@ -226,6 +238,86 @@ public class InteractionFragment extends Fragment {
     /*
     *   End of Custom Keyboard Cofiguration
     */
+    public void deleteElement(Editable editable,int start){
+
+        String aux = editable.toString();
+
+        if( editable!=null && start>0 ){
+            if(aux.charAt(aux.length()-1) >= 'a' && aux.charAt(aux.length()-1) <= 'z')
+                editable.delete(start - 2, start);
+            else
+                editable.delete(start - 1, start);
+        }
 
 
+    }
+
+    public void insertElement(Editable editable,int start, int primaryCode){
+
+        if(primaryCode >= 0 &&  primaryCode < 10){
+
+            if(start > 0 && editable.toString().charAt(start - 1)=='.'){
+                editable.insert(start, CodeConverter.convert(primaryCode));
+            }
+            else{
+
+                if(start == 0)
+                    editable.insert(start, CodeConverter.convert(primaryCode));
+                else{
+                    Spanned code;
+                    code = Html.fromHtml("<sub>" + CodeConverter.convert(primaryCode) +"</sub>");
+
+                    SpannableString spannedCode = new SpannableString(code);
+                    spannedCode.setSpan(new RelativeSizeSpan(0.6f),0,spannedCode.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    editable.insert(start, spannedCode);
+                }
+
+            }
+
+        }
+        else
+            editable.insert(start, CodeConverter.convert(primaryCode));
+
+
+        hideAllElementifVisible();
+    }
+
+    public void openAllElementsDialog(){
+
+        //keyboardView.setVisibility(View.GONE);
+        //keyboardAll.setVisibility(View.VISIBLE);
+
+        dialog = new Dialog(getActivity());
+        dialog.setTitle("All Elements");
+        dialog.setContentView(R.layout.keyboardall_layout);
+
+        Display display = getActivity().getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+        int height = size.y;
+
+        // set the custom dialog components - text, image and button
+        FrameLayout keyboardWrapper = (FrameLayout) dialog.findViewById(R.id.keyboardwrapper);
+
+        ViewGroup.LayoutParams params = keyboardWrapper.getLayoutParams();
+        params.width = (int) (width * 3);
+        keyboardWrapper.setLayoutParams(params);
+
+        KeyboardView aEKeyboardView = (KeyboardView) dialog.findViewById(R.id.keyboardview);
+
+        Keyboard aEKeyboard = new Keyboard(getActivity(), R.xml.keyboardall);
+        aEKeyboardView.setKeyboard(aEKeyboard);
+
+        aEKeyboardView.setOnKeyboardActionListener(keyboardListener);
+
+        dialog.show();
+    }
+
+    public void hideAllElementifVisible(){
+
+        if(dialog!= null && dialog.isShowing())
+            dialog.dismiss();
+
+    }
 }

@@ -4,12 +4,12 @@
     android:keyHeight="8%p">
 
     <Row android:keyWidth="16%p">
-        <Key android:codes="1001"    android:keyLabel=" H " android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="1001"    android:keyLabel=" H "   android:keyEdgeFlags="left"/>
         <Key android:codes="1002"    android:keyLabel=" He " android:horizontalGap="262.3%p" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row android:keyWidth="16%p">
-        <Key android:codes="1003"    android:keyLabel=" Li " android:horizontalGap="1%p" android:isRepeatable="false"  android:keyEdgeFlags="left"/>
+        <Key android:codes="1003"    android:keyLabel=" Li " android:horizontalGap="1%p"   android:keyEdgeFlags="left"/>
         <Key android:codes="1004"    android:keyLabel=" Be " android:horizontalGap="165%p"/>
         <Key android:codes="1005"        android:keyLabel=" B " android:horizontalGap="1%p"/>
         <Key android:codes="1006"      android:keyLabel=" C "  android:horizontalGap="1%p"/>
@@ -54,7 +54,7 @@
     <Row android:keyWidth="16%p" >
         <Key android:codes="1037"    android:keyLabel=" Rb " android:horizontalGap="1%p" android:keyEdgeFlags="left"/>
         <Key android:codes="1038"    android:keyLabel=" Sr " android:horizontalGap="1%p"/>
-        <Key android:codes="1039"    android:keyLabel=" Y " android:keyOutputText="Y" android:horizontalGap="1%p"/>
+        <Key android:codes="1039"    android:keyLabel=" Y "  android:horizontalGap="1%p"/>
         <Key android:codes="1040"    android:keyLabel=" Zr " android:horizontalGap="1%p" />
         <Key android:codes="1041"    android:keyLabel=" Nb " android:horizontalGap="1%p" />
         <Key android:codes="1042"    android:keyLabel=" Mo " android:horizontalGap="1%p" />
