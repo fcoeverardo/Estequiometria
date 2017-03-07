@@ -33,7 +33,7 @@ public class CodeConverter {
                     return "O";
                 case 1009:
                     return "F";
-                case 10010:
+                case 1010:
                     return "Ne";
 
                 case 1011:
