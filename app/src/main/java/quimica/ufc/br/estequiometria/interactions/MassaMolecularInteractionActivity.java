@@ -1,36 +1,27 @@
 package quimica.ufc.br.estequiometria.interactions;
 
 import android.content.res.Configuration;
-import android.graphics.Point;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Html;
 import android.text.TextWatcher;
-import android.util.Log;
-import android.view.Display;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import quimica.ufc.br.estequiometria.InteractionAcitivity;
-import quimica.ufc.br.estequiometria.MainActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
-import quimica.ufc.br.estequiometria.models.Element;
 
-public class Interaction3Activity extends InteractionAcitivity {
+public class MassaMolecularInteractionActivity extends InteractionAcitivity {
 
     ArrayAdapter<String> elementAdapter;
 
 
     EditText etMass;
-    TextView tvMolarMass, tvNMols, tvDescInt3;
+    TextView tvMolarMass, tvNMols, tvDescInt3,tvMassa;
     Button btCalc;
 
     String currentResult = "";
@@ -43,14 +34,21 @@ public class Interaction3Activity extends InteractionAcitivity {
         setContentView(R.layout.activity_interaction3);
 
         etMass = (EditText) findViewById(R.id.etMass);
+        etMass.setVisibility(View.GONE);
 
         tvMolarMass = (TextView) findViewById(R.id.tvMolarMass);
         tvNMols = (TextView) findViewById(R.id.tvNMols);
+        tvNMols.setVisibility(View.GONE);
+
+        tvMassa = (TextView) findViewById(R.id.tvMass);
+        tvMassa.setVisibility(View.GONE);
+
         tvDescInt3 = (TextView) findViewById(R.id.tvDescInt3);
 
         tvDescInt3.setText(HtmlCompat.fromHtml(getString(R.string.tvDescInt3)));
 
         btCalc = (Button) findViewById(R.id.btCalc);
+        btCalc.setVisibility(View.GONE);
 
         setUpToolbar(getString(R.string.int1Name));
 

@@ -16,6 +16,7 @@ public class BasicActivity extends AppCompatActivity {
 
     protected static final String VIDEO_EXTRA = "video";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -33,6 +33,7 @@
             <!-- Formulas aqui no meio -->
 
             <TextView
+                android:id="@+id/tv13_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/m1t3.2"/>

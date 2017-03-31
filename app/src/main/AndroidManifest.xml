@@ -146,6 +146,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".subjetcs.Subject15Activity" />
         </activity>
+        <activity
+            android:name=".interactions.MassaMolecularInteractionActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject14Activity" />
+        </activity>
         <activity android:name=".interactions.Interaction4Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -168,6 +175,14 @@
         <activity android:name=".interactions.Interaction13Activity" />
         <activity
             android:name=".interactions.Interaction14Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject21Activity" />
+        </activity>
+
+        <activity
+            android:name=".interactions.FormulaPercentualInteractionActivity"
             android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

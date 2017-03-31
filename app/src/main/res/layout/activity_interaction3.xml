@@ -10,7 +10,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
 
         <LinearLayout
             android:orientation="vertical"
@@ -67,6 +68,9 @@
 
     </ScrollView>
 
-    <include layout="@layout/keyboard_layout" />
+    <include layout="@layout/keyboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"/>
 
 </LinearLayout>

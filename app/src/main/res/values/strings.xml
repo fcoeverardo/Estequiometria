@@ -231,7 +231,12 @@
             \n\nDevemos calcular a média ponderada das
             massas atômicas de seus isótopos, considerando a abundância relativa destes isótopos na natureza.\n
         </string>
-
+    btInt3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+    startActivity(new Intent(Subject15Activity.this, Interaction3Activity.class));
+    }
+    });
         <string name="m1t3.2" formatted="false">
             Observe o seguinte exemplo:&lt;br />
             O elemento químico Cloro é encontrado na natureza como dois isótopos: &lt;sup>&lt;small>35&lt;/small>&lt;/sup>Cl e &lt;sup>&lt;small>37&lt;/small>&lt;/sup>Cl.&lt;br />&lt;br />
@@ -1483,6 +1488,8 @@
     <!-- Interaction 14 -->
 
     <string name="titleSub2">Fórmula Molecular</string>
+
+    <string name="titleSub2_1">Fórmula Percentual</string>
 
     <string name="tvPercFormula">Formula Percentual:</string>
     <string name="tvMinFormula">Formula Minima:</string>

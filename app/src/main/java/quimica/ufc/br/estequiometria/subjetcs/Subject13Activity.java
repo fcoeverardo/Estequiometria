@@ -15,7 +15,7 @@ import quimica.ufc.br.estequiometria.BasicActivity;
 
 public class Subject13Activity extends BasicActivity {
 
-    TextView tv13_3;
+    TextView tv13_3,tv13_2;
     Button btInt2;
     Resources resources;
     String title;
@@ -27,6 +27,9 @@ public class Subject13Activity extends BasicActivity {
 
         tv13_3 = (TextView) findViewById(R.id.tv13_3);
         tv13_3.setText(HtmlCompat.fromHtml(getString(R.string.m1t3_3)));
+
+        tv13_2 = (TextView) findViewById(R.id.tv13_2);
+        tv13_2.setText(HtmlCompat.fromHtml(getString(R.string.m1t3_2)));
 
         resources = getResources();
 

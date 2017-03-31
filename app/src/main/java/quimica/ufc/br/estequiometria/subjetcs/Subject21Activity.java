@@ -10,6 +10,7 @@ import android.widget.TextView;
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
+import quimica.ufc.br.estequiometria.interactions.FormulaPercentualInteractionActivity;
 import quimica.ufc.br.estequiometria.interactions.Interaction14Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction1Activity;
 
@@ -57,7 +58,7 @@ public class Subject21Activity extends BasicActivity {
         btIntPer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Subject21Activity.this, Interaction14Activity.class));
+                startActivity(new Intent(Subject21Activity.this, FormulaPercentualInteractionActivity.class));
             }
         });
 

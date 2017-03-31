@@ -29,22 +29,6 @@
             android:shadowRadius="0"
             android:shadowColor="#00000000" />
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:id="@+id/keyboardAllElements"
-            android:layout_height="match_parent"
-            android:visibility="gone">
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                layout="@layout/keyboard_allelements_layout"/>
-
-        </FrameLayout>
-
-
-
-
     </FrameLayout>
 
 </LinearLayout>
