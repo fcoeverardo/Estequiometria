@@ -1,8 +1,14 @@
 package quimica.ufc.br.estequiometria.parser;
 
+import android.util.Log;
+
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
+
+import java.util.ArrayList;
+
+import quimica.ufc.br.estequiometria.models.Element;
 
 
 /**
@@ -14,6 +20,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class Evaluator extends CompoundBaseVisitor<Double>{
 
 	public Evaluator() {}
+    public ArrayList<Element> elementsArray = new ArrayList<Element>();
 	
 	private ParseTree makeTree(String formula) {
 		ANTLRInputStream input = new ANTLRInputStream(formula);
@@ -27,7 +34,8 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 		return parser.s();
 	}
 	public Double eval(String formula) {
-		ParseTree tree = this.makeTree(formula);
+
+        ParseTree tree = this.makeTree(formula);
 		return this.visit(tree);
 	}
 	@Override 
@@ -50,10 +58,19 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 		} else if (ctx.parens() != null) {
 			return visit(ctx.parens());
 		} else {
-			for (CompoundParser.ElementContext element : ctx.element()) {
-				if(null == element) break;	
-				value += visit(element);
+			Element ele = new Element();
+            for (CompoundParser.ElementContext element : ctx.element()) {
+				if(null == element) break;
+
+                if(element.INT() == null)
+                    ele = new Element(element.ATOM()+"",visit(element),1);
+                else
+                    ele = new Element(element.ATOM()+"",getElementMass(element),Integer.parseInt(element.INT()+""));
+
+                value += visit(element);
 			}
+
+			elementsArray.add(ele);
 			return value;
 		}
 	}
@@ -83,4 +100,14 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 		}
 		return table.lookAtom(name); 
 	}
+
+    public Double getElementMass(CompoundParser.ElementContext ctx) {
+        LookUpTable table = LookUpTable.getTable();
+        String name = ctx.ATOM().getText();
+
+        return table.lookAtom(name);
+    }
+
+
+
 }

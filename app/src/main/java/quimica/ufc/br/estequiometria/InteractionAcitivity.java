@@ -181,6 +181,7 @@ public class InteractionAcitivity extends BasicActivity {
             Log.d(MainActivity.TAG, "Massa molar: " + evaluator.eval(etFormula.getText().toString()));
 
             MOLAR_MASS = evaluator.eval(etFormula.getText().toString());
+            elements = evaluator.elementsArray;
         }catch (SyntaxErrorException e){
             // Mostrar Mensagem ao usuario
 

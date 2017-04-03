@@ -3,6 +3,7 @@ package quimica.ufc.br.estequiometria.interactions;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
@@ -65,7 +66,7 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
             public void onClick(View v) {
 
 
-                tvMinFormula.setText(HtmlCompat.fromHtml(getString(R.string.tvPercFormula) + " " +percentualFormula()));
+                tvMinFormula.setText(Html.fromHtml(getString(R.string.tvPercFormula) + " " + percentualFormula()));
 
             }
         });
@@ -94,17 +95,20 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
     };
 
     private String percentualFormula(){
-        String result = "";
+        String percentualFomula = "";
         Element element;
-        Log.d("Wololo","Eita");
+        Log.d("Wololo","Elemens size:" + elements.size());
         for(int i=0;i<elements.size();i++){
             element = elements.get(i);
-            double percentage = (((element.getNumber() * element.getMass())/MOLAR_MASS)*100);
-            //Log.d("Wololo","Formula = " + percentage);
-            //result += element.getName() + " " + noFloat.format(percentage) + "% ";
+            double mass = element.getMass() * element.getNumber();
+
+            double percentage = (((mass)/MOLAR_MASS)*100);
+            String aux = (element.getName() + percentage + "% ");
+            percentualFomula += percentualFomula + aux;
+
         }
 
-        return result;
+        return percentualFomula;
     }
 
     private String minFormula(double mass){

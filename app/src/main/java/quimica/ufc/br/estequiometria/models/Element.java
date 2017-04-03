@@ -20,6 +20,17 @@ public class Element {
         Element.MOLARMASS += mass*number;
     }
 
+    public Element(){
+
+    }
+
+    public Element(String name,double mass,int number){
+        this.name = name;
+        this.mass = mass;
+        this.number = number;
+        Element.MOLARMASS += mass*number;
+    }
+
     public String getName() {
         return name;
     }
