@@ -20,12 +20,14 @@ import quimica.ufc.br.estequiometria.MainActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.models.Element;
+import quimica.ufc.br.estequiometria.parser.Evaluator;
 
 public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
 
     EditText etMass;
     TextView tvMolarMass, tvNMols, tvPercFormula, tvMinFormula,tvMass;
     Button btCalc;
+    private Evaluator eval;
 
     double minPercent = 0.0;
 
@@ -66,7 +68,7 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
             public void onClick(View v) {
 
 
-                tvMinFormula.setText(Html.fromHtml(getString(R.string.tvPercFormula) + " " + percentualFormula()));
+                //tvMinFormula.setText(Html.fromHtml(getString(R.string.tvPercFormula) + " " + percentualFormula()));
 
             }
         });
@@ -84,7 +86,10 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             defaultFormulaAction();
             tvMolarMass.setText(getString(R.string.tvMolarMass)+" "+ numberFormat.format(MOLAR_MASS));
-            tvPercFormula.setText(getString(R.string.tvPercFormula) + " " + percentualFormula());
+            if(!etFormula.getText().toString().equals(""))
+                tvPercFormula.setText(getString(R.string.tvPercFormula) + " " + percentualFormula());
+            else
+                tvPercFormula.setText("");
 
         }
 
@@ -95,16 +100,17 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
     };
 
     private String percentualFormula(){
+
         String percentualFomula = "";
         Element element;
-        Log.d("Wololo","Elemens size:" + elements.size());
         for(int i=0;i<elements.size();i++){
             element = elements.get(i);
+
             double mass = element.getMass() * element.getNumber();
 
             double percentage = (((mass)/MOLAR_MASS)*100);
-            String aux = (element.getName() + percentage + "% ");
-            percentualFomula += percentualFomula + aux;
+            String aux = (element.getName() + numberFormat.format(percentage) + "% ");
+            percentualFomula += aux;
 
         }
 

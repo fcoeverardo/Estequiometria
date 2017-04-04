@@ -20,7 +20,8 @@ import quimica.ufc.br.estequiometria.models.Element;
 public class Evaluator extends CompoundBaseVisitor<Double>{
 
 	public Evaluator() {}
-    public ArrayList<Element> elementsArray = new ArrayList<Element>();
+    public ArrayList<Element> elementsArray = new ArrayList<Element>();;
+	public boolean added = false;
 	
 	private ParseTree makeTree(String formula) {
 		ANTLRInputStream input = new ANTLRInputStream(formula);
@@ -34,8 +35,7 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 		return parser.s();
 	}
 	public Double eval(String formula) {
-
-        ParseTree tree = this.makeTree(formula);
+		ParseTree tree = this.makeTree(formula);
 		return this.visit(tree);
 	}
 	@Override 
@@ -58,8 +58,9 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 		} else if (ctx.parens() != null) {
 			return visit(ctx.parens());
 		} else {
+
 			Element ele = new Element();
-            for (CompoundParser.ElementContext element : ctx.element()) {
+			for (CompoundParser.ElementContext element : ctx.element()) {
 				if(null == element) break;
 
                 if(element.INT() == null)
@@ -70,7 +71,17 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
                 value += visit(element);
 			}
 
-			elementsArray.add(ele);
+			if(elementsArray.isEmpty())
+				elementsArray.add(ele);
+
+			else{
+				Log.d("Eita","EleName: " + ele.getName() + "  size: " + (elementsArray.get(elementsArray.size()-1)).getName());
+				if((elementsArray.get(elementsArray.size()-1)).getName().equals(ele.getName()))
+					elementsArray.set(elementsArray.size()-1,ele);
+				else
+					elementsArray.add(ele);
+			}
+
 			return value;
 		}
 	}
@@ -91,6 +102,7 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 	
 	@Override 
 	public Double visitElement(CompoundParser.ElementContext ctx) {
+
 		LookUpTable table = LookUpTable.getTable();
 		String name = ctx.ATOM().getText();
 		if(null != ctx.INT()) {
