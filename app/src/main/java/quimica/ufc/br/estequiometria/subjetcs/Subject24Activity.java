@@ -31,7 +31,7 @@ public class Subject24Activity extends BasicActivity {
         btIntM2T4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Subject24Activity.this, Interaction14Activity.class));
+                //startActivity(new Intent(Subject24Activity.this, Interaction14Activity.class));
             }
         });
 

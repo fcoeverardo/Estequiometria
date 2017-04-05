@@ -58,12 +58,14 @@
                     android:id="@+id/tvPercFormula"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="@string/tvPercFormula"/>
 
                 <TextView
                     android:id="@+id/tvMinFormula"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="@string/tvMinFormula"/>
 
             </LinearLayout>

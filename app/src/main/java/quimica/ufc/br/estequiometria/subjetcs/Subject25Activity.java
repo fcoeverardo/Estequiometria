@@ -3,6 +3,8 @@ package quimica.ufc.br.estequiometria.subjetcs;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import quimica.ufc.br.estequiometria.BasicActivity;
@@ -13,6 +15,8 @@ public class Subject25Activity extends BasicActivity {
 
     TextView tv25_1, tv25_2, tv25_3, tv25_4, tv25_5,
             tv25_6, tv25_7;
+
+    Button btIntM2T5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,13 @@ public class Subject25Activity extends BasicActivity {
         tv25_6.setText(HtmlCompat.fromHtml(getString(R.string.m2t5_6)));
         tv25_7.setText(HtmlCompat.fromHtml(getString(R.string.m2t5_7)));
 
+        btIntM2T5 = (Button) findViewById(R.id.btIntM2T5);
+        btIntM2T5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(Subject24Activity.this, Interaction14Activity.class));
+            }
+        });
 
 
     }

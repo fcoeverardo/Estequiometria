@@ -21,7 +21,7 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 
 	public Evaluator() {}
     public ArrayList<Element> elementsArray = new ArrayList<Element>();;
-	public boolean added = false;
+
 	
 	private ParseTree makeTree(String formula) {
 		ANTLRInputStream input = new ANTLRInputStream(formula);
@@ -75,7 +75,7 @@ public class Evaluator extends CompoundBaseVisitor<Double>{
 				elementsArray.add(ele);
 
 			else{
-				Log.d("Eita","EleName: " + ele.getName() + "  size: " + (elementsArray.get(elementsArray.size()-1)).getName());
+				Log.d("Eita","EleCurrent: " + ele.getName() + "  LastElement: " + (elementsArray.get(elementsArray.size()-1)).getName());
 				if((elementsArray.get(elementsArray.size()-1)).getName().equals(ele.getName()))
 					elementsArray.set(elementsArray.size()-1,ele);
 				else

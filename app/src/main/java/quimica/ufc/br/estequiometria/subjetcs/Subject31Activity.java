@@ -1,12 +1,17 @@
 package quimica.ufc.br.estequiometria.subjetcs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
+import quimica.ufc.br.estequiometria.interactions.Interaction10Activity;
+import quimica.ufc.br.estequiometria.interactions.MassaMolecularInteractionActivity;
 
 public class Subject31Activity extends BasicActivity {
 
@@ -17,10 +22,14 @@ public class Subject31Activity extends BasicActivity {
             tv31_21,tv31_22,tv31_23,tv31_24,tv31_25,
             tv31_26;
 
+    Button btInt10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subject31);
+
+        btInt10 = (Button) findViewById(R.id.btInteraction10);
 
         tv31_1 = (TextView) findViewById(R.id.tv31_1);
         tv31_2 = (TextView) findViewById(R.id.tv31_2);
@@ -83,7 +92,12 @@ public class Subject31Activity extends BasicActivity {
 
         tv31_26.setText(HtmlCompat.fromHtml(getString(R.string.m3t1_26)));
 
-
+        btInt10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Subject31Activity.this, Interaction10Activity.class));
+            }
+        });
 
 
         setUpToolbar(getResources().getStringArray(R.array.module3Topics)[0]);

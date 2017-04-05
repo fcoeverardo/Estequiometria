@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 import quimica.ufc.br.estequiometria.InteractionAcitivity;
 import quimica.ufc.br.estequiometria.MainActivity;
@@ -87,7 +88,7 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
             defaultFormulaAction();
             tvMolarMass.setText(getString(R.string.tvMolarMass)+" "+ numberFormat.format(MOLAR_MASS));
             if(!etFormula.getText().toString().equals(""))
-                tvPercFormula.setText(getString(R.string.tvPercFormula) + " " + percentualFormula());
+                tvPercFormula.setText(HtmlCompat.fromHtml(getString(R.string.tvPercFormula) + " " + percentualFormula()));
             else
                 tvPercFormula.setText("");
 
@@ -103,13 +104,16 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
 
         String percentualFomula = "";
         Element element;
-        for(int i=0;i<elements.size();i++){
-            element = elements.get(i);
+        ArrayList<String> elementName = new ArrayList<String>();
+        ArrayList<Double> elementMass = new ArrayList<Double>();
+        groupElements(elementName,elementMass);
 
-            double mass = element.getMass() * element.getNumber();
+        for(int i=0;i<elementName.size();i++){
+
+            double mass = elementMass.get(i);
 
             double percentage = (((mass)/MOLAR_MASS)*100);
-            String aux = (element.getName() + numberFormat.format(percentage) + "% ");
+            String aux = (elementName.get(i) + "<small><sub>" +numberFormat.format(percentage) + "%</sub></small> ");
             percentualFomula += aux;
 
         }
@@ -150,6 +154,21 @@ public class FormulaPercentualInteractionActivity extends InteractionAcitivity {
         }
 
         return result;
+    }
+
+    private void groupElements(ArrayList<String> elementName, ArrayList<Double> elementMass){
+
+      for(int i = 0; i<elements.size();i++)
+          if(elementName.indexOf(elements.get(i).getName()) == -1){
+              elementName.add(elements.get(i).getName());
+              elementMass.add(elements.get(i).getNumber() * elements.get(i).getMass());
+          }
+
+          else{
+              int index = elementName.indexOf(elements.get(i).getName());
+              elementMass.set(index,elementMass.get(index) + (elements.get(i).getNumber() * elements.get(i).getMass()));
+          }
+
     }
 
     @Override

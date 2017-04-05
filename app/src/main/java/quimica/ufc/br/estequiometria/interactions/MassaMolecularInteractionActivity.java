@@ -24,9 +24,6 @@ public class MassaMolecularInteractionActivity extends InteractionAcitivity {
     TextView tvMolarMass, tvNMols, tvDescInt3,tvMassa;
     Button btCalc;
 
-    String currentResult = "";
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
