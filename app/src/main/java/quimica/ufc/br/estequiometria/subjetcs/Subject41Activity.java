@@ -26,7 +26,7 @@ public class Subject41Activity extends BasicActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subject41);
 
-        setUpToolbar(getResources().getStringArray(R.array.module3Topics)[3]);
+        setUpToolbar(getResources().getStringArray(R.array.module4Topics)[0]);
 
         tv41 = (TextView) findViewById(R.id.tv41);
 
