@@ -1,6 +1,8 @@
-package quimica.ufc.br.estequiometria.test;
+package quimica.ufc.br.estequiometria.fragments;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,11 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.adapters.TopicAdapter;
+import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.interactions.Interaction10Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction11Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction12Activity;
@@ -32,21 +36,21 @@ import quimica.ufc.br.estequiometria.models.Topic;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Test2Fragment.OnFragmentInteractionListener} interface
+ * {@link } interface
  * to handle interaction events.
- * Use the {@link Test2Fragment#newInstance} factory method to
+ * Use the {@link AllInteractionFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Test2Fragment extends Fragment {
+public class AllInteractionFragment extends Fragment {
 
     private ListView lvInteraction;
 
-    public Test2Fragment() {
+    public AllInteractionFragment() {
         // Required empty public constructor
     }
 
-    public static Test2Fragment newInstance(String param1, String param2) {
-        Test2Fragment fragment = new Test2Fragment();
+    public static AllInteractionFragment newInstance(String param1, String param2) {
+        AllInteractionFragment fragment = new AllInteractionFragment();
         return fragment;
     }
 
@@ -65,12 +69,12 @@ public class Test2Fragment extends Fragment {
         lvInteraction = (ListView) view.findViewById(R.id.lvInteractions);
 
         ArrayList<Topic> topics = new ArrayList<>();
-
-        for(int i=0;i<14;i++) {
-            topics.add(new Topic("Interação "+(i+1),""));
+        String [] interationsNames = getResources().getStringArray(R.array.interationsNames);
+        for (int i = 0; i < 14; i++) {
+            topics.add(new Topic(interationsNames[i], ""));
         }
 
-        TopicAdapter topicAdapter = new TopicAdapter(getActivity(),topics);
+        TopicAdapter topicAdapter = new TopicAdapter(getActivity(), topics);
 
 
         lvInteraction.setAdapter(topicAdapter);
@@ -126,9 +130,9 @@ public class Test2Fragment extends Fragment {
                         startActivity(new Intent(getActivity(), Interaction14Activity.class));
                         break;
 
-
                 }
-            }});
+            }
+        });
 
 
         return view;

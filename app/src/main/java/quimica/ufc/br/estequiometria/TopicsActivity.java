@@ -35,6 +35,7 @@ import quimica.ufc.br.estequiometria.subjetcs.Subject32Activity;
 import quimica.ufc.br.estequiometria.subjetcs.Subject33Activity;
 import quimica.ufc.br.estequiometria.subjetcs.Subject34Activity;
 import quimica.ufc.br.estequiometria.subjetcs.Subject35Activity;
+import quimica.ufc.br.estequiometria.subjetcs.Subject41Activity;
 import quimica.ufc.br.estequiometria.test.TestActivity;
 
 public class TopicsActivity extends BasicActivity {
@@ -123,6 +124,7 @@ public class TopicsActivity extends BasicActivity {
                 arrTopics = resources.getStringArray(R.array.module4Topics);
                 arrTopicsDesc = resources.getStringArray(R.array.module4TopicsDesc);
                 break;
+
 
             default:
                 finish();
@@ -216,10 +218,8 @@ public class TopicsActivity extends BasicActivity {
                 }else if(getTopic() == 3){
                     switch((int)id){
                         case 0:
-                            //startActivity(new Intent(TopicsActivity.this, Interaction6Activity.class));
-                            //startActivity(new Intent(TopicsActivity.this, Interaction14Activity.class));
-                            //startActivity(new Intent(TopicsActivity.this, TestActivity.class));
-                            startActivity(new Intent(TopicsActivity.this, TestActivity.class));
+
+                            startActivity(new Intent(TopicsActivity.this, Subject41Activity.class));
                             break;
                         case 1:
                             //startActivity(new Intent(TopicsActivity.this, Interaction13Activity.class));

@@ -1,5 +1,6 @@
 package quimica.ufc.br.estequiometria.subjetcs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
+import quimica.ufc.br.estequiometria.interactions.Interaction12Activity;
 
 public class Subject33Activity extends BasicActivity {
 
@@ -32,7 +34,13 @@ public class Subject33Activity extends BasicActivity {
             @Override
             public void onClick(View v) {
                 // Chamar Interacao
-                //startActivity(new Intent(Subject33Activity.this, InteractionXXActivity.class));
+                Intent i = new Intent(Subject33Activity.this, Interaction12Activity.class);
+
+                Bundle b = new Bundle();
+                b.putInt("subject", 33); //Your id
+                i.putExtras(b);
+
+                startActivity(i);
             }
         });
 

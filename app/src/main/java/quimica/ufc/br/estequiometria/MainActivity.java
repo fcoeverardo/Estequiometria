@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         images.add(ContextCompat.getDrawable(context, R.drawable.mod2));
         images.add(ContextCompat.getDrawable(context, R.drawable.mod3));
         images.add(ContextCompat.getDrawable(context, R.drawable.mod4));
+        images.add(ContextCompat.getDrawable(context, R.drawable.mod2));
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

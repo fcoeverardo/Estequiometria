@@ -124,6 +124,12 @@
                 android:value=".TopicsActivity" />
         </activity>
 
+        <activity android:name=".subjetcs.Subject41Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+
         <!-- Subjects Activities -->
 
 
@@ -160,19 +166,66 @@
         </activity>
         <activity
             android:name=".interactions.Interaction5Activity"
-            android:configChanges="orientation|screenSize" />
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject41Activity" />
+        </activity>
+
         <activity
             android:name=".interactions.Interaction6Activity"
             android:configChanges="orientation|screenSize" />
         <activity
             android:name=".interactions.Interaction7Activity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".interactions.Interaction8Activity" />
-        <activity android:name=".interactions.Interaction9Activity" />
-        <activity android:name=".interactions.Interaction10Activity" />
-        <activity android:name=".interactions.Interaction11Activity" />
-        <activity android:name=".interactions.Interaction12Activity" />
-        <activity android:name=".interactions.Interaction13Activity" />
+
+        <activity
+            android:name=".interactions.Interaction8Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject41Activity" />
+        </activity>
+
+        <activity
+            android:name=".interactions.Interaction9Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject35Activity" />
+        </activity>
+
+        <activity
+            android:name=".interactions.Interaction10Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject31Activity" />
+        </activity>
+
+        <activity
+            android:name=".interactions.Interaction11Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject34Activity" />
+        </activity>
+
+        <activity
+            android:name=".interactions.Interaction12Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject32Activity" />
+        </activity>
+
+        <activity
+            android:name=".interactions.Interaction13Activity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject34Activity" />
+        </activity>
         <activity
             android:name=".interactions.Interaction14Activity"
             android:configChanges="orientation|screenSize">
@@ -191,7 +244,16 @@
 
         <!-- Interactions Actictivities -->
 
+        <activity
+            android:name=".AllInterationsActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity android:name=".test.TestActivity" />
+
         <activity android:name=".VideoActivity"
             android:theme="@style/FullScreanTheme">
 

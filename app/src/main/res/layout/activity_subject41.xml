@@ -23,18 +23,18 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv34.1"
+                android:id="@+id/tv41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:id="@+id/btIntm3t42"
+                android:id="@+id/btIntm4t1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btIntm3t42"/>
 
             <Button
-                android:id="@+id/btIntm3t4"
+                android:id="@+id/btIntm4t12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/btIntm3t4"/>

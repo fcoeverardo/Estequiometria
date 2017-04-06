@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class Interaction12Activity extends InteractionAcitivity {
             tvProduct1, tvProduct1Mass, tvProduct1Mols,
             tvProduct2, tvProduct2Mass, tvProduct2Mols, tvExp;
     SeekBar sb1, sb2, sb3;
+    LinearLayout layoutResults;
 
     double mass1,mass2,mols1,mols2,yield;
 
@@ -26,6 +28,16 @@ public class Interaction12Activity extends InteractionAcitivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interaction4);
+
+        Bundle b = getIntent().getExtras();
+        int value = 0;
+        if(b != null)
+            value = b.getInt("subject");
+
+        if(value == 32){
+            layoutResults = (LinearLayout) findViewById(R.id.layoutResults);
+            layoutResults.setVisibility(View.GONE);
+        }
 
 
 

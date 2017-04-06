@@ -1,20 +1,34 @@
 package quimica.ufc.br.estequiometria.interactions;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.text.Html;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import quimica.ufc.br.estequiometria.InteractionAcitivity;
+import quimica.ufc.br.estequiometria.MainActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
+import quimica.ufc.br.estequiometria.models.Element;
 
 public class Interaction10Activity extends InteractionAcitivity {
 
     private SeekBar sb1;
     private TextView tvResults,tvInt102,tvExp10;
 
+    double minPercent = 0.0;
+
+    //DecimalFormat numberFormat = new DecimalFormat("#.00");
+    DecimalFormat noFloat = new DecimalFormat("#");
 
 
     @Override
@@ -22,6 +36,7 @@ public class Interaction10Activity extends InteractionAcitivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interaction10);
 
+        setUpToolbar(getString(R.string.titleInt10));
 
         tvExp10 = (TextView) findViewById(R.id.tvExp10);
         tvInt101 = (TextView) findViewById(R.id.tvInt101);
@@ -34,7 +49,7 @@ public class Interaction10Activity extends InteractionAcitivity {
 
         sb1 = (SeekBar) findViewById(R.id.sb1);
 
-        setUpToolbar(getString(R.string.titleInt10));
+
 
         calculateFormula(3,1);
 
@@ -68,9 +83,9 @@ public class Interaction10Activity extends InteractionAcitivity {
     };
 
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
-
 }

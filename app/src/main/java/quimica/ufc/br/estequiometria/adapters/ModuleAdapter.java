@@ -17,6 +17,7 @@ import java.util.List;
 
 import quimica.ufc.br.estequiometria.*;
 import quimica.ufc.br.estequiometria.models.Module;
+import quimica.ufc.br.estequiometria.test.TestActivity;
 
 public class ModuleAdapter extends RecyclerView.Adapter<ModuleAdapter.ModuleViewHolder> {
 
@@ -73,11 +74,18 @@ public class ModuleAdapter extends RecyclerView.Adapter<ModuleAdapter.ModuleView
                 @Override public void onClick(View v) {
                     // item clicked
 
-                    Log.d(MainActivity.TAG,"Clicked item: "+getCurrentItem());
+                    if(getCurrentItem() == 4){
+                        v.getContext().startActivity(new Intent(v.getContext(), AllInterationsActivity.class));
+                    }
 
-                    Intent it = new Intent(v.getContext(), TopicsActivity.class);
-                    it.putExtra("item", getCurrentItem());
-                    v.getContext().startActivity(it);
+                    else{
+                        Log.d(MainActivity.TAG,"Clicked item: "+ getCurrentItem());
+
+                        Intent it = new Intent(v.getContext(), TopicsActivity.class);
+                        it.putExtra("item", getCurrentItem());
+                        v.getContext().startActivity(it);
+                    }
+
 
                 }
             });

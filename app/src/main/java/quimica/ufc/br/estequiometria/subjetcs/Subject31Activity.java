@@ -11,7 +11,6 @@ import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.interactions.Interaction10Activity;
-import quimica.ufc.br.estequiometria.interactions.MassaMolecularInteractionActivity;
 
 public class Subject31Activity extends BasicActivity {
 

@@ -147,55 +147,65 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/sb3" />
 
-            <TextView
-                android:id="@+id/tvProducts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-
-            <TextView
-                android:id="@+id/tvProduct1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-
-            <TextView
-                android:id="@+id/tvProduct1Mass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tvMass2"
-                />
-
-            <TextView
-                android:id="@+id/tvProduct1Mols"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tvMols"
-                />
-
-            <TextView
+            <LinearLayout
+                android:id ="@+id/layoutResults"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/tvProduct2"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvProduct2Mass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tvMass2"
-                />
+                <TextView
+                    android:id="@+id/tvProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
 
-            <TextView
-                android:id="@+id/tvProduct2Mols"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tvMols"
-                />
+                <TextView
+                    android:id="@+id/tvProduct1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProduct1Mass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvMass2"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProduct1Mols"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvMols"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvProduct2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProduct2Mass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvMass2"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProduct2Mols"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvMols"
+                    />
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
     </ScrollView>

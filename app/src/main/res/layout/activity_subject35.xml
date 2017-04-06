@@ -27,6 +27,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <Button
+                android:id="@+id/btIntm3t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btIntm3t5"/>
+
         </LinearLayout>
     </ScrollView>
 

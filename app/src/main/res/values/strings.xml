@@ -38,9 +38,28 @@
         <item>Cálculos Químicos</item>
         <item>Cálculos de Fórmulas</item>
         <item>Cálculo Estequiométrico</item>
-        <item>Volumetria</item>
+        <item>Cálulo de Volumetria</item>
+        <item>Todas as Interações</item>
     </string-array>
     <!-- Modules Names -->
+
+    <string-array name="interationsNames">
+        <item>Massa Atômica</item>
+        <item>Massa e Moles</item>
+        <item>Massa Molar e Moles</item>
+        <item>Rendimento de uma reação</item>
+        <item>Cálculos de concetração de soluções</item>
+        <item>Titulação Ácido-Base</item>
+        <item>Padronização de NaOH</item>
+        <item>Preparo de soluções por diluição e dissolução</item>
+        <item>Reações sucessivas</item>
+        <item>Coeficientes Estequimétricos</item>
+        <item>Reagente impuro em reações</item>
+        <item>Reagente limitante e excesso</item>
+        <item>Pureza e Rendimento</item>
+        <item>Fórmula percentual e mínima</item>
+
+    </string-array>
 
     <!-- Modules Brief Descriptions -->
     <!-- Modules Brief Descriptions -->
@@ -1068,11 +1087,19 @@
             V. Relacionar o que foi dado e pedido e trabalhar com a equação química obtida a partir da soma das reações anteriores.
         </string>
 
+    <string name="btIntm3t5">Interação Reações Sucessivas</string>
+
     <!-- Module 3 Topic 5 -->
 
     <!-- Module 4 Topic 1 -->
 
-        <string name="m4t1.1">
+        <string name="m4t1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla iaculis accumsan purus, et dictum tellus ornare sed. Aliquam erat volutpat.
+            Duis ipsum nunc, molestie euismod interdum eget, varius id turpis.
+            Vivamus vulputate sapien ut felis molestie ornare. Cras dapibus ultricies viverra.
+            Mauris porta mattis dui, in imperdiet nulla lobortis sed.
+            Sed ac lacinia massa, in faucibus purus.
 
         </string>
 
