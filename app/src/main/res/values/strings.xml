@@ -566,6 +566,8 @@
             C&lt;small>9&lt;/small>H&lt;small>5&lt;/small>O&lt;small>4&lt;/small> &#8594; Fórmula Mínima
         </string>
 
+    <string name="btIntMin">Interação Fórmula Mínima</string>
+
 
     <!-- Module 2 Topic 2 -->
 
@@ -1517,6 +1519,7 @@
     <string name="titleSub2">Fórmula Molecular</string>
 
     <string name="titleSub2_1">Fórmula Percentual</string>
+    <string name="titleSub2_2">Fórmula Mínima</string>
 
     <string name="tvPercFormula">Formula Percentual:</string>
     <string name="tvMinFormula">Formula Minima:</string>

@@ -12,9 +12,11 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 import quimica.ufc.br.estequiometria.InteractionAcitivity;
 import quimica.ufc.br.estequiometria.MainActivity;
@@ -25,7 +27,7 @@ import quimica.ufc.br.estequiometria.models.Element;
 public class Interaction14Activity extends InteractionAcitivity {
 
     EditText etMass;
-    TextView tvResult, tvMolarMass, tvNMols, tvPercFormula, tvMinFormula;
+    TextView tvResult, tvMolarMass, tvNMols, tvPercFormula, tvMinFormula,tvMass;
     Button btCalc;
 
     double minPercent = 0.0;
@@ -41,6 +43,7 @@ public class Interaction14Activity extends InteractionAcitivity {
 
         etMass = (EditText) findViewById(R.id.etMass);
 
+        tvMass = (TextView) findViewById(R.id.tvMass);
         tvResult = (TextView) findViewById(R.id.tvResult);
         tvMolarMass = (TextView) findViewById(R.id.tvMolarMass);
         tvNMols = (TextView) findViewById(R.id.tvNMols);
@@ -51,6 +54,32 @@ public class Interaction14Activity extends InteractionAcitivity {
 
         setUpToolbar(getString(R.string.titleSub2));
 
+        Bundle b = getIntent().getExtras();
+        int value = 0;
+        if(b != null)
+            value = b.getInt("subject");
+
+        if(value == 21){
+
+            etMass.setVisibility(View.GONE);
+            tvMass.setVisibility(View.GONE);
+            tvMolarMass.setVisibility(View.GONE);
+            tvNMols.setVisibility(View.GONE);
+            tvMinFormula.setVisibility(View.GONE);
+            btCalc.setVisibility(View.GONE);
+            setUpToolbar(getResources().getString(R.string.titleSub2_1));
+
+        }
+
+        if(value == 22){
+
+            etMass.setVisibility(View.GONE);
+            tvMass.setVisibility(View.GONE);
+            tvMolarMass.setVisibility(View.GONE);
+            tvNMols.setVisibility(View.GONE);
+            btCalc.setVisibility(View.GONE);
+            setUpToolbar(getResources().getString(R.string.titleSub2_2));
+        }
 
         setUpCustomKeyboard(textListener);
 
@@ -59,8 +88,7 @@ public class Interaction14Activity extends InteractionAcitivity {
             public void onClick(View v) {
                 double mass = Double.parseDouble(etMass.getText().toString());
                 tvNMols.setText(HtmlCompat.fromHtml(getString(R.string.tvNMols)+" "+convertBelowZero(mass/MOLAR_MASS)));
-
-                tvMinFormula.setText(HtmlCompat.fromHtml(getString(R.string.tvMinFormula) + " " +minFormula(mass)));
+                tvMinFormula.setText(HtmlCompat.fromHtml(getString(R.string.tvMinFormula) + " " + minFormula()));
 
             }
         });
@@ -76,9 +104,21 @@ public class Interaction14Activity extends InteractionAcitivity {
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
+
             defaultFormulaAction();
             tvMolarMass.setText(getString(R.string.tvMolarMass)+" "+ numberFormat.format(MOLAR_MASS));
-            tvPercFormula.setText(getString(R.string.tvPercFormula) + " " + percentualFormula());
+            if(!etFormula.getText().toString().equals("")){
+                tvPercFormula.setText(HtmlCompat.fromHtml(getString(R.string.tvPercFormula) + " " + percentualFormula()));
+                tvMinFormula.setText(HtmlCompat.fromHtml(getString(R.string.tvMinFormula) + " " + minFormula()));
+            }
+
+            else{
+                tvPercFormula.setText(getString(R.string.tvPercFormula));
+                tvMinFormula.setText(getString(R.string.tvMinFormula));
+            }
+
+
+
         }
 
         @Override
@@ -88,52 +128,109 @@ public class Interaction14Activity extends InteractionAcitivity {
     };
 
     private String percentualFormula(){
-        String result = "";
+
+        String percentualFomula = "";
         Element element;
+        ArrayList<String> elementName = new ArrayList<String>();
+        ArrayList<Double> elementMass = new ArrayList<Double>();
+        groupElements(elementName,elementMass);
 
-        for(int i=0;i<elements.size();i++){
-            element = elements.get(i);
-            double percentage = (((element.getNumber() * element.getMass())/MOLAR_MASS)*100);
+        for(int i=0;i<elementName.size();i++){
 
-            result += element.getName() + " " + noFloat.format(percentage) + "% ";
+            double mass = elementMass.get(i);
+
+            double percentage = (((mass)/MOLAR_MASS)*100);
+            String aux = (elementName.get(i) + "<small><sub>" +numberFormat.format(percentage) + "%</sub></small> ");
+            percentualFomula += aux;
+
         }
 
-        return result;
+        return percentualFomula;
     }
 
-    private String minFormula(double mass){
-        String result = "";
+    private String minFormula(){
+
+        String minFormula = "";
+        String minFormula2 = "";
+        boolean allDivisible = true;
+        ArrayList<Integer> coeficients = new ArrayList<>();
+        int min = 0;
+
+        if(elements.size() > 0)
+            min = elements.get(0).getNumber();
+
+        for(int i=0;i<elements.size();i++)
+            min = Math.min(elements.get(i).getNumber(),min);
+
+        for(int i=0;i<elements.size();i++){
+
+            if(elements.get(i).getNumber()%min != 0){
+                allDivisible = false;
+            }
+
+            String aux;
+            String aux2;
+
+            if(elements.get(i).getNumber()/min == 1)
+                aux = (elements.get(i).getName());
+            else
+                aux = (elements.get(i).getName() + "<small><sub>" + elements.get(i).getNumber()/min + "</sub></small> ");
+
+
+            if(elements.get(i).getNumber() == 1)
+                aux2 = (elements.get(i).getName());
+            else
+                aux2 = (elements.get(i).getName() + "<small><sub>" + elements.get(i).getNumber() + "</sub></small> ");
+
+            minFormula += aux;
+            minFormula2 += aux2;
+
+        }
+
+        if(allDivisible)
+            return minFormula;
+        else
+            return  minFormula2;
+        /*
+        String minFormula = "";
         Element element;
+        int min = 0;
 
         double percs[] = new double[elements.size()];
 
+        if(elements.size() > 0)
+            min = elements.get(0).getNumber();
+
+        for(int i=0;i<elements.size();i++)
+            min = Math.min(elements.get(i).getNumber(),min);
 
         for(int i=0;i<elements.size();i++){
-            element = elements.get(i);
 
-            //Log.d(MainActivity.TAG, "perc: "+(((element.getNumber() * element.getMass())/Element.MOLARMASS)*100));
+            String aux;
+            if(elements.get(i).getNumber()/min == 1)
+                 aux = (elements.get(i).getName());
+            else
+                aux = (elements.get(i).getName() + "<small><sub>" + elements.get(i).getNumber()/min + "</sub></small> ");
 
-            double percentage = ((((element.getNumber() * element.getMass())/Element.MOLARMASS)*mass)/element.getMass());
+            minFormula += aux;
 
-            percs[i] = percentage;
+        }
+        return minFormula;*/
+    }
 
-            if(i==0) {
-                minPercent = percentage;
-            }else if(percentage<minPercent){
-                minPercent = percentage;
+    private void groupElements(ArrayList<String> elementName, ArrayList<Double> elementMass){
+
+        for(int i = 0; i<elements.size();i++)
+            if(elementName.indexOf(elements.get(i).getName()) == -1){
+                elementName.add(elements.get(i).getName());
+                elementMass.add(elements.get(i).getNumber() * elements.get(i).getMass());
             }
-        }
 
-        Log.d(MainActivity.TAG,"minpercent: "+minPercent);
-        //Log.d(MainActivity.TAG,"percentage Array: "+"["+percs[0]+", "+percs[1]+", "+percs[2]+"]");
+            else{
+                int index = elementName.indexOf(elements.get(i).getName());
+                elementMass.set(index,elementMass.get(index) + (elements.get(i).getNumber() * elements.get(i).getMass()));
+            }
 
-        for(int i=0;i<percs.length;i++){
-
-            element = elements.get(i);
-            result += element.getName() + "<sub><small>" +  noFloat.format(percs[i]/minPercent) + "</sub></small>";
-        }
-
-        return result;
     }
 
     @Override

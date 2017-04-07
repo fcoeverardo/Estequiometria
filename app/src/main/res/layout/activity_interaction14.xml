@@ -45,6 +45,7 @@
                     android:id="@+id/tvMolarMass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="@string/tvMolarMass"
                     />
 
@@ -52,6 +53,7 @@
                     android:id="@+id/tvNMols"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="@string/tvNMols"/>
 
                 <TextView
