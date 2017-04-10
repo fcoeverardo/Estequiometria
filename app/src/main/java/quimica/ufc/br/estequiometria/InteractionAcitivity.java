@@ -111,6 +111,7 @@ public class InteractionAcitivity extends BasicActivity {
     */
 
     public void setUpCustomKeyboard(TextWatcher listener){
+
         MOLAR_MASS = 0.0;
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
@@ -145,12 +146,15 @@ public class InteractionAcitivity extends BasicActivity {
                     showCustomKeyboard(v);
                     hideKeyboard(v);
                 }
-                else
-                    hideCustomKeyboardIfVisible();
+                else{
+                    if( isCustomKeyboardVisible() )
+                        hideCustomKeyboard();
+                }
+
             }
         });
 
-        etFormula.requestFocus();
+        //etFormula.requestFocus();
 
         etFormula.addTextChangedListener(listener);
     }
@@ -465,6 +469,15 @@ public class InteractionAcitivity extends BasicActivity {
         if(dialog!= null && dialog.isShowing())
             dialog.dismiss();
 
+    }
+
+    public int getScreenSize(){
+
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
+        return size.y;
     }
 
 }

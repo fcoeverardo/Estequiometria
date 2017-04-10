@@ -30,7 +30,7 @@ public class Interaction3Activity extends InteractionAcitivity {
 
 
     EditText etMass;
-    TextView tvMolarMass, tvNMols, tvDescInt3;
+    TextView tvMolarMass, tvNMols, tvDescInt3,tvMassa;
     Button btCalc;
 
     String currentResult = "";
@@ -55,6 +55,21 @@ public class Interaction3Activity extends InteractionAcitivity {
         setUpToolbar(getString(R.string.int1Name));
 
         setUpCustomKeyboard(textListener);
+
+        Bundle b = getIntent().getExtras();
+        int value = 0;
+        if(b != null)
+            value = b.getInt("subject");
+
+        if(value == 14){
+
+            etMass.setVisibility(View.GONE);
+            tvNMols.setVisibility(View.GONE);
+            btCalc.setVisibility(View.GONE);
+            tvMassa = (TextView) findViewById(R.id.tvMass);
+            tvMassa.setVisibility(View.GONE);
+        }
+
 
         btCalc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,5 +119,6 @@ public class Interaction3Activity extends InteractionAcitivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
+
 
 }

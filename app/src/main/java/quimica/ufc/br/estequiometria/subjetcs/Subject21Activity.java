@@ -10,10 +10,7 @@ import android.widget.TextView;
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
-import quimica.ufc.br.estequiometria.interactions.FormulaPercentualInteractionActivity;
-import quimica.ufc.br.estequiometria.interactions.Interaction12Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction14Activity;
-import quimica.ufc.br.estequiometria.interactions.Interaction1Activity;
 
 public class Subject21Activity extends BasicActivity {
 

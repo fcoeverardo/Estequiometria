@@ -39,7 +39,14 @@ public class Subject15Activity extends BasicActivity {
        btInt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Subject15Activity.this, Interaction3Activity.class));
+
+                Intent i = new Intent(Subject15Activity.this, Interaction3Activity.class);
+
+                Bundle b = new Bundle();
+                b.putInt("subject", 15); //Your id
+                i.putExtras(b);
+
+                startActivity(i);
             }
         });
 

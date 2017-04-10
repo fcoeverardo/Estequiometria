@@ -12,7 +12,6 @@ import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.interactions.Interaction3Activity;
-import quimica.ufc.br.estequiometria.interactions.MassaMolecularInteractionActivity;
 
 public class Subject14Activity extends BasicActivity {
 
@@ -40,7 +39,14 @@ public class Subject14Activity extends BasicActivity {
         btInt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Subject14Activity.this, MassaMolecularInteractionActivity.class));
+
+                Intent i = new Intent(Subject14Activity.this, Interaction3Activity.class);
+
+                Bundle b = new Bundle();
+                b.putInt("subject", 14); //Your id
+                i.putExtras(b);
+
+                startActivity(i);
             }
         });
 
