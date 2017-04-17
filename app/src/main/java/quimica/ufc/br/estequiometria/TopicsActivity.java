@@ -36,6 +36,7 @@ import quimica.ufc.br.estequiometria.subjetcs.Subject33Activity;
 import quimica.ufc.br.estequiometria.subjetcs.Subject34Activity;
 import quimica.ufc.br.estequiometria.subjetcs.Subject35Activity;
 import quimica.ufc.br.estequiometria.subjetcs.Subject41Activity;
+import quimica.ufc.br.estequiometria.subjetcs.Subject43Activity;
 import quimica.ufc.br.estequiometria.test.TestActivity;
 
 public class TopicsActivity extends BasicActivity {
@@ -225,9 +226,12 @@ public class TopicsActivity extends BasicActivity {
                             //startActivity(new Intent(TopicsActivity.this, Interaction13Activity.class));
                             break;
                         case 2:
-                            //startActivity(new Intent(TopicsActivity.this, Interaction11Activity.class));
+                            startActivity(new Intent(TopicsActivity.this, Subject43Activity.class));
                             break;
                         case 3:
+                            startActivity(new Intent(TopicsActivity.this, Interaction7Activity.class));
+                            break;
+                        case 4:
                             startActivity(new Intent(TopicsActivity.this, Interaction7Activity.class));
                             break;
                     }

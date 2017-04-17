@@ -136,6 +136,7 @@
 
     <!-- Module 4 Topics -->
     <string-array name="module4Topics">
+        <item>Unidades de concentração e preparo de soluções</item>
         <item>Volumetria de precipitação</item>
         <item>Volumetria de oxi-redução</item>
         <item>Volumetria ácido-base</item>
@@ -1125,6 +1126,81 @@
         </string>
 
     <!-- Module 4 Topic 2 -->
+
+    <!-- Module 4 Topic 1 -->
+
+    <string name="m4t3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla iaculis accumsan purus, et dictum tellus ornare sed. Aliquam erat volutpat.
+            Duis ipsum nunc, molestie euismod interdum eget, varius id turpis.
+            Vivamus vulputate sapien ut felis molestie ornare. Cras dapibus ultricies viverra.
+            Mauris porta mattis dui, in imperdiet nulla lobortis sed.
+            Sed ac lacinia massa, in faucibus purus.
+            &lt;br />&lt;br />
+
+            &lt;b>Exemplo 1: &lt;/b>&lt;br />&lt;br />
+            O volume de 25,00ml de uma amostra aquosa de &lt;b>ácido oxálico (H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4&lt;/small>)&lt;/b>
+            foi titulado com solução padrão 0,20 molL&lt;sup>&lt;small>-1&lt;/small>&lt;/sup> de KOH.&lt;br />
+
+            H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4(aq)&lt;/small>) + 20H&lt;small>(aq)&lt;/small> &#8594; C&lt;small>2&lt;/small>O&lt;small>4&lt;/small>&lt;sup>&lt;small>2-&lt;/small>&lt;/sup>&lt;small>(aq)&lt;/small> + 2H&lt;small>2&lt;/small>O&lt;small>(l)&lt;/small>&lt;br />&lt;br />
+            A titulação alcançou o ponto de equivalência com 25,00ml de solução titulante.Calcule a concentração, em molL&lt;sup>&lt;small>-1&lt;/small>&lt;/sup>, de ácido oxálico na amostra original. &lt;br />&lt;br/>
+
+            &lt;b>Dados: &lt;/b>&lt;br />&lt;br/>
+            H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4&lt;/small>&lt;br />
+            V = 25ml = 25.10&lt;sup>&lt;small>3&lt;/small>&lt;/sup>L&lt;br/>
+            M = ?&lt;br /> &lt;br/>
+
+            KOH&lt;br />
+            V = 25ml = 25.10&lt;sup>&lt;small>3&lt;/small>&lt;/sup>L&lt;br/>
+            M = 0,02 mol/L&lt;br />&lt;br />
+
+            I)Cálculo do número de mols de KOH:&lt;br/>&lt;br/>
+            0,02 mol de KOH --------- 1 L&lt;br/>
+            X mol de KOH    --------- 25.10&lt;sup>&lt;small>-1&lt;/small>&lt;/sup>L &lt;br/>
+            X = 0,5.10&lt;sup>&lt;small>3&lt;/small>&lt;/sup> mol de KOH&lt;br/>
+            &lt;b>X = 5.10&lt;sup>&lt;small>4&lt;/small>&lt;/sup> mol de KOH &lt;br/>&lt;br/>&lt;/b>
+
+            II)Cálculo de número de mols de H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4&lt;/small>:&lt;br/>&lt;br/>
+            H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4(aq)&lt;/small> + 20H&lt;small>(aq)&lt;/small> &#8594; C&lt;small>2&lt;/small>O&lt;small>4&lt;/small>&lt;sup>&lt;small>2-&lt;/small>&lt;/sup>&lt;small>(aq)&lt;/small> + 2H&lt;small>2&lt;/small>O&lt;small>(l)&lt;/small>&lt;br />
+            1 mol de H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4(aq)&lt;/small>) + 20H&lt;small>(aq)&lt;/small> --------- 2 mol de OH&lt;sup>&lt;small>-&lt;/small>&lt;/sup>&lt;br/>
+            X mol de H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4(aq)&lt;/small>         --------- 5.10&lt;sup>&lt;small>-4&lt;/small>&lt;/sup>&lt;br/>
+            &lt;b>X = 2,5.10&lt;sup>&lt;small>-4&lt;/small>&lt;/sup> mol H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4(aq)&lt;/small>&lt;/b>&lt;br/>&lt;br/>
+
+            III) Cálculo da concentração em mol/L da solução de H&lt;small>2&lt;/small>C&lt;small>2&lt;/small>O&lt;small>4&lt;/small>: &lt;br/>&lt;br/>
+            V = 25ml = 25.10&lt;sup>&lt;small>-3&lt;/small>&lt;/sup>L
+            M = n&lt;small>1&lt;/small>/V = 2,5.10&lt;sup>&lt;small>-4&lt;/small>&lt;/sup>mol /  25.10&lt;sup>&lt;small>-3&lt;/small>&lt;/sup>L&lt;br/>
+            M = 0,01 mol.L&lt;sup>&lt;small>-1&lt;/small>&lt;/sup>&lt;br/>
+            &lt;b>M = 1.10&lt;sup>&lt;small>-2&lt;/small>&lt;/sup>mol.L&lt;sup>&lt;small>-1&lt;/small>&lt;/sup>&lt;/b>&lt;br/>&lt;br/>
+
+            &lt;b>Exemplo 2: &lt;/b>&lt;br/>&lt;br/>
+            Preparou uma solução dissolvendo-se 5,90 gramas de &lt;b>ácido butanodióico (succínico, massa molar 118g.mol&lt;sup>&lt;small>-1&lt;/small>&lt;/sup>)&lt;/b>
+            em 1000 cm&lt;sup>&lt;small>3&lt;/small>&lt;/sup> de água. Titulou-se 25,0cm&lt;sup>&lt;small>3&lt;/small>&lt;/sup> desta solução de NaOH 0,125 mol/L.&lt;br/>
+            a)Calcular a molaridade da solução do ácido succínico preparada.&lt;br/>
+            b)Escrever as equações das reações que ocorrem quando o ácido reage parcial e totalmente com a base.&lt;br/>
+            c)Calcular o volume de NaOH usada na referida titulação, considerando se todo o ácido for neutralizado.&lt;br/>&lt;br/>
+
+            &lt;b>Dados: &lt;/b>&lt;br />&lt;br/>
+            m1 = 5,90g de ácido butanodióico &lt;br/>
+            M1 = 118g/mol &lt;br/>
+            V = 1000 mL = 1L &lt;br/>
+            Solução titulada: V = 25 ml = 25.10&lt;sup>&lt;small>-3&lt;/small>&lt;/sup>L&lt;br />&lt;br/>
+
+            NaOH&lt;br />
+            V = ?&lt;br />
+            M = 0,125 mol/L&lt;br/>&lt;br />
+            &lt;b>a)&lt;/b>&lt;br/>
+            I)Cálculo do número de mols de Ác. Butanodióico:&lt;br />&lt;br/>
+            n1 = m1/M1 = 5,9 g / 118g.mol&lt;sup>&lt;small>-1&lt;/small>&lt;/sup>&lt;br/>
+            &lt;b>n1 = 0,05mol&lt;/b>&lt;br/>&lt;br />
+
+            II)Cálculo da concentração em mol/L da solução de Ác. Butonodióico:&lt;br/>&lt;br/>
+            M = n1/V = 0,05 mol / 1,0L&lt;br/>
+            &lt;b>M = 0,05 mol/L&lt;/b>&lt;br/>&lt;br/>
+
+
+    </string>
+
+    <!-- Module 4 Topic 1 -->
 
 
     <!-- Interaction 1 -->

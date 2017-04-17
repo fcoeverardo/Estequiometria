@@ -130,6 +130,12 @@
                 android:value=".TopicsActivity" />
         </activity>
 
+        <activity android:name=".subjetcs.Subject43Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TopicsActivity" />
+        </activity>
+
         <!-- Subjects Activities -->
 
 
