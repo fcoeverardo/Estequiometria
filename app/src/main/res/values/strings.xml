@@ -621,34 +621,39 @@
             \t\t12g/mol&lt;br />&lt;br />
 
             &lt;b>C&lt;/b> 7,14 mols&lt;br />
-            (dividinddo pelo menor)
+            (dividindo pelo menor)&lt;br />&lt;br />
 
-            &lt;b>C&lt;/b> &lt;u>7,14 mols&lt;/u>
-            \t\t7,14&lt;br />&lt;br />
+            &lt;b>C&lt;/b> &lt;u>7,14 mols&lt;/u>&lt;br/>
+            \t\t7,14&lt;br/>&lt;br />
 
-            &lt;b>C&lt; /b> 1 mol&lt;br />
+            &lt;b>C&lt;/b> 1 mol&lt;br />
 
         </string>
 
         <string name="m2t3.7" formatted="false">
-            &lt;b>H&lt;/b> 14,29% &lt;br />&lt;br />
+            &lt;b>H&lt;/b> 14,29% &lt;br />&lt;br />&lt;br />
 
-            &lt;b>H&lt;/b> 14,29g&lt;br />&lt;br />
+            &lt;b>H&lt;/b> 14,29g&lt;br />&lt;br />&lt;br />&lt;br />
 
             &lt;b>H&lt;/b> &lt;u>14,29g &lt;/u>&lt;br />
             \t\t 1g/mol&lt;br />&lt;br />
 
-            &lt;b>H&lt;/b> 14,29 mols &lt;br />&lt;br />
+            &lt;b>H&lt;/b> 14,29 mols &lt;br />&lt;br />&lt;br />
 
             &lt;b>H&lt;/b> &lt;u>14,29 mols &lt;/u>&lt;br />
             \t\t 7,14&lt;br />&lt;br />
 
             &lt;b>H&lt;/b> 2 mols&lt;br />&lt;br />
 
-            CH&lt;small>2&lt;/small> &#8594; Fórmula Mínima
         </string>
 
-        <string name="m2t3.8">
+        <string name="m2t3.7.5" formatted="false">
+
+        CH&lt;small>2&lt;/small> &#8594; Fórmula Mínima
+
+        </string>
+
+    <string name="m2t3.8">
             &lt;br />&lt;br />
             Cálculo do n:&lt;br />
             n = Massa molecular / Massa da F. Mínima&lt;br />&lt;br />
