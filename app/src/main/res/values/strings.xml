@@ -403,31 +403,34 @@
         </string>
 
         <string name="m2t1.4" formatted="false">
-            Cálculo da % de C&lt;br />
+            &lt;b>Cálculo da % de C&lt;/b>&lt;br />
             180 &#8594; 100%&lt;br />
             72g &#8594; X%&lt;br />&#8594;
 
             x = (72 * 100) / 180 = &lt;u>40%&lt;/u>
+           &lt;br />
         </string>
 
         <string name="m2t1.5" formatted="false">
-            Cálculo da % de H&lt;br />
+            &lt;b>Cálculo da % de H&lt;/b>&lt;br />
             180 &#8594; 100%&lt;br />
             12g &#8594; Y%&lt;br />&#8594;
 
             y = (12 * 100) / 180 = &lt;u>6,7%&lt;/u>
+            &lt;br />
         </string>
 
         <string name="m2t1.6" formatted="false">
-            Cálculo da % de O&lt;br />
+            &lt;b>Cálculo da % de O&lt;/b>&lt;br />
             180 &#8594; 100%&lt;br />
             96g &#8594; Z%&lt;br />&#8594;
 
             z = (96 * 100) / 180 = &lt;u>53.3%&lt;/u>
+            &lt;br
         </string>
 
         <string name="m2t1.7" formatted="false">
-            &lt;b>Composição percentual da glicose:&lt;/b> C = 40%; H = 6,7%; O = 53,3%&lt;br />&lt;br />
+            &lt;b>Composição percentual da glicose:&lt;/b> &lt;br/>C = 40%; H = 6,7%; O = 53,3%&lt;br />&lt;br />
 
             A partir da composição percentual, podemos representar a &lt;b>fração em massa&lt;/b> dos componentes de um composto; basta dividir as porcentagens por 100.&lt;br />
         </string>
@@ -463,7 +466,7 @@
     <!-- Module 2 Topic 2 -->
 
         <string name="m2t2.1">
-            É a fórmula do composto que tem os menores índices inteiros possíveis.&lt;br />&lt;br />
+            &lt;b>Fórmula molecular&lt;/b> é a fórmula do composto que tem os menores índices inteiros possíveis.&lt;br />&lt;br />
 
             Exemplos:
         </string>
@@ -611,16 +614,16 @@
             &lt;b>C&lt;/b> 85,71%&lt;br />
             (passando para "g")&lt;br />&lt;br />
 
-            &lt;b>C&lt; /b> 85,71g&lt;br />
+            &lt;b>C&lt;/b> 85,71g&lt;br />
             (dividindo pela massa molar)&lt;br />&lt;br />
 
-            &lt;b>C&lt; /b> &lt;u>85,71g&lt;/u>&lt;br />
+            &lt;b>C&lt;/b> &lt;u>85,71g&lt;/u>&lt;br />
             \t\t12g/mol&lt;br />&lt;br />
 
-            &lt;b>C&lt; /b> 7,14 mols&lt;br />
+            &lt;b>C&lt;/b> 7,14 mols&lt;br />
             (dividinddo pelo menor)
 
-            &lt;b>C&lt; /b> &lt;u>7,14 mols&lt;/u>
+            &lt;b>C&lt;/b> &lt;u>7,14 mols&lt;/u>
             \t\t7,14&lt;br />&lt;br />
 
             &lt;b>C&lt; /b> 1 mol&lt;br />
@@ -1364,13 +1367,13 @@
         Para encontrar o massar molar e o número de moles correspondente a uma determinada massa de uma substância, insira a formula molecular e a massa da substância e toque no botão calcular.&lt;br />&lt;br />
     </string>
 
-    <string name="int3Name">Pratica Massa Molar</string>
+    <string name="int3Name">Cálculo do N° de Moles</string>
 
     <string name="actvHint">Digite a sigla do elemento desejado</string>
     <string name="btAdd">Adicionar</string>
     <string name="tvFormula">Formula Molecular:</string>
-    <string name="tvMolarMass">Massa Molar:</string>
-    <string name="tvMass">Massa:</string>
+    <string name="tvMolarMass">Massa Molar (g/mol):</string>
+    <string name="tvMass">Massa (g):</string>
     <string name="btCalc">Calcular</string>
     <string name="tvNMols">Número de Moles:</string>
 

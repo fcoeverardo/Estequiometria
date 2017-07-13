@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import quimica.ufc.br.estequiometria.InteractionAcitivity;
 import quimica.ufc.br.estequiometria.MainActivity;
@@ -56,6 +57,7 @@ public class Interaction3Activity extends InteractionAcitivity {
 
         setUpCustomKeyboard(textListener);
 
+
         Bundle b = getIntent().getExtras();
         int value = 0;
         if(b != null)
@@ -68,17 +70,26 @@ public class Interaction3Activity extends InteractionAcitivity {
             btCalc.setVisibility(View.GONE);
             tvMassa = (TextView) findViewById(R.id.tvMass);
             tvMassa.setVisibility(View.GONE);
+
+            setUpToolbar("Massa Molecular");
         }
 
 
         btCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hideKeyboard(v);
 
-                double mass = Double.parseDouble(etMass.getText().toString());
+                if(tvMassa.getText().toString().equals(""))
+                    Toast.makeText(getApplicationContext(),"Digite o valor da massa",Toast.LENGTH_SHORT).show();
+                else{
 
-                tvNMols.setText(HtmlCompat.fromHtml(getString(R.string.tvNMols)+" "+(convertBelowZero(mass/MOLAR_MASS))));
+                    hideKeyboard(v);
+
+                    double mass = Double.parseDouble(etMass.getText().toString());
+
+                    tvNMols.setText(HtmlCompat.fromHtml(getString(R.string.tvNMols)+" "+(convertBelowZero(mass/MOLAR_MASS))));
+
+                }
 
             }
         });

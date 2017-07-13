@@ -77,6 +77,8 @@
 
     </ScrollView>
 
-    <include layout="@layout/keyboard_layout" />
+    <include
+        layout="@layout/keyboard_layout"
+        android:layout_height="350dp" />
 
 </LinearLayout>

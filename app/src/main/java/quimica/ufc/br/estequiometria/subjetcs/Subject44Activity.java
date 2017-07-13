@@ -13,7 +13,7 @@ import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.interactions.Interaction5Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction8Activity;
 
-public class Subject43Activity extends BasicActivity {
+public class Subject44Activity extends BasicActivity {
 
     TextView tv43;
 
@@ -21,7 +21,7 @@ public class Subject43Activity extends BasicActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subject43);
+        setContentView(R.layout.activity_subject44);
 
         setUpToolbar(getResources().getStringArray(R.array.module4Topics)[0]);
 

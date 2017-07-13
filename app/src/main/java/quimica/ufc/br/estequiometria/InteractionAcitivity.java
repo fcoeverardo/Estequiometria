@@ -8,6 +8,7 @@ import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
 import android.support.v4.widget.ListViewAutoScrollHelper;
 import android.support.v7.widget.AppCompatEditText;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.text.Editable;
 import android.text.Html;
 import android.text.Spannable;
@@ -206,6 +207,9 @@ public class InteractionAcitivity extends BasicActivity {
 
 
         keyboardLayout.setVisibility(View.VISIBLE);
+        //LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) keyboardLayout.getLayoutParams();
+        //params.height = getScreenSize() / 2;
+        //keyboardLayout.setLayoutParams(params);
         keyboardView.setEnabled(true);
 
     }
@@ -346,6 +350,7 @@ public class InteractionAcitivity extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        evaluator.elementsArray.clear();
     }
 
     protected void undoElement(){
