@@ -73,6 +73,7 @@
 
             <SeekBar
                 android:id="@+id/sb1"
+                android:minHeight="45dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

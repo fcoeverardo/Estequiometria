@@ -99,7 +99,7 @@
                 android:id="@+id/btIntM3T2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btIntM3T2"/>
+                android:text="@string/btnInteraction"/>
 
 
 

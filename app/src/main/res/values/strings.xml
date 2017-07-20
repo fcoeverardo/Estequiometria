@@ -126,10 +126,10 @@
 
     <!-- Module 3 Topics -->
     <string-array name="module3Topics">
-        <item>Casos gerais</item>
+        <item>Introdução</item>
         <item>Reagente em excesso</item>
-        <item>Rendimento</item>
-        <item>Pureza</item>
+        <item>Rendimento de Reação</item>
+        <item>Pureza de Reagente</item>
         <item>Reações sucessivas</item>
     </string-array>
     <!-- Module 3 Topics -->
@@ -712,6 +712,8 @@
 
     <string name="btIntM2T4">Pratica Assunto</string>
 
+
+    <string name="btnInteraction">Saiba Mais</string>
     <!-- Module 2 Topic 4 -->
 
     <!-- Module 2 Topic 5 -->
@@ -807,8 +809,8 @@
     <!-- Module 3 Topic 1 -->
 
         <string name="m3t1.1">
-            Cálculos estequiométricos são aqueles que envolvem as quantidades das substâncias que participam de uma reação química.&lt;br />
-            Os coeficientes de uma reação química balanceada indicam a proporção de cada substância que reage e que é produzido. Essa proporção pode ser em mols, massa, número de moléculas, volume nas mesmas condições de temperatura e de pressão ou volume nas CNTP (a relação entre volumes só é válida para substâncias na fase gasosa).&lt;br />&lt;br />
+            Cálculos estequiométricos são aqueles que envolvem as quantidades das substâncias que participam de uma reação química.&lt;br />&lt;br />
+            Os coeficientes de uma reação química balanceada indicam a proporção de cada substância que reage e que é produzido.&lt;br />&lt;br />Essa proporção pode ser em mols, massa, número de moléculas, volume nas mesmas condições de temperatura e de pressão ou volume nas CNTP (a relação entre volumes só é válida para substâncias na fase gasosa).&lt;br />&lt;br />
 
             &lt;b>Exemplo:&lt;/b>
         </string>
@@ -1497,6 +1499,15 @@
         <item>POR DISSOLUÇÂO</item>
     </string-array>
 
+    <string-array name="tab15Names">
+
+        <item>CuSO&lt;small>4&lt;/small>. x H&lt;small>2&lt;/small>O</item>
+        <item>CoI&lt;small>2&lt;/small>. x H&lt;small>2&lt;/small>O</item>
+        <item>SnCl&lt;small>2&lt;/small>. x H&lt;small>2&lt;/small>O</item>
+
+    </string-array>
+
+
     <string name="tv1Sol">Solução:\n</string>
 
     <string name="tv1SolDil">Solução diluida:\n</string>
@@ -1565,12 +1576,12 @@
     <string name="tvIntRect"> 3 NiCl&lt;small>2&lt;/small> + 2 Na&lt;small>3&lt;/small>PO&lt;small>4&lt;/small> &#8594; Ni(PO&lt;small>4&lt;/small>)&lt;small>2&lt;/small> + 6 NaCl</string>
     <string name="tvInt102">&lt;br />Números de Moles (NiCl&lt;small>2&lt;/small>):</string>
 
-    <string name="tvExp10">Varie a massa de NiCl&lt;small>2&lt;/small> e observe a massa/número de moles nescessários para a reação e a quantidade de massa/número de moles produzidos por cada produto. Considere rendimento de 100%.&lt;br /></string>
+    <string name="tvExp10">Varie o número de moles e a massa de NiCl&lt;small>2&lt;/small> e observe a massa (e o número de moles) de cada reagente que são consumidos na reação; e as massas (e número de moles) que são produzidos de cada produto. Considere rendimento de 100%.&lt;br /></string>
 
     <string name="tvNicl2">&lt;b>NiCl&lt;small>2&lt;/small>&lt;/b>: %1$sg consumidos, Moles: %2$s</string>
-    <string name="tvNa3PO4">Na&lt;small>3&lt;/small>PO&lt;small>4&lt;/small>: %1$sg consumidos, Moles: %2$s</string>
-    <string name="tvNipo42">Ni(PO4)2: %1$sg consumidos, Moles: %2$s</string>
-    <string name="tvNacl">NaCl: %1$sg consumidos, Moles: %2$s</string>
+    <string name="tvNa3PO4">&lt;b>Na&lt;small>3&lt;/small>PO&lt;small>4&lt;/small>&lt;/b>: %1$sg consumidos, Moles: %2$s</string>
+    <string name="tvNipo42">&lt;b>Ni(PO&lt;small>4&lt;/small>)&lt;small>2&lt;/small>&lt;/b>: %1$sg consumidos, Moles: %2$s</string>
+    <string name="tvNacl">&lt;b>NaCl&lt;/b>: %1$sg consumidos, Moles: %2$s</string>
 
     <!-- Interaction 10 -->
 
@@ -1578,7 +1589,7 @@
 
     <string name="titleInt11">Reagente Impuro</string>
 
-    <string name="tvExp11">Varie a massa e a pureza de NiCl&lt;small>2&lt;/small> e observe a massa/número de moles necessários para reação e a quantidade de massa/número de moles produzidos de cada produto.</string>
+    <string name="tvExp11">Varie a massa e a pureza de NiCl&lt;small>2&lt;/small> e observe a massa/número de moles necessários para reação e a quantidade de massa/número de moles produzidos de cada produto.&lt;br/></string>
 
     <string name="tvPurityNiCl">Pureza (NiCl):</string>
 

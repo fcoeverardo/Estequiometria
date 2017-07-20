@@ -39,10 +39,12 @@
             <SeekBar
                 android:id="@+id/sb1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"/>
 
             <TextView
                 android:id="@+id/tvPurityNicl"
+                android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tvPurityNiCl"/>
@@ -50,12 +52,13 @@
             <SeekBar
                 android:id="@+id/sb2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"/>
 
             <TextView
                 android:id="@+id/tvResults"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/tvNicl2"
@@ -65,17 +68,20 @@
             <TextView
                 android:id="@+id/tvNa3po4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/tvNipo42"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:id="@+id/tvNacl"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
 
 
         </LinearLayout>

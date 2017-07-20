@@ -44,6 +44,7 @@ public class BasicActivity extends AppCompatActivity {
         if(slidingTabLayout != null && viewPager != null) {
             viewPager.setAdapter(adapter);
 
+
             slidingTabLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
             slidingTabLayout.setSelectedIndicatorColors(ContextCompat.getColor(this, R.color.colorAccent));
             slidingTabLayout.setDistributeEvenly(true);

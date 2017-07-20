@@ -11,6 +11,7 @@ import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.interactions.Interaction14Activity;
+import quimica.ufc.br.estequiometria.interactions.Interaction15Activity;
 
 public class Subject24Activity extends BasicActivity {
 
@@ -31,7 +32,7 @@ public class Subject24Activity extends BasicActivity {
         btIntM2T4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(Subject24Activity.this, Interaction14Activity.class));
+                startActivity(new Intent(Subject24Activity.this, Interaction15Activity.class));
             }
         });
 
