@@ -165,13 +165,21 @@
                 android:value=".subjetcs.Subject32Activity" />
         </activity>
         <activity
-            android:name=".interactions.Interaction5Activity"
-            android:configChanges="orientation|screenSize">
+            android:name=".interactions.Interaction52Activity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".subjetcs.Subject41Activity" />
         </activity>
-
+        <activity
+            android:name=".interactions.Interaction5Activity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".subjetcs.Subject41Activity" />
+        </activity>
         <activity
             android:name=".interactions.Interaction6Activity"
             android:configChanges="orientation|screenSize" />

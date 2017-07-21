@@ -10,16 +10,13 @@ import android.widget.TextView;
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
-import quimica.ufc.br.estequiometria.interactions.Interaction11Activity;
-import quimica.ufc.br.estequiometria.interactions.Interaction13Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction5Activity;
-import quimica.ufc.br.estequiometria.interactions.Interaction8Activity;
 
 public class Subject41Activity extends BasicActivity {
 
     TextView tv41;
 
-    Button btIntm4t1, btIntm4t12;
+    Button btIntm4t1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +30,7 @@ public class Subject41Activity extends BasicActivity {
         tv41.setText(HtmlCompat.fromHtml(getString(R.string.m4t1)));
 
         btIntm4t1 = (Button) findViewById(R.id.btIntm4t1);
-        btIntm4t12 = (Button) findViewById(R.id.btIntm4t12);
+
 
         btIntm4t1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,12 +39,7 @@ public class Subject41Activity extends BasicActivity {
             }
         });
 
-        btIntm4t12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Subject41Activity.this, Interaction8Activity.class));
-            }
-        });
+
 
     }
 

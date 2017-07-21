@@ -27,15 +27,10 @@ import quimica.ufc.br.estequiometria.models.Element;
 
 public class Interaction3Activity extends InteractionAcitivity {
 
-    ArrayAdapter<String> elementAdapter;
-
 
     EditText etMass;
     TextView tvMolarMass, tvNMols, tvDescInt3,tvMassa;
     Button btCalc;
-
-    String currentResult = "";
-
 
 
     @Override

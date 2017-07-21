@@ -1,17 +1,13 @@
 package quimica.ufc.br.estequiometria.subjetcs;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import quimica.ufc.br.estequiometria.BasicActivity;
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.extras.HtmlCompat;
-import quimica.ufc.br.estequiometria.interactions.Interaction5Activity;
-import quimica.ufc.br.estequiometria.interactions.Interaction8Activity;
 
 public class Subject42Activity extends BasicActivity {
 

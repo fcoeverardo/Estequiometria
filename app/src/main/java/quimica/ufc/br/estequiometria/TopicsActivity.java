@@ -199,7 +199,7 @@ public class TopicsActivity extends BasicActivity {
                             startActivity(new Intent(TopicsActivity.this, Subject31Activity.class));
                             break;
                         case 1:
-                            //startActivity(new Intent(TopicsActivity.this, Interaction5Activity.class));
+                            //startActivity(new Intent(TopicsActivity.this, Interaction52Activity.class));
                             startActivity(new Intent(TopicsActivity.this, Subject32Activity.class));
                             break;
                         case 2:
@@ -219,7 +219,6 @@ public class TopicsActivity extends BasicActivity {
                 }else if(getTopic() == 3){
                     switch((int)id){
                         case 0:
-
                             startActivity(new Intent(TopicsActivity.this, Subject41Activity.class));
                             break;
                         case 1:
@@ -232,6 +231,9 @@ public class TopicsActivity extends BasicActivity {
                             startActivity(new Intent(TopicsActivity.this, Interaction7Activity.class));
                             break;
                         case 4:
+                            startActivity(new Intent(TopicsActivity.this, Interaction7Activity.class));
+                            break;
+                        case 5:
                             startActivity(new Intent(TopicsActivity.this, Interaction7Activity.class));
                             break;
                     }

@@ -22,7 +22,7 @@ import quimica.ufc.br.estequiometria.interactions.Interaction1Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction2Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction3Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction4Activity;
-import quimica.ufc.br.estequiometria.interactions.Interaction5Activity;
+import quimica.ufc.br.estequiometria.interactions.Interaction52Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction6Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction7Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction8Activity;
@@ -96,7 +96,7 @@ public class Test2Fragment extends Fragment {
                         startActivity(new Intent(getActivity(), Interaction4Activity.class));
                         break;
                     case 4:
-                        startActivity(new Intent(getActivity(), Interaction5Activity.class));
+                        startActivity(new Intent(getActivity(), Interaction52Activity.class));
                         break;
                     case 5:
                         startActivity(new Intent(getActivity(), Interaction6Activity.class));

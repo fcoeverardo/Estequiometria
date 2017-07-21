@@ -1,8 +1,6 @@
 package quimica.ufc.br.estequiometria.fragments;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,13 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import quimica.ufc.br.estequiometria.R;
 import quimica.ufc.br.estequiometria.adapters.TopicAdapter;
-import quimica.ufc.br.estequiometria.extras.HtmlCompat;
 import quimica.ufc.br.estequiometria.interactions.Interaction10Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction11Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction12Activity;
@@ -26,7 +22,7 @@ import quimica.ufc.br.estequiometria.interactions.Interaction1Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction2Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction3Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction4Activity;
-import quimica.ufc.br.estequiometria.interactions.Interaction5Activity;
+import quimica.ufc.br.estequiometria.interactions.Interaction52Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction6Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction7Activity;
 import quimica.ufc.br.estequiometria.interactions.Interaction8Activity;
@@ -100,7 +96,7 @@ public class AllInteractionFragment extends Fragment {
                         startActivity(new Intent(getActivity(), Interaction4Activity.class));
                         break;
                     case 4:
-                        startActivity(new Intent(getActivity(), Interaction5Activity.class));
+                        startActivity(new Intent(getActivity(), Interaction52Activity.class));
                         break;
                     case 5:
                         startActivity(new Intent(getActivity(), Interaction6Activity.class));

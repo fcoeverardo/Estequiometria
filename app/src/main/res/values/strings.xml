@@ -38,7 +38,7 @@
         <item>Cálculos Químicos</item>
         <item>Cálculos de Fórmulas</item>
         <item>Cálculo Estequiométrico</item>
-        <item>Cálulo de Volumetria</item>
+        <item>Cálculo de Volumetria</item>
         <item>Todas as Interações</item>
     </string-array>
     <!-- Modules Names -->
@@ -136,7 +136,8 @@
 
     <!-- Module 4 Topics -->
     <string-array name="module4Topics">
-        <item>Unidades de concentração e preparo de soluções</item>
+        <item>Unidades de concentração</item>
+        <item>Preparo de soluções</item>
         <item>Volumetria de precipitação</item>
         <item>Volumetria de oxi-redução</item>
         <item>Volumetria ácido-base</item>
@@ -1116,6 +1117,8 @@
 
         </string>
 
+        <string name="btIntm4t1">Cálculos de concetração de soluções</string>
+
     <!-- Module 4 Topic 1 -->
 
     <!-- Module 4 Topic 2 -->
@@ -1211,7 +1214,6 @@
     </string>
 
     <!-- Module 4 Topic 1 -->
-
 
     <!-- Interaction 1 -->
 
@@ -1419,7 +1421,7 @@
     <string name="rbBenzene">Benzeno</string>
     <string name="rbAcetic">Ácido acético</string>
 
-    <string name="tvPurity">Pureza:</string>
+    <string name="tvPurity">Pureza (%):</string>
 
     <string name="tvSolu">Soluto:</string>
 
